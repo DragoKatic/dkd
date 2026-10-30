@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Festival Tickets – Nightbloom Festival Demo</title>
+  <meta name="description" content="Ticket shop for Nightbloom, a fictional music festival: day, weekend, camping and VIP tickets with a live order total. A demo page by Drago Katić Development, ready for a custom WordPress theme.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#140b2e">
+  <link rel="canonical" href="https://dkd.rs/themes/nightbloom/tickets.html">
+  <link rel="icon" href="images/nightbloom-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Festival Tickets – Nightbloom Festival Demo">
+  <meta property="og:description" content="Ticket shop for Nightbloom, a fictional music festival: day, weekend, camping and VIP tickets with a live order total. A demo page by Drago Katić Development, ready for a custom WordPress theme.">
+  <meta property="og:url" content="https://dkd.rs/themes/nightbloom/tickets.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/nightbloom.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Nightbloom Festival, music festival website demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/unbounded.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/rubik.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="nightbloom.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Festival Tickets – Nightbloom Festival Demo",
+  "description": "Ticket shop for Nightbloom, a fictional music festival: day, weekend, camping and VIP tickets with a live order total. A demo page by Drago Katić Development, ready for a custom WordPress theme.",
+  "url": "https://dkd.rs/themes/nightbloom/tickets.html",
+  "image": "https://dkd.rs/images/projects/nightbloom.webp",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Drago Katić Development",
+    "url": "https://dkd.rs/"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Drago Katić",
+    "url": "https://dkd.rs/"
+  }
+}
+  </script>
+</head>
+<body>
+  <a class="nb-skip" href="#main">Skip to content</a>
+  <header class="nb-header">
+    <div class="nb-wrap nb-header-row">
+      <a class="nb-logo" href="index.html"><img src="images/nightbloom-mark.svg" alt="" width="40" height="40"><span>Nightbloom</span></a>
+      <button class="nb-menu" type="button" aria-expanded="false" aria-controls="nb-nav">Menu</button>
+      <nav class="nb-nav" id="nb-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html#lineup">Line-up</a></li>
+          <li><a href="index.html#map">Festival map</a></li>
+          <li><a href="index.html#info">Info &amp; FAQ</a></li>
+          <li><a class="nb-nav-cta" href="tickets.html">Tickets</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="nb-page-head">
+      <div class="nb-wrap"><p class="nb-kicker">Tickets</p><h1>Choose your tickets</h1><p class="nb-lead">Early-bird prices until 31 January. Up to eight tickets per order, e-tickets sent straight to your phone.</p></div>
+    </section>
+    <section class="nb-section nb-shop">
+      <form class="nb-wrap nb-shop-grid" action="#" novalidate>
+        <ul class="nb-tickets"><li class="nb-ticket nb-reveal" data-price="79"><div><h2>Day ticket</h2><p>One day of your choice, all stages, free water refills.</p></div><p class="nb-price">€79</p><div class="nb-qty"><button type="button" data-step="-1" aria-label="One day ticket less">−</button><label class="nb-sr" for="nb-qty-day">Number of day tickets</label><input id="nb-qty-day" name="day" type="number" min="0" max="8" value="0" inputmode="numeric"><button type="button" data-step="1" aria-label="One day ticket more">+</button></div></li><li class="nb-ticket nb-reveal" data-price="189"><div><h2>Weekend ticket</h2><p>All three days and nights, every stage, re-entry allowed.</p></div><p class="nb-price">€189</p><div class="nb-qty"><button type="button" data-step="-1" aria-label="One weekend ticket less">−</button><label class="nb-sr" for="nb-qty-weekend">Number of weekend tickets</label><input id="nb-qty-weekend" name="weekend" type="number" min="0" max="8" value="0" inputmode="numeric"><button type="button" data-step="1" aria-label="One weekend ticket more">+</button></div></li><li class="nb-ticket nb-reveal" data-price="239"><div><h2>Weekend + camping</h2><p>Weekend ticket plus a pitch in the Meadow campsite with showers.</p></div><p class="nb-price">€239</p><div class="nb-qty"><button type="button" data-step="-1" aria-label="One weekend + camping less">−</button><label class="nb-sr" for="nb-qty-camping">Number of weekend + campings</label><input id="nb-qty-camping" name="camping" type="number" min="0" max="8" value="0" inputmode="numeric"><button type="button" data-step="1" aria-label="One weekend + camping more">+</button></div></li><li class="nb-ticket nb-reveal" data-price="349"><div><h2>VIP weekend</h2><p>Viewing deck at the main stage, lounge, own bar and fast-track entry.</p></div><p class="nb-price">€349</p><div class="nb-qty"><button type="button" data-step="-1" aria-label="One vip weekend less">−</button><label class="nb-sr" for="nb-qty-vip">Number of vip weekends</label><input id="nb-qty-vip" name="vip" type="number" min="0" max="8" value="0" inputmode="numeric"><button type="button" data-step="1" aria-label="One vip weekend more">+</button></div></li></ul>
+        <aside class="nb-order" aria-labelledby="nb-order-title">
+          <h2 id="nb-order-title">Your order</h2>
+          <ul class="nb-order-lines" aria-live="polite"><li class="nb-order-empty">No tickets selected yet.</li></ul>
+          <p class="nb-fee"><span>Booking fee</span><span id="nb-fee">€0.00</span></p>
+          <p class="nb-sum"><span>Total</span><strong id="nb-total">€0.00</strong></p>
+          <div class="nb-field"><label for="nb-name">Name on tickets</label><input id="nb-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="nb-field"><label for="nb-email">Email for e-tickets</label><input id="nb-email" name="email" type="email" autocomplete="email" required></div>
+          <button class="nb-btn nb-btn-hot" type="submit">Go to payment</button>
+          <p class="nb-order-status" role="status"></p>
+        </aside>
+      </form>
+    </section>
+  </main>
+
+  <footer class="nb-footer">
+    <div class="nb-wrap nb-footer-grid">
+      <div>
+        <a class="nb-logo" href="index.html"><img src="images/nightbloom-mark.svg" alt="" width="36" height="36"><span>Nightbloom</span></a>
+        <p>16–18 July · Larkspur Valley · three nights, three stages.</p>
+      </div>
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme. Nightbloom Festival, the artists, the valley and the tickets are fictional; the pictures are illustrations.</p>
+    </div>
+    <p class="nb-wrap nb-copy">© <span id="year">2026</span> Nightbloom Festival demo</p>
+  </footer>
+
+  <script src="nightbloom.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

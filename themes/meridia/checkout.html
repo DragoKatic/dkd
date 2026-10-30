@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout – Meridia Travel Demo</title>
+  <meta name="description" content="Checkout with deposit or full payment — part of a WooCommerce-style tour booking demo by Drago Katić Development.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#faf6ef">
+  <link rel="canonical" href="https://dkd.rs/themes/meridia/checkout.html">
+  <link rel="icon" href="images/meridia-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Checkout – Meridia Travel Demo">
+  <meta property="og:description" content="Checkout with deposit or full payment — part of a WooCommerce-style tour booking demo by Drago Katić Development.">
+  <meta property="og:url" content="https://dkd.rs/themes/meridia/checkout.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/meridia.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Meridia Travel tour booking website demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/dm-serif-display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="meridia.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Checkout – Meridia Travel Demo",
+    "description": "Checkout with deposit or full payment — part of a WooCommerce-style tour booking demo by Drago Katić Development.",
+    "url": "https://dkd.rs/themes/meridia/checkout.html",
+    "image": "https://dkd.rs/images/projects/meridia.webp",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Drago Katić Development",
+      "url": "https://dkd.rs/"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Drago Katić",
+      "url": "https://dkd.rs/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/meridia-mark.svg" alt="" width="34" height="34">
+        <span>Meridia <small>Travel</small></span>
+      </a>
+      <a class="basket-link" href="basket.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="visually-hidden">Basket, </span><span class="basket-count">0</span><span class="visually-hidden"> bookings</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-terra" href="tours.html">Book a tour</a>
+      </nav>
+    </div>
+  </header>
+
+<main id="main">
+    <div class="wrap shop-crumbs">
+      <ol class="crumbs crumbs-dark" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li><a href="basket.html">Basket</a></li><li aria-current="page">Checkout</li></ol>
+      <h1 class="shop-title">Checkout</h1>
+    </div>
+    <section class="wrap shop-page" id="checkout" data-deposit="20">
+      <div class="basket-empty">
+        <p class="woo-info">Your basket is empty, so there is nothing to check out yet.</p>
+        <a class="btn btn-teal" href="tours.html">Return to tours</a>
+      </div>
+      <form class="checkout" novalidate hidden>
+        <div class="checkout-fields">
+          <h2>Billing details</h2>
+          <div class="form-grid">
+            <div class="field"><label for="c-first">First name <abbr title="required">*</abbr></label><input id="c-first" name="first" autocomplete="given-name" required></div>
+            <div class="field"><label for="c-last">Last name <abbr title="required">*</abbr></label><input id="c-last" name="last" autocomplete="family-name" required></div>
+            <div class="field field-full"><label for="c-email">Email address <abbr title="required">*</abbr></label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="c-phone">Phone <abbr title="required">*</abbr></label><input id="c-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="c-country">Country / Region</label><select id="c-country" name="country" autocomplete="country-name"><option>Austria</option><option>Croatia</option><option>France</option><option>Germany</option><option>Italy</option><option>Netherlands</option><option>Serbia</option><option>Slovenia</option><option>Spain</option><option>Sweden</option><option>United Kingdom</option><option>United States</option></select></div>
+          </div>
+          <h2>Additional information</h2>
+          <div class="field field-full"><label for="c-notes">Booking notes (optional)</label><textarea id="c-notes" name="notes" rows="3" placeholder="Dietary requirements, names of the other travellers, a birthday on the trip…"></textarea></div>
+        </div>
+
+        <div class="order-review">
+          <h2>Your booking</h2>
+          <table class="shop-table review-table">
+            <thead><tr><th scope="col">Tour</th><th scope="col" class="num">Subtotal</th></tr></thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+          </table>
+          <fieldset class="pay-choice">
+            <legend>Payment</legend>
+            <label class="choice"><input type="radio" name="plan" value="deposit" checked> Pay a 20% deposit now <small class="deposit-amount"></small></label>
+            <label class="choice"><input type="radio" name="plan" value="full"> Pay in full</label>
+          </fieldset>
+          <fieldset class="pay-choice">
+            <legend>Payment method</legend>
+            <label class="choice"><input type="radio" name="method" value="Credit card" checked> Credit card <small>demo, no card data is asked for</small></label>
+            <label class="choice"><input type="radio" name="method" value="Direct bank transfer"> Direct bank transfer</label>
+          </fieldset>
+          <label class="choice terms"><input type="checkbox" name="terms" required> <span>I have read and agree to the booking terms <abbr title="required">*</abbr></span></label>
+          <p class="checkout-error" role="alert"></p>
+          <button type="submit" class="btn btn-terra btn-block">Place order</button>
+        </div>
+      </form>
+      <div class="order-received" hidden tabindex="-1"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img src="images/meridia-mark.svg" alt="" width="30" height="30">
+          <span>Meridia <small>Travel</small></span>
+        </a>
+        <p>Small-group tours and tailor-made trips since 2009. Fewer places, more time in each.</p>
+        <p class="pay-note">Secure online booking · 20% deposit · free date changes up to 30 days before departure</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2>Book online</h2>
+        <ul>
+          <li><a href="tours.html">All tours</a></li>
+          <li><a href="tours.html?region=europe">Europe</a></li>
+          <li><a href="tours.html?region=asia">Asia</a></li>
+          <li><a href="tours.html?region=americas">Americas</a></li>
+          <li><a href="basket.html">Your basket</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Travel letter</h2>
+        <p>One email a month with new departures and last-minute places.</p>
+        <form class="newsletter" novalidate>
+          <label class="visually-hidden" for="news-email">Email address</label>
+          <input id="news-email" type="email" placeholder="you@example.com" autocomplete="email">
+          <button type="submit" class="btn btn-terra">Subscribe</button>
+        </form>
+        <p class="newsletter-status" role="status"></p>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme for a WooCommerce tour booking shop. Meridia Travel is a fictional agency; tours, prices and places are examples; the landscapes are illustrations of fictional places; no booking or payment is made.</p>
+      <p>© <span id="year">2026</span> Meridia Travel demo</p>
+    </div>
+  </footer>
+
+  <script src="meridia.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

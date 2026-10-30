@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Instagram's in-app browser gets a slightly smaller scale; runs before the first layout -->
+    <script>if(/Instagram/i.test(navigator.userAgent))document.querySelector('meta[name="viewport"]').content="width=device-width, initial-scale=0.9"</script>
+    <title>Web Applications, Websites &amp; eCommerce | Drago Katić Development</title>
+    <link rel="canonical" href="https://dkd.rs/">
+    <meta name="description" content="Web developer: web applications that automate routine work, websites and eCommerce on WordPress and WooCommerce, SEO and accessibility. Live demos.">
+    <meta name="author" content="Drago Katić">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <!-- Fonts used on every page: fetched before the CSS asks for them, so text does not jump when they arrive -->
+    <link rel="preload" href="fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/JetBrainsMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.css?v=a3a40e31a2">
+    <!-- Cookie consent; analytics/marketing trackers are loaded by it only after consent -->
+    <script src="js/core.js?v=f5ade95661" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://dkd.rs/#person",
+                "name": "Drago Katić",
+                "jobTitle": "Web Developer",
+                "url": "https://dkd.rs",
+                "image": "https://dkd.rs/images/drago-katic.jpg",
+                "description": "Web developer: web applications and automation, websites and online stores, custom WordPress themes and plugins.",
+                "knowsAbout": [
+                    "Web application development",
+                    "WordPress",
+                    "WooCommerce",
+                    "Technical SEO",
+                    "Web accessibility",
+                    "Web performance"
+                ],
+                "sameAs": [
+                    "https://github.com/DragoKatic",
+                    "https://www.instagram.com/drago.katic.development",
+                    "https://www.facebook.com/drago.katic.development",
+                    "https://www.tiktok.com/@drago.katic.development",
+                    "https://www.pinterest.com/dragokatic/",
+                    "https://www.reddit.com/user/DragoKatic/",
+                    "https://www.linkedin.com/company/145334456/",
+                    "https://dragokatic.wordpress.com",
+                    "https://www.upwork.com/freelancers/~01a8eb657df3ee0d5f",
+                    "https://www.freelancer.com/u/DragoKatic"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://dkd.rs/#website",
+                "url": "https://dkd.rs/",
+                "name": "Drago Katić Development",
+                "inLanguage": "en",
+                "publisher": {
+                    "@id": "https://dkd.rs/#person"
+                }
+            }
+        ]
+    }
+    </script>
+    <meta name="p:domain_verify" content="f6a71bbc536ffc34bb310ccdac6bb68a">
+    <!-- Icons and web app manifest -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48 32x32 16x16">
+    <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="author" type="text/plain" href="humans.txt">
+    <meta name="theme-color" content="#0d1321">
+    <meta name="apple-mobile-web-app-title" content="Drago Katić">
+    <!-- Open Graph / X -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Drago Katić Development">
+    <meta property="og:title" content="Web Applications, Websites &amp; eCommerce | Drago Katić Development">
+    <meta property="og:description" content="Web applications that do the work for you, plus websites and online stores. Try the demo websites and read the case studies.">
+    <meta property="og:url" content="https://dkd.rs/">
+    <meta property="og:image" content="https://dkd.rs/images/drago-katic.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="Drago Katić Development">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Drago Katić">
+    <meta name="twitter:label2" content="Time to read">
+    <meta name="twitter:data2" content="2 minutes">
+</head>
+<body>
+<header>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="./" class="navbar-brand mx-auto mx-lg-0">
+                <img src="images/logo-title-on-dark.svg" class="brand-logo-title brand-on-dark" alt="Drago Katić Development" width="240" height="61">
+                <img src="images/logo-title-on-light.svg" class="brand-logo-title brand-on-light" alt="Drago Katić Development" width="240" height="61">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="navbar-nav ms-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link section-link" href="./#home"><span class="menu-links-size">Home</span><img src="images/icon-home.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link section-link" href="./#web-apps"><span class="menu-links-size">Web Apps</span><img src="images/icon-web-apps.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link section-link" href="./#services"><span class="menu-links-size">Services</span><img src="images/icon-services.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link section-link" href="./#projects"><span class="menu-links-size">Projects</span><img src="images/icon-projects.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link section-link" href="./#contact"><span class="menu-links-size">Contact</span><img src="images/icon-contact.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                    <li class="nav-item d-lg-none dkd-menu-install" hidden>
+                        <a href="#install" class="nav-link dkd-install-link"><span class="menu-links-size">Install app</span><img src="images/icon-install.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <main id="main" tabindex="-1">
+        <section class="dragokaticdevelopment d-flex justify-content-center align-items-center" id="home">
+            <div class="container z-index-50">
+                <div class="row">
+                    <div class="col-lg-7 col-12">
+                        <div class="intro-text">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="images/icon-home.svg" class="home-icon" alt="" width="64" height="64">
+                                <p class="ms-3 mb-0 drago-katic-development-text-box home-greeting">Hi there!</p>
+                            </div>
+                            <h1 class="mb-4 drago-katic-development-text-box home-title">Web applications that do the work for you</h1>
+                            <p class="mb-4"><a class="action-btn scroll-link" href="#web-apps">See what’s possible</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <img src="images/logo-white.svg" class="logo-image img-fluid" alt="" width="64" height="64">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why-hire section-space" id="web-apps">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <img src="images/php-development.webp" srcset="images/php-development-600.webp 600w, images/php-development-800.webp 800w, images/php-development.webp 1000w" sizes="(min-width: 992px) 640px, calc(100vw - 24px)"  class="why-hire-image img-fluid" alt="Illustration of PHP code on a computer screen" loading="lazy" width="1000" height="780">
+                    </div>
+                    <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                        <div class="why-hire-box">
+                            <div class="section-heading d-flex justify-content-end align-items-center mb-4">
+                                <h2 class="text-white me-4 mb-0">What Web Apps Can Do</h2>
+                                <img src="images/drago-katic-avatar.webp" srcset="images/drago-katic-avatar-320.webp 320w, images/drago-katic-avatar.webp 480w" sizes="160px" class="heading-image img-fluid" alt="Drago Katić, web developer" loading="lazy" width="480" height="480">
+                            </div>
+                            <p>Routine work eats the day: copying data between spreadsheets, answering the same enquiries, assembling reports. A web application automates it and runs in any browser with nothing to install.</p>
+                            <p>A web developer turns existing data into order and booking systems, reminders and reports: an ally and partner for the owner. Websites and eCommerce on WooCommerce or WordPress get the same attention to design as to code. To see how, try the <a href="websites.html">demo websites</a> in the browser, read the <a href="case-studies.html">case studies</a> or download the free <a href="ecommerce.html">WordPress plugins</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-space glance-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="credentials-box">
+                            <div class="credentials-heading">
+                                <h3 class="mb-0">At a Glance</h3>
+                            </div>
+                            <div class="credentials-list">
+                                <p><span class="credentials-item">Web applications and automation</span></p>
+                                <p><span class="credentials-item">WordPress and WooCommerce</span></p>
+                                <p><span class="credentials-item">Graphic design and clean code</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                        <div class="why-hire-box">
+                            <div class="row">
+                                <div class="col-lg-6 col-6 stat-divider-bottom py-2 featured-section">
+                                    <strong class="stat-number">15+</strong>
+                                    <p class="stat-label">Demo websites to try</p>
+                                </div>
+                                <div class="col-lg-6 col-6 stat-divider-start stat-divider-bottom ps-5 py-2 featured-section">
+                                    <strong class="stat-number">4+</strong>
+                                    <p class="stat-label">Free WordPress plugins</p>
+                                </div>
+                                <div class="col-lg-6 col-6 pt-2">
+                                    <strong class="stat-number featured-section">4</strong>
+                                    <p class="stat-label">Services incl. SEO</p>
+                                </div>
+                                <div class="col-lg-6 col-6 stat-divider-start ps-5 pt-2 featured-section">
+                                    <strong class="stat-number">0</strong>
+                                    <p class="stat-label">Trackers before consent</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-space services-area" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-12 mx-auto width-100">
+                        <div class="section-heading d-flex justify-content-center align-items-center mb-5">
+                            <img src="images/icon-services.svg" class="heading-image dkd-icon img-fluid" alt="" loading="lazy" width="160" height="160">
+                            <h2 class="text-white ms-4 mb-0">Services</h2>
+                        </div>
+                        <div class="row pt-lg-5">
+                            <div class="col-lg-6 col-12">
+                                <div class="service-card">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h3 class="mb-0 services-context-description homepage-services">Web Apps</h3>
+                                        <div class="service-file-formats ms-auto">
+                                            <p class="services-context-data mb-0">
+                                                <svg role="img" aria-label="JS" data-name="File Type Icon JS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">JS</text>
+                                                </svg>
+                                                <svg role="img" aria-label="API" data-name="File Type Icon API" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">API</text>
+                                                </svg>
+                                                <svg role="img" aria-label="SQL" data-name="File Type Icon SQL" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">SQL</text>
+                                                </svg>
+                                            </p>
+                                            <div class="service-chip-overlay"></div>
+                                        </div>
+                                    </div>
+                                    <p class="text-weight-bold">Automate the routine, keep the data in one place</p>
+                                    <p>Booking and ordering systems, dashboards, forms, reports and small tools, built around the way the work really goes. Unusual ideas included.</p>
+                                    <a href="case-studies.html" class="dkd-btn outline-btn btn mt-3">Read case studies</a>
+                                    <a href="case-studies.html" class="dkd-btn outline-btn btn mt-3" hidden="hidden"><span class="img-spriter" title="Spriter *.gif animation"></span></a>
+                                    <div class="service-icon-box d-flex justify-content-center align-items-center">
+                                        <img src="images/icon-web-apps.svg" class="service-icon service-icon-img" alt="" width="90" height="90">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="service-card service-card-raised">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h3 class="mb-0 services-context-description homepage-services">Websites</h3>
+                                        <div class="service-file-formats ms-auto">
+                                            <p class="services-context-data mb-0">
+                                                <svg role="img" aria-label="HTML" data-name="File Type Icon HTML" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">HTML</text>
+                                                </svg>
+                                                <svg role="img" aria-label="CSS" data-name="File Type Icon CSS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">CSS</text>
+                                                </svg>
+                                                <svg role="img" aria-label="JS" data-name="File Type Icon JS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">JS</text>
+                                                </svg>
+                                            </p>
+                                            <div class="service-chip-overlay"></div>
+                                        </div>
+                                    </div>
+                                    <p class="text-weight-bold">A website made for your work, not squeezed into a template</p>
+                                    <p>From a one-page presentation to a site with online booking. Every page works on phones, loads quickly, meets WCAG 2.1 AA accessibility and is easy to update in a CMS.</p>
+                                    <a href="websites.html" class="dkd-btn outline-btn btn mt-3">See demo websites</a>
+                                    <a href="websites.html" class="dkd-btn outline-btn btn mt-3" hidden="hidden"><span class="img-spriter" title="Spriter *.gif animation"></span></a>
+                                    <div class="service-icon-box d-flex justify-content-center align-items-center">
+                                        <i class="service-icon bi-globe" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="service-card">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h3 class="mb-0 services-context-description homepage-services">Online Stores</h3>
+                                        <div class="service-file-formats ms-auto">
+                                            <p class="services-context-data mb-0">
+                                                <svg role="img" aria-label="CSV" data-name="File Type Icon CSV" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">CSV</text>
+                                                </svg>
+                                                <svg role="img" aria-label="PHP" data-name="File Type Icon PHP" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">PHP</text>
+                                                </svg>
+                                                <svg role="img" aria-label="SQL" data-name="File Type Icon SQL" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">SQL</text>
+                                                </svg>
+                                            </p>
+                                            <div class="service-chip-overlay"></div>
+                                        </div>
+                                    </div>
+                                    <p class="text-weight-bold">A shop your customers can find their way around</p>
+                                    <p>eCommerce on WooCommerce: clear product pages, simple filters and a short path to checkout. An existing shop can move to a new home or get the features it is missing.</p>
+                                    <a href="ecommerce.html" class="dkd-btn outline-btn btn mt-3">About online stores</a>
+                                    <a href="ecommerce.html" class="dkd-btn outline-btn btn mt-3" hidden="hidden"><span class="img-spriter" title="Spriter *.gif animation"></span></a>
+                                    <div class="service-icon-box d-flex justify-content-center align-items-center">
+                                        <i class="service-icon bi-phone" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="service-card service-card-raised">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h3 class="mb-0 services-context-description homepage-services">SEO &amp; Speed</h3>
+                                        <div class="service-file-formats ms-auto">
+                                            <p class="services-context-data mb-0">
+                                                <svg role="img" aria-label="XML" data-name="File Type Icon XML" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">XML</text>
+                                                </svg>
+                                                <svg role="img" aria-label="CSV" data-name="File Type Icon CSV" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">CSV</text>
+                                                </svg>
+                                                <svg role="img" aria-label="TXT" data-name="File Type Icon TXT" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.91 163.5" class="bi file-type-icon">
+                                                    <path d="M0,16A16,16,0,0,1,16,0H56V32a8,8,0,0,0,8,8H96V56H44c-8.83,0-16,2.17-16,11v61H16A16,16,0,0,1,0,112ZM96,32H64V0Z"/>
+                                                    <text class="bi-filetype" transform="translate(38.91 127.5)">TXT</text>
+                                                </svg>
+                                            </p>
+                                            <div class="service-chip-overlay"></div>
+                                        </div>
+                                    </div>
+                                    <p class="text-weight-bold">Is your site hard to find?</p>
+                                    <p>Page titles, descriptions, loading speed, images and accessibility: checked, fixed and explained in plain words.</p>
+                                    <a href="seo.html" class="dkd-btn outline-btn btn mt-3">About SEO and speed</a>
+                                    <a href="seo.html" class="dkd-btn outline-btn btn mt-3" hidden="hidden"><span class="img-spriter" title="Spriter *.gif animation"></span></a>
+                                    <div class="service-icon-box d-flex justify-content-center align-items-center">
+                                        <i class="service-icon bi-google" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="section-space services-area" id="projects">
+            <p id="gallery-hint" hidden>Opens a larger screenshot</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-12 ms-auto margin-left-0">
+                    <div class="section-heading d-flex justify-content-center align-items-center mb-4">
+                        <img src="images/icon-projects.svg" class="heading-image dkd-icon img-fluid" alt="" loading="lazy" width="160" height="160">
+                        <h2 class="text-white ms-4 mb-0">Client Projects</h2>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <p class="col-12 projects-note">Screenshots taken at launch. Most of these sites have since closed or been changed by others.</p>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="work-card">
+                        <div class="work-info">
+                            <small class="work-tag">WordPress / Custom (theme/modules)</small>
+                            <h3 class="work-title">Titan Design</h3>
+                        </div>
+                        <a href="images/projects/titandizajn.webp" type="image/webp"  class="gallery-link" aria-describedby="gallery-hint">
+                            <img src="images/projects/titandizajn.webp" srcset="images/projects/titandizajn-400.webp 400w, images/projects/titandizajn.webp 640w" sizes="(min-width: 1400px) 385px, (min-width: 576px) 320px, calc(100vw - 66px)"  class="work-image img-fluid" alt="Titan Design: client website, screenshot at launch" width="640" height="640" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="work-card">
+                        <div class="work-info">
+                            <small class="work-tag">WordPress / Noxe</small>
+                            <h3 class="work-title">Classica Nova</h3>
+                        </div>
+                        <a href="images/projects/classicanova.webp" type="image/webp"  class="gallery-link" aria-describedby="gallery-hint">
+                            <img src="images/projects/classicanova.webp" srcset="images/projects/classicanova-400.webp 400w, images/projects/classicanova.webp 640w" sizes="(min-width: 1400px) 385px, (min-width: 576px) 320px, calc(100vw - 66px)"  class="work-image img-fluid" alt="Classica Nova: client website, screenshot at launch" width="640" height="640" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="work-card">
+                        <div class="work-info">
+                            <small class="work-tag">WordPress / Astra</small>
+                            <h3 class="work-title">Svetlana Negić</h3>
+                        </div>
+                        <a href="images/projects/svetlananegic.webp" type="image/webp"  class="gallery-link" aria-describedby="gallery-hint">
+                            <img src="images/projects/svetlananegic.webp" srcset="images/projects/svetlananegic-400.webp 400w, images/projects/svetlananegic.webp 640w" sizes="(min-width: 1400px) 385px, (min-width: 576px) 320px, calc(100vw - 66px)"  class="work-image img-fluid" alt="Holistic centre Svetlana Negić: client website, screenshot at launch" width="640" height="640" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="work-card">
+                        <div class="work-info">
+                            <small class="work-tag">WordPress / The Gem</small>
+                            <h3 class="work-title">COSMOKIDS</h3>
+                        </div>
+                        <a href="images/projects/cosmokids.webp" type="image/webp"  class="gallery-link" aria-describedby="gallery-hint">
+                            <img src="images/projects/cosmokids.webp" srcset="images/projects/cosmokids-400.webp 400w, images/projects/cosmokids.webp 640w" sizes="(min-width: 1400px) 385px, (min-width: 576px) 320px, calc(100vw - 66px)"  class="work-image img-fluid" alt="Cosmokids: client website, screenshot at launch" width="640" height="640" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="work-card">
+                        <div class="work-info">
+                            <small class="work-tag">WordPress / The Gem</small>
+                            <h3 class="work-title">COSMOFUN</h3>
+                        </div>
+                        <a href="images/projects/cosmofun.webp" type="image/webp"  class="gallery-link" aria-describedby="gallery-hint">
+                            <img src="images/projects/cosmofun.webp" srcset="images/projects/cosmofun-400.webp 400w, images/projects/cosmofun.webp 640w" sizes="(min-width: 1400px) 385px, (min-width: 576px) 320px, calc(100vw - 66px)"  class="work-image img-fluid" alt="Cosmofun: client website, screenshot at launch" width="640" height="640" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="work-card">
+                        <div class="work-info">
+                            <small class="work-tag">WordPress / The Gem</small>
+                            <h3 class="work-title">COSMOJUMP</h3>
+                        </div>
+                        <a href="images/projects/cosmojump.webp" type="image/webp"  class="gallery-link" aria-describedby="gallery-hint">
+                            <img src="images/projects/cosmojump.webp" srcset="images/projects/cosmojump-400.webp 400w, images/projects/cosmojump.webp 640w" sizes="(min-width: 1400px) 385px, (min-width: 576px) 320px, calc(100vw - 66px)"  class="work-image img-fluid" alt="Cosmojump: client website, screenshot at launch" width="640" height="640" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-area section-space" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-12 ms-auto">
+                    <div class="section-heading d-flex justify-content-center align-items-center mb-4">
+                        <img src="images/icon-contact.svg" class="heading-image dkd-icon img-fluid" alt="" loading="lazy" width="160" height="160">
+                        <h2 class="text-white ms-4 mb-0">Get in Touch</h2>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                    <form action="contact.php"
+                    method="POST"
+                    id="contact-form"
+                    class="dkd-form contact-request margin-0">
+                    <input type="hidden" name="page" value="index.html">
+                    <!-- Honeypot: hidden from people, bots fill it in and contact.php ignores them -->
+                    <div class="form-hp" aria-hidden="true">
+                        <label for="contact-website">Leave this field empty</label>
+                        <input type="text" name="website" id="contact-website" tabindex="-1" autocomplete="off">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-floating">
+                                <input 
+                                type="text"
+                                name="Name"
+                                id="contact-name"
+                                class="form-control"
+                                placeholder="Name"
+                                autocomplete="name"
+                                required>
+                                <label for="contact-name">Name</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-floating">
+                                <input 
+                                type="email"
+                                name="Email"
+                                id="contact-email"
+                                class="form-control"
+                                placeholder="Email address"
+                                autocomplete="email"
+                                required>
+                                <label for="contact-email">Email address</label>
+                            </div>
+                        </div>
+                        <!-- Service Checkboxes: one named group, so a screen reader says what they are for -->
+                        <div class="col-12" role="group" aria-labelledby="contact-services-label">
+                        <p class="visually-hidden" id="contact-services-label">Services you are interested in (optional)</p>
+                        <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="form-check form-check-inline">
+                                <input name="Services[]" type="checkbox" class="form-check-input" id="service-websites" value="Websites">
+                                <label class="form-check-label" for="service-websites">
+                                    <i class="bi-globe choice-icon" aria-hidden="true"></i>
+                                    <span class="choice-label">Websites</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="form-check form-check-inline">
+                                <input name="Services[]" type="checkbox" class="form-check-input" id="service-webapps" value="Web Apps">
+                                <label class="form-check-label" for="service-webapps">
+                                    <img src="images/icon-web-apps.svg" class="choice-icon choice-icon-img" alt="" width="20" height="20">
+                                    <span class="choice-label">Web Apps</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="form-check form-check-inline">
+                                <input name="Services[]" type="checkbox" class="form-check-input" id="service-ecommerce" value="eCommerce">
+                                <label class="form-check-label" for="service-ecommerce">
+                                    <i class="bi-phone choice-icon" aria-hidden="true"></i>
+                                    <span class="choice-label">eCommerce</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="form-check form-check-inline me-0">
+                                <input name="Services[]" type="checkbox" class="form-check-input" id="service-seo" value="SEO">
+                                <label class="form-check-label" for="service-seo">
+                                    <i class="bi-google choice-icon" aria-hidden="true"></i>
+                                    <span class="choice-label">SEO</span>
+                                </label>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-12 col-12">
+                            <div class="form-floating">
+                                <textarea 
+                                name="Message"
+                                id="contact-message"
+                                class="form-control"
+                                placeholder="Describe the project"
+                                autocomplete="on"
+                                required></textarea>
+                                <label for="contact-message">Describe the project</label>
+                            </div>
+                        </div>
+                        <!-- Submit -->
+                        <div class="col-lg-3 col-12 ms-auto margin-left-0">
+                            <button type="submit" class="action-btn">Send</button>
+                        </div>
+                        <div class="col-12">
+                            <p class="contact-note">Your details are used only to reply to you. <a href="privacy.html">Privacy Policy</a></p>
+                            <p class="contact-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
+                <div class="contact-details d-flex flex-column">
+                    <strong class="info-heading d-block mb-3 contact-title">Write a message</strong>
+                    <p class="mb-0">
+                        A few sentences about the idea are enough. The answer comes by email.
+                    </p>
+                    <strong class="info-heading d-block mt-4 mb-3 contact-title">Email</strong>
+                    <p>
+                        <a href="mailto:contact@dkd.rs" aria-label="Send an email to contact@dkd.rs">contact@dkd.rs</a>
+                    </p>
+                    <strong class="info-heading d-block mt-4 mb-3 contact-title">Phone</strong>
+                    <p class="mb-0">
+                        <a href="tel:+381640882949" aria-label="Call +381 64 088 2949">+381 64 088 2949</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
+                <div class="contact-details contact-details-alt d-flex flex-column">
+                    <strong class="info-heading d-block mb-3 contact-title">On this site</strong>
+                    <ul class="pill-menu">
+                        <li class="pill-menu-item"><a href="websites.html" class="pill-menu-link">Websites</a></li>
+                        <li class="pill-menu-item"><a href="ecommerce.html" class="pill-menu-link">eCommerce</a></li>
+                        <li class="pill-menu-item"><a href="seo.html" class="pill-menu-link">SEO</a></li>
+                        <li class="pill-menu-item"><a href="case-studies.html" class="pill-menu-link">Case Studies</a></li>
+                    </ul>
+                    <strong class="info-heading d-block mt-4 mb-3 contact-title">Elsewhere online</strong>
+                    <ul class="social-links">
+                        <li class="social-links-item">
+                            <a href="https://www.linkedin.com/company/145334456/"
+                            class="social-links-link bi-linkedin"
+                            aria-label="LinkedIn (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://github.com/DragoKatic"
+                            class="social-links-link bi-github"
+                            aria-label="GitHub (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://www.instagram.com/drago.katic.development"
+                            class="social-links-link bi-instagram"
+                            aria-label="Instagram (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://www.facebook.com/drago.katic.development"
+                            class="social-links-link bi-facebook"
+                            aria-label="Facebook Page (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://www.tiktok.com/@drago.katic.development"
+                            class="social-links-link bi-tiktok"
+                            aria-label="TikTok (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://www.pinterest.com/dragokatic/"
+                            class="social-links-link bi-pinterest"
+                            aria-label="Pinterest (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                    </ul>
+                    <strong class="info-heading d-block mt-4 mb-3 contact-title">Free software</strong>
+                    <p class="mb-0">The code of this site and of the WordPress plugins is free to use and change under the <a href="LICENSE.txt">GPLv2 or later</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                <div class="copyright-bar">
+                    <p class="mb-0">
+                        <span class="copyright-line">Copyright © <span id="year"></span> <a href="./">Drago Katić</a> &middot; Code: <a href="LICENSE.txt" class="footer-license">GPLv2 or later</a></span><span class="footer-legal"><span aria-hidden="true">|</span> <a href="privacy.html">Privacy Policy</a> <span aria-hidden="true">|</span> <a href="credits.html">Credits</a> <span aria-hidden="true">|</span> <a href="privacy.html#cookies" class="cookie-settings-link">Cookie Settings</a></span>
+                    </p>
+                    <!-- Quality marks: each opens the check itself, so a visitor can verify it -->
+                    <ul class="footer-marks" aria-label="Standards this site meets">
+                        <li><a class="footer-mark" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdkd.rs%2F" target="_blank" rel="noopener noreferrer" aria-label="W3C HTML: check this page with the W3C validator (opens in a new tab)">W3C HTML</a></li>
+                        <li><a class="footer-mark" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdkd.rs%2Fcss%2Fstyle.css&amp;profile=css3svg&amp;usermedium=all&amp;warning=no&amp;lang=en" target="_blank" rel="noopener noreferrer" aria-label="W3C CSS: check the stylesheet with the W3C validator (opens in a new tab)">W3C CSS</a></li>
+                        <li><a class="footer-mark" href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank" rel="noopener noreferrer" aria-label="WCAG 2.1 AA accessibility (opens in a new tab)">WCAG 2.1 AA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js?v=155ac993c8" defer></script>
+</body>
+</html>

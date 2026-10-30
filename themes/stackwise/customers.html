@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customers – Stackwise Demo</title>
+  <meta name="description" content="A customer table with search, filters, sorting, paging, editing and CSV export — part of an admin dashboard demo by Drago Katić Development.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f4f4f1">
+  <link rel="canonical" href="https://dkd.rs/themes/stackwise/customers.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%233355ff'/%3E%3Cpath%20d='M8%2021.5h16M8%2016h11M8%2010.5h6'%20stroke='%23fff'%20stroke-width='3'%20stroke-linecap='round'/%3E%3Ccircle%20cx='23.5'%20cy='10.5'%20r='2.5'%20fill='%23c6f04a'/%3E%3C/svg%3E" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Customers – Stackwise Demo">
+  <meta property="og:description" content="A customer table with search, filters, sorting, paging, editing and CSV export — part of an admin dashboard demo by Drago Katić Development.">
+  <meta property="og:url" content="https://dkd.rs/themes/stackwise/customers.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/stackwise.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Stackwise dashboard demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="stackwise.css">
+  <script>(function (d) { d.className += " js"; var t = null; try { t = localStorage.getItem("stackwise-theme"); } catch (e) {} if (t === "dark" || (t !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches)) { d.setAttribute("data-theme", "dark"); } })(document.documentElement);</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Customers – Stackwise Demo",
+    "description": "A customer table with search, filters, sorting, paging, editing and CSV export — part of an admin dashboard demo by Drago Katić Development.",
+    "url": "https://dkd.rs/themes/stackwise/customers.html",
+    "image": "https://dkd.rs/images/projects/stackwise.webp",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Drago Katić Development",
+      "url": "https://dkd.rs/"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Drago Katić",
+      "url": "https://dkd.rs/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="app">
+  <aside class="sidebar" id="sidebar" aria-label="Main menu">
+    <a class="brand" href="index.html"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#3355ff"/><path d="M8 21.5h16M8 16h11M8 10.5h6" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="23.5" cy="10.5" r="2.5" fill="#c6f04a"/></svg><span>Stackwise</span></a>
+    <div class="store-switch">
+      <span class="store-avatar" aria-hidden="true">OH</span>
+      <span><b>Oakmere Home</b><small>Online store · Growth plan</small></span>
+    </div>
+    <nav class="side-nav" aria-label="Sections">
+      <p class="side-label">Menu</p>
+      <ul>
+        <li><a class="nav-link" href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg><span>Overview</span></a></li>
+        <li class="nav-group">
+          <button class="nav-link nav-group-toggle" type="button" aria-expanded="false" aria-controls="nav-reports"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 20.5h17M6.5 17v-5M11 17V6M15.5 17v-8M20 17v-3"/></svg><span>Reports</span><svg class="icon chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m8 10 4 4 4-4"/></svg></button>
+          <ul class="subnav" id="nav-reports" hidden>
+            <li><a class="nav-link" href="analytics.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12h4l2.5-6 5 12 2.5-6h4"/></svg><span>Analytics</span></a></li>
+            <li><a class="nav-link" href="regions.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 4.5 3.5 6.5v13L9 17.5l6 2 5.5-2v-13L15 6.5z M9 4.5v13M15 6.5v13"/></svg><span>Regions</span><span class="nav-badge">31</span></a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="customers.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c1.8.8 3 2.6 3.5 5.2"/></svg><span>Customers</span><span class="nav-badge">3 new</span></a></li>
+        <li><a class="nav-link" href="settings.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6.5h9M17.5 6.5H20M4 12h3.5M12 12h8M4 17.5h11.5M20 17.5h0"/><circle cx="15.5" cy="6.5" r="2"/><circle cx="9.5" cy="12" r="2"/><circle cx="17.5" cy="17.5" r="2"/></svg><span>Settings</span></a></li>
+      </ul>
+      <p class="side-label">Account</p>
+      <ul>
+        <li><a class="nav-link sign-out" href="sign-in.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4M10 16l-4-4 4-4M6 12h10"/></svg><span>Sign out</span></a></li>
+      </ul>
+    </nav>
+    <div class="side-card">
+      <p><b>Autumn sale</b> starts in 6 days. 14 products are still missing sale prices.</p>
+      <a href="customers.html">Notify customers</a>
+    </div>
+  </aside>
+  <div class="backdrop" hidden></div>
+  <div class="main-col">
+    <header class="topbar">
+      <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="visually-hidden">Open menu</span></button>
+      <form class="top-search" action="customers.html" role="search">
+        <label class="visually-hidden" for="top-q">Search customers</label>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="top-q" name="q" type="search" placeholder="Search…" autocomplete="off">
+        <kbd>/</kbd>
+      </form>
+      <div class="top-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-pressed="false"><svg class="icon i-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="icon i-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg><span class="visually-hidden">Dark mode</span></button>
+        <div class="notify">
+          <button class="icon-btn notify-toggle has-dot" type="button" aria-expanded="false" aria-controls="notify-panel"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 16v-5a6 6 0 0 1 12 0v5l1.5 2h-15zM10 20.5a2 2 0 0 0 4 0"/></svg><span class="visually-hidden">Notifications (3 unread)</span></button>
+          <div class="notify-panel" id="notify-panel" hidden>
+            <div class="notify-head"><b>Notifications</b><button type="button" class="link-btn notify-read">Mark all as read</button></div>
+            <ul>
+              <li class="unread"><span class="dot dot-4"></span><p><b>Low stock:</b> Stoneware mug, sage — 6 left.<small>12 min ago</small></p></li>
+              <li class="unread"><span class="dot dot-1"></span><p><b>New order</b> #OK-10486 from Lea Hoffmann, €126.40.<small>38 min ago</small></p></li>
+              <li class="unread"><span class="dot dot-2"></span><p><b>3 new customers</b> signed up today.<small>2 h ago</small></p></li>
+              <li><span class="dot dot-3"></span><p><b>Payout</b> of €9,842.10 sent to your bank.<small>Yesterday</small></p></li>
+            </ul>
+          </div>
+        </div>
+        <a class="user-chip" href="settings.html" aria-label="Mia Novak, account settings">
+          <span class="avatar" aria-hidden="true">MN</span>
+          <span class="user-name"><b>Mia Novak</b><small>Store manager</small></span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="content">
+      <div class="page-head">
+        <div>
+          <h1>Customers</h1>
+          <p>26 customers, 20 active. Search, sort, edit or invite new ones.</p>
+        </div>
+        <div class="page-actions"><button class="btn btn-ghost js-only" type="button" data-export-customers><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg>Export CSV</button><button class="btn btn-primary js-only" type="button" data-open="#invite-dialog"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg>Invite customer</button></div>
+      </div>
+
+      <section class="card">
+        <div class="toolbar js-only">
+          <div class="field-inline search-field">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+            <label class="visually-hidden" for="c-search">Search by name, email or country</label>
+            <input id="c-search" type="search" placeholder="Name, email or country" autocomplete="off">
+          </div>
+          <div class="field-inline">
+            <label for="c-status">Status</label>
+            <select id="c-status">
+              <option value="">All</option>
+              <option>Active</option>
+              <option>Invited</option>
+              <option>Paused</option>
+            </select>
+          </div>
+          <div class="bulk" hidden>
+            <span class="bulk-count">0 selected</span>
+            <button class="btn btn-ghost btn-sm" type="button" data-bulk="pause">Pause</button>
+            <button class="btn btn-ghost btn-sm danger" type="button" data-bulk="delete">Delete</button>
+          </div>
+        </div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Customers">
+          <table class="data-table customers-table">
+            <caption class="visually-hidden">Customers of Oakmere Home</caption>
+            <thead><tr><td class="sel js-only"><input type="checkbox" class="select-all" aria-label="Select all on this page"></td><th scope="col" data-sort="name"><button type="button" class="sort-btn">Customer<span class="sort-icon" aria-hidden="true"></span></button></th><th scope="col" data-sort="country"><button type="button" class="sort-btn">Country<span class="sort-icon" aria-hidden="true"></span></button></th><th scope="col" data-sort="status"><button type="button" class="sort-btn">Status<span class="sort-icon" aria-hidden="true"></span></button></th><th scope="col" data-sort="joined"><button type="button" class="sort-btn">Joined<span class="sort-icon" aria-hidden="true"></span></button></th><th scope="col" class="num" data-sort="orders"><button type="button" class="sort-btn">Orders<span class="sort-icon" aria-hidden="true"></span></button></th><th scope="col" class="num" data-sort="spent"><button type="button" class="sort-btn">Spent<span class="sort-icon" aria-hidden="true"></span></button></th><td class="js-only"><span class="visually-hidden">Actions</span></td></tr></thead>
+            <tbody>
+              <tr data-id="1" data-name="Lea Hoffmann" data-email="lea.hoffmann@example.com" data-country="DE" data-status="Active" data-joined="2024-03-14" data-orders="14" data-spent="1286.40">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Lea Hoffmann"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">LH</span><span><b class="c-name">Lea Hoffmann</b><small class="c-email">lea.hoffmann@example.com</small></span></span></th>
+                <td class="c-country">Germany</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>14 Mar 2024</td>
+                <td class="num">14</td>
+                <td class="num">€1,286.40</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Lea Hoffmann</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Lea Hoffmann</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="2" data-name="Tomás Ferreira" data-email="tomas.ferreira@example.com" data-country="PT" data-status="Active" data-joined="2025-01-09" data-orders="6" data-spent="412.90">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Tomás Ferreira"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">TF</span><span><b class="c-name">Tomás Ferreira</b><small class="c-email">tomas.ferreira@example.com</small></span></span></th>
+                <td class="c-country">Portugal</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>9 Jan 2025</td>
+                <td class="num">6</td>
+                <td class="num">€412.90</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Tomás Ferreira</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Tomás Ferreira</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="3" data-name="Ingrid Solberg" data-email="ingrid.solberg@example.com" data-country="NO" data-status="Active" data-joined="2024-11-21" data-orders="9" data-spent="877.30">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Ingrid Solberg"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">IS</span><span><b class="c-name">Ingrid Solberg</b><small class="c-email">ingrid.solberg@example.com</small></span></span></th>
+                <td class="c-country">Norway</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>21 Nov 2024</td>
+                <td class="num">9</td>
+                <td class="num">€877.30</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Ingrid Solberg</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Ingrid Solberg</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="4" data-name="Marko Jovanović" data-email="marko.jovanovic@example.com" data-country="RS" data-status="Active" data-joined="2025-06-02" data-orders="4" data-spent="219.60">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Marko Jovanović"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">MJ</span><span><b class="c-name">Marko Jovanović</b><small class="c-email">marko.jovanovic@example.com</small></span></span></th>
+                <td class="c-country">Serbia</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>2 Jun 2025</td>
+                <td class="num">4</td>
+                <td class="num">€219.60</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Marko Jovanović</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Marko Jovanović</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="5" data-name="Chloé Martin" data-email="chloe.martin@example.com" data-country="FR" data-status="Paused" data-joined="2024-05-30" data-orders="11" data-spent="934.10">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Chloé Martin"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">CM</span><span><b class="c-name">Chloé Martin</b><small class="c-email">chloe.martin@example.com</small></span></span></th>
+                <td class="c-country">France</td>
+                <td><span class="pill warn c-status">Paused</span></td>
+                <td>30 May 2024</td>
+                <td class="num">11</td>
+                <td class="num">€934.10</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Chloé Martin</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Chloé Martin</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="6" data-name="Oliver Bennett" data-email="oliver.bennett@example.com" data-country="GB" data-status="Active" data-joined="2023-10-12" data-orders="22" data-spent="2140.75">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Oliver Bennett"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">OB</span><span><b class="c-name">Oliver Bennett</b><small class="c-email">oliver.bennett@example.com</small></span></span></th>
+                <td class="c-country">United Kingdom</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>12 Oct 2023</td>
+                <td class="num">22</td>
+                <td class="num">€2,140.75</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Oliver Bennett</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Oliver Bennett</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="7" data-name="Sanne de Vries" data-email="sanne.devries@example.com" data-country="NL" data-status="Active" data-joined="2024-08-18" data-orders="8" data-spent="603.20">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Sanne de Vries"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">SV</span><span><b class="c-name">Sanne de Vries</b><small class="c-email">sanne.devries@example.com</small></span></span></th>
+                <td class="c-country">Netherlands</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>18 Aug 2024</td>
+                <td class="num">8</td>
+                <td class="num">€603.20</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Sanne de Vries</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Sanne de Vries</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="8" data-name="Giulia Romano" data-email="giulia.romano@example.com" data-country="IT" data-status="Invited" data-joined="2026-09-28" data-orders="0" data-spent="0.00">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Giulia Romano"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">GR</span><span><b class="c-name">Giulia Romano</b><small class="c-email">giulia.romano@example.com</small></span></span></th>
+                <td class="c-country">Italy</td>
+                <td><span class="pill info c-status">Invited</span></td>
+                <td>28 Sep 2026</td>
+                <td class="num">0</td>
+                <td class="num">€0.00</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Giulia Romano</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Giulia Romano</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="9" data-name="Jakub Nowak" data-email="jakub.nowak@example.com" data-country="PL" data-status="Active" data-joined="2025-02-27" data-orders="5" data-spent="318.00">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Jakub Nowak"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">JN</span><span><b class="c-name">Jakub Nowak</b><small class="c-email">jakub.nowak@example.com</small></span></span></th>
+                <td class="c-country">Poland</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>27 Feb 2025</td>
+                <td class="num">5</td>
+                <td class="num">€318.00</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Jakub Nowak</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Jakub Nowak</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="10" data-name="Elin Andersson" data-email="elin.andersson@example.com" data-country="SE" data-status="Active" data-joined="2024-12-03" data-orders="12" data-spent="1044.85">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Elin Andersson"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">EA</span><span><b class="c-name">Elin Andersson</b><small class="c-email">elin.andersson@example.com</small></span></span></th>
+                <td class="c-country">Sweden</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>3 Dec 2024</td>
+                <td class="num">12</td>
+                <td class="num">€1,044.85</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Elin Andersson</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Elin Andersson</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="11" data-name="Lukas Gruber" data-email="lukas.gruber@example.com" data-country="AT" data-status="Active" data-joined="2024-04-16" data-orders="17" data-spent="1603.50">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Lukas Gruber"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">LG</span><span><b class="c-name">Lukas Gruber</b><small class="c-email">lukas.gruber@example.com</small></span></span></th>
+                <td class="c-country">Austria</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>16 Apr 2024</td>
+                <td class="num">17</td>
+                <td class="num">€1,603.50</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Lukas Gruber</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Lukas Gruber</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="12" data-name="Aoife Byrne" data-email="aoife.byrne@example.com" data-country="IE" data-status="Paused" data-joined="2025-03-11" data-orders="3" data-spent="147.30">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Aoife Byrne"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">AB</span><span><b class="c-name">Aoife Byrne</b><small class="c-email">aoife.byrne@example.com</small></span></span></th>
+                <td class="c-country">Ireland</td>
+                <td><span class="pill warn c-status">Paused</span></td>
+                <td>11 Mar 2025</td>
+                <td class="num">3</td>
+                <td class="num">€147.30</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Aoife Byrne</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Aoife Byrne</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="13" data-name="Ana Kovač" data-email="ana.kovac@example.com" data-country="HR" data-status="Active" data-joined="2025-07-19" data-orders="7" data-spent="488.40">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Ana Kovač"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">AK</span><span><b class="c-name">Ana Kovač</b><small class="c-email">ana.kovac@example.com</small></span></span></th>
+                <td class="c-country">Croatia</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>19 Jul 2025</td>
+                <td class="num">7</td>
+                <td class="num">€488.40</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Ana Kovač</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Ana Kovač</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="14" data-name="Pieter Claes" data-email="pieter.claes@example.com" data-country="BE" data-status="Active" data-joined="2024-09-25" data-orders="10" data-spent="791.60">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Pieter Claes"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">PC</span><span><b class="c-name">Pieter Claes</b><small class="c-email">pieter.claes@example.com</small></span></span></th>
+                <td class="c-country">Belgium</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>25 Sep 2024</td>
+                <td class="num">10</td>
+                <td class="num">€791.60</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Pieter Claes</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Pieter Claes</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="15" data-name="Mette Larsen" data-email="mette.larsen@example.com" data-country="DK" data-status="Invited" data-joined="2026-09-29" data-orders="0" data-spent="0.00">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Mette Larsen"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">ML</span><span><b class="c-name">Mette Larsen</b><small class="c-email">mette.larsen@example.com</small></span></span></th>
+                <td class="c-country">Denmark</td>
+                <td><span class="pill info c-status">Invited</span></td>
+                <td>29 Sep 2026</td>
+                <td class="num">0</td>
+                <td class="num">€0.00</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Mette Larsen</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Mette Larsen</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="16" data-name="Nina Horvat" data-email="nina.horvat@example.com" data-country="SI" data-status="Active" data-joined="2023-12-08" data-orders="19" data-spent="1732.20">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Nina Horvat"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">NH</span><span><b class="c-name">Nina Horvat</b><small class="c-email">nina.horvat@example.com</small></span></span></th>
+                <td class="c-country">Slovenia</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>8 Dec 2023</td>
+                <td class="num">19</td>
+                <td class="num">€1,732.20</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Nina Horvat</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Nina Horvat</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="17" data-name="Pablo Ruiz" data-email="pablo.ruiz@example.com" data-country="ES" data-status="Active" data-joined="2025-05-06" data-orders="6" data-spent="455.10">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Pablo Ruiz"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">PR</span><span><b class="c-name">Pablo Ruiz</b><small class="c-email">pablo.ruiz@example.com</small></span></span></th>
+                <td class="c-country">Spain</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>6 May 2025</td>
+                <td class="num">6</td>
+                <td class="num">€455.10</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Pablo Ruiz</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Pablo Ruiz</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="18" data-name="Eva Novotná" data-email="eva.novotna@example.com" data-country="CZ" data-status="Active" data-joined="2024-06-22" data-orders="9" data-spent="702.95">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Eva Novotná"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">EN</span><span><b class="c-name">Eva Novotná</b><small class="c-email">eva.novotna@example.com</small></span></span></th>
+                <td class="c-country">Czechia</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>22 Jun 2024</td>
+                <td class="num">9</td>
+                <td class="num">€702.95</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Eva Novotná</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Eva Novotná</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="19" data-name="Juho Virtanen" data-email="juho.virtanen@example.com" data-country="FI" data-status="Paused" data-joined="2024-02-14" data-orders="4" data-spent="266.80">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Juho Virtanen"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">JV</span><span><b class="c-name">Juho Virtanen</b><small class="c-email">juho.virtanen@example.com</small></span></span></th>
+                <td class="c-country">Finland</td>
+                <td><span class="pill warn c-status">Paused</span></td>
+                <td>14 Feb 2024</td>
+                <td class="num">4</td>
+                <td class="num">€266.80</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Juho Virtanen</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Juho Virtanen</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="20" data-name="Luca Brunner" data-email="luca.brunner@example.com" data-country="CH" data-status="Active" data-joined="2024-10-01" data-orders="13" data-spent="1398.00">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Luca Brunner"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">LB</span><span><b class="c-name">Luca Brunner</b><small class="c-email">luca.brunner@example.com</small></span></span></th>
+                <td class="c-country">Switzerland</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>1 Oct 2024</td>
+                <td class="num">13</td>
+                <td class="num">€1,398.00</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Luca Brunner</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Luca Brunner</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="21" data-name="Zsófia Nagy" data-email="zsofia.nagy@example.com" data-country="HU" data-status="Active" data-joined="2025-08-12" data-orders="3" data-spent="188.40">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Zsófia Nagy"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">ZN</span><span><b class="c-name">Zsófia Nagy</b><small class="c-email">zsofia.nagy@example.com</small></span></span></th>
+                <td class="c-country">Hungary</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>12 Aug 2025</td>
+                <td class="num">3</td>
+                <td class="num">€188.40</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Zsófia Nagy</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Zsófia Nagy</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="22" data-name="Hannah Weber" data-email="hannah.weber@example.com" data-country="DE" data-status="Active" data-joined="2023-11-27" data-orders="25" data-spent="2688.10">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Hannah Weber"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">HW</span><span><b class="c-name">Hannah Weber</b><small class="c-email">hannah.weber@example.com</small></span></span></th>
+                <td class="c-country">Germany</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>27 Nov 2023</td>
+                <td class="num">25</td>
+                <td class="num">€2,688.10</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Hannah Weber</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Hannah Weber</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="23" data-name="Andrei Popescu" data-email="andrei.popescu@example.com" data-country="RO" data-status="Invited" data-joined="2026-09-30" data-orders="0" data-spent="0.00">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Andrei Popescu"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">AP</span><span><b class="c-name">Andrei Popescu</b><small class="c-email">andrei.popescu@example.com</small></span></span></th>
+                <td class="c-country">Romania</td>
+                <td><span class="pill info c-status">Invited</span></td>
+                <td>30 Sep 2026</td>
+                <td class="num">0</td>
+                <td class="num">€0.00</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Andrei Popescu</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Andrei Popescu</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="24" data-name="Sofia Papadopoulou" data-email="sofia.papadopoulou@example.com" data-country="GR" data-status="Active" data-joined="2025-04-18" data-orders="5" data-spent="377.25">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Sofia Papadopoulou"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">SP</span><span><b class="c-name">Sofia Papadopoulou</b><small class="c-email">sofia.papadopoulou@example.com</small></span></span></th>
+                <td class="c-country">Greece</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>18 Apr 2025</td>
+                <td class="num">5</td>
+                <td class="num">€377.25</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Sofia Papadopoulou</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Sofia Papadopoulou</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="25" data-name="Émile Lambert" data-email="emile.lambert@example.com" data-country="FR" data-status="Active" data-joined="2024-07-09" data-orders="15" data-spent="1215.70">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Émile Lambert"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">ÉL</span><span><b class="c-name">Émile Lambert</b><small class="c-email">emile.lambert@example.com</small></span></span></th>
+                <td class="c-country">France</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>9 Jul 2024</td>
+                <td class="num">15</td>
+                <td class="num">€1,215.70</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Émile Lambert</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Émile Lambert</span></button>
+                </div></td>
+              </tr>
+              <tr data-id="26" data-name="Katarina Petrović" data-email="katarina.petrovic@example.com" data-country="RS" data-status="Active" data-joined="2024-01-23" data-orders="18" data-spent="1569.90">
+                <td class="sel js-only"><input type="checkbox" aria-label="Select Katarina Petrović"></td>
+                <th scope="row"><span class="who"><span class="avatar sm" aria-hidden="true">KP</span><span><b class="c-name">Katarina Petrović</b><small class="c-email">katarina.petrovic@example.com</small></span></span></th>
+                <td class="c-country">Serbia</td>
+                <td><span class="pill ok c-status">Active</span></td>
+                <td>23 Jan 2024</td>
+                <td class="num">18</td>
+                <td class="num">€1,569.90</td>
+                <td class="js-only"><div class="row-actions">
+                  <button class="icon-btn sm" type="button" data-action="edit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span class="visually-hidden">Edit Katarina Petrović</span></button>
+                  <button class="icon-btn sm danger" type="button" data-action="delete"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></svg><span class="visually-hidden">Delete Katarina Petrović</span></button>
+                </div></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="empty" hidden>No customers match your search.</p>
+        </div>
+        <div class="pager js-only">
+          <p class="pager-info" aria-live="polite"></p>
+          <div class="pager-btns">
+            <button class="btn btn-ghost btn-sm" type="button" data-page="prev">Previous</button>
+            <span class="pager-pages"></span>
+            <button class="btn btn-ghost btn-sm" type="button" data-page="next">Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="app-footer">
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme. Stackwise and Oakmere Home are fictional; names, orders and figures are made-up examples.</p>
+      <p>© <span id="year">2026</span> Stackwise demo</p>
+    </footer>
+  </div>
+  </div>
+  <dialog class="modal" id="signout-dialog" aria-labelledby="signout-title">
+    <form method="dialog">
+      <h2 id="signout-title">Sign out of Stackwise?</h2>
+      <p>You will need your email and password to get back in. Unsaved changes on this page will be lost.</p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" value="cancel">Stay signed in</button>
+        <a class="btn btn-danger" href="sign-in.html">Sign out</a>
+      </div>
+    </form>
+  </dialog>
+  <div class="toasts" role="status" aria-live="polite"></div>
+  <dialog class="modal" id="edit-dialog" aria-labelledby="edit-title">
+    <form class="form" novalidate>
+      <h2 id="edit-title">Edit customer</h2>
+      <div class="field"><label for="e-name">Full name</label><input id="e-name" name="name" required autocomplete="off"><p class="field-msg"></p></div>
+      <div class="field"><label for="e-email">Email</label><input id="e-email" name="email" type="email" required autocomplete="off"><p class="field-msg"></p></div>
+      <div class="field-row">
+        <div class="field"><label for="e-country">Country</label><select id="e-country" name="country"><option value="AT">Austria</option><option value="BE">Belgium</option><option value="BA">Bosnia and Herzegovina</option><option value="BG">Bulgaria</option><option value="HR">Croatia</option><option value="CZ">Czechia</option><option value="DK">Denmark</option><option value="EE">Estonia</option><option value="FI">Finland</option><option value="FR">France</option><option value="DE">Germany</option><option value="GR">Greece</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IE">Ireland</option><option value="IT">Italy</option><option value="LV">Latvia</option><option value="LT">Lithuania</option><option value="NL">Netherlands</option><option value="MK">North Macedonia</option><option value="NO">Norway</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="RO">Romania</option><option value="RS">Serbia</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="ES">Spain</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="GB">United Kingdom</option></select></div>
+        <div class="field"><label for="e-status">Status</label><select id="e-status" name="status"><option>Active</option><option>Invited</option><option>Paused</option></select></div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" type="button" data-close>Cancel</button>
+        <button class="btn btn-primary" type="submit">Save changes</button>
+      </div>
+    </form>
+  </dialog>
+  <dialog class="modal" id="invite-dialog" aria-labelledby="invite-title">
+    <form class="form" novalidate>
+      <h2 id="invite-title">Invite a customer</h2>
+      <p>They get an email with a link to set a password. In this demo nothing is sent.</p>
+      <div class="field"><label for="i-name">Full name</label><input id="i-name" name="name" required autocomplete="off"><p class="field-msg"></p></div>
+      <div class="field"><label for="i-email">Email</label><input id="i-email" name="email" type="email" required autocomplete="off" placeholder="name@example.com"><p class="field-msg"></p></div>
+      <div class="field"><label for="i-country">Country</label><select id="i-country" name="country"><option value="AT">Austria</option><option value="BE">Belgium</option><option value="BA">Bosnia and Herzegovina</option><option value="BG">Bulgaria</option><option value="HR">Croatia</option><option value="CZ">Czechia</option><option value="DK">Denmark</option><option value="EE">Estonia</option><option value="FI">Finland</option><option value="FR">France</option><option value="DE" selected>Germany</option><option value="GR">Greece</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IE">Ireland</option><option value="IT">Italy</option><option value="LV">Latvia</option><option value="LT">Lithuania</option><option value="NL">Netherlands</option><option value="MK">North Macedonia</option><option value="NO">Norway</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="RO">Romania</option><option value="RS">Serbia</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="ES">Spain</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="GB">United Kingdom</option></select></div>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" type="button" data-close>Cancel</button>
+        <button class="btn btn-primary" type="submit">Send invite</button>
+      </div>
+    </form>
+  </dialog>
+  <script src="stackwise.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

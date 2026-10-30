@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olmara – Mediterranean Restaurant Website Demo</title>
+  <meta name="description" content="Restaurant website demo designed and coded from scratch by Drago Katić Development: a Mediterranean restaurant with an interactive menu to order from — quantities, dietary filters and search, a live order total, table or takeaway — plus opening hours and location. Can be built as a custom WordPress theme.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4f5d2f">
+  <link rel="canonical" href="https://dkd.rs/themes/olmara/index.html">
+  <link rel="icon" href="images/olmara-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Olmara – Mediterranean Restaurant Website Demo">
+  <meta property="og:description" content="Restaurant website demo designed and coded from scratch by Drago Katić Development: a Mediterranean restaurant with an interactive menu to order from — quantities, dietary filters and search, a live order total, table or takeaway — plus opening hours and location. Can be built as a custom WordPress theme.">
+  <meta property="og:url" content="https://dkd.rs/themes/olmara/index.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/olmara.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Olmara, Mediterranean restaurant website demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/mulish.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="photos/hero-oven-1600.webp" imagesrcset="photos/hero-oven-800.webp 800w, photos/hero-oven-1600.webp 1600w" imagesizes="(min-width: 900px) 55vw, 100vw" fetchpriority="high">
+  <link rel="stylesheet" href="olmara.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Olmara – Mediterranean Restaurant Website Demo",
+  "description": "Restaurant website demo designed and coded from scratch by Drago Katić Development: a Mediterranean restaurant with an interactive menu to order from — quantities, dietary filters and search, a live order total, table or takeaway — plus opening hours and location. Can be built as a custom WordPress theme.",
+  "url": "https://dkd.rs/themes/olmara/index.html",
+  "image": "https://dkd.rs/images/projects/olmara.webp",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Drago Katić Development",
+    "url": "https://dkd.rs/"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Drago Katić",
+    "url": "https://dkd.rs/"
+  }
+}
+  </script>
+</head>
+<body>
+  <a class="ol-skip" href="#menu">Skip to the menu</a>
+  <header class="ol-header">
+    <div class="ol-wrap ol-header-in">
+      <a class="ol-logo" href="#top"><svg class="ol-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="19" fill="#4f5d2f"/><path d="M12 29c4-7 9.5-12.5 17-17" fill="none" stroke="#f6f0e4" stroke-width="2" stroke-linecap="round"/><ellipse cx="17" cy="19" rx="2.6" ry="5.2" transform="rotate(-50 17 19)" fill="#f6f0e4"/><ellipse cx="23" cy="21.5" rx="2.6" ry="5.2" transform="rotate(40 23 21.5)" fill="#f6f0e4"/><ellipse cx="24.5" cy="14" rx="2.4" ry="4.8" transform="rotate(-40 24.5 14)" fill="#f6f0e4"/><circle cx="14.5" cy="26" r="2.6" fill="#c8892b"/></svg><span>Olmara</span></a>
+      <nav class="ol-nav" aria-label="Main">
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#kitchen">Our kitchen</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+      <a class="ol-btn ol-btn-order" href="#order">Your order <span class="ol-count" aria-hidden="true">0</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="ol-hero">
+      <div class="ol-wrap ol-hero-in">
+        <div class="ol-hero-text">
+          <p class="ol-kicker">Mediterranean kitchen · Larenza harbour</p>
+          <h1>Sea, fire &amp; <em>olive oil</em></h1>
+          <p class="ol-lead">Fish from the morning boats, pasta rolled by hand and pizza from a wood oven. Pick your dishes from the menu, choose how many, and we will have them ready at your table or to take away.</p>
+          <div class="ol-hero-actions">
+            <a class="ol-btn ol-btn-olive" href="#menu">Order from the menu</a>
+            <a class="ol-btn ol-btn-line" href="#visit">Find us</a>
+          </div>
+          <p class="ol-open" data-hours='[null, [&quot;12:00&quot;, &quot;23:00&quot;], [&quot;12:00&quot;, &quot;23:00&quot;], [&quot;12:00&quot;, &quot;23:00&quot;], [&quot;12:00&quot;, &quot;00:00&quot;], [&quot;12:00&quot;, &quot;00:00&quot;], [&quot;12:00&quot;, &quot;22:00&quot;]]'>Tuesday to Sunday from 12:00</p>
+        </div>
+        <figure class="ol-hero-photo">
+          <img src="photos/hero-oven-1600.webp" srcset="photos/hero-oven-800.webp 800w, photos/hero-oven-1600.webp 1600w" sizes="(min-width: 900px) 55vw, 100vw" alt="A pizza on a peel in front of the fire of a wood oven" width="1600" height="1000" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <section class="ol-menu" id="menu" aria-labelledby="ol-menu-title">
+      <div class="ol-wrap">
+        <div class="ol-menu-head">
+          <p class="ol-kicker">28 dishes · prices include VAT</p>
+          <h2 id="ol-menu-title">The menu</h2>
+          <p>Enter how many of each dish you would like; your order adds up as you go.</p>
+        </div>
+        <div class="ol-tools">
+          <nav class="ol-cats" aria-label="Menu categories">
+            <ul>
+          <li><a href="#starters">Starters</a></li>
+          <li><a href="#salads">Salads</a></li>
+          <li><a href="#pasta">Pasta &amp; risotto</a></li>
+          <li><a href="#sea">From the sea</a></li>
+          <li><a href="#pizza">Wood oven pizza</a></li>
+          <li><a href="#desserts">Desserts</a></li>
+          <li><a href="#drinks">Drinks</a></li>
+            </ul>
+          </nav>
+          <div class="ol-filters">
+            <label class="ol-search"><span class="ol-sr">Search the menu</span><input type="search" placeholder="Search the menu" autocomplete="off"></label>
+            <div class="ol-chips" role="group" aria-label="Dietary filters">
+            <button type="button" class="ol-chip" data-tag="v" aria-pressed="false">Vegetarian</button>
+            <button type="button" class="ol-chip" data-tag="vg" aria-pressed="false">Vegan</button>
+            <button type="button" class="ol-chip" data-tag="gf" aria-pressed="false">Gluten-free</button>
+            <button type="button" class="ol-chip" data-tag="hot" aria-pressed="false">Spicy</button>
+            </div>
+          </div>
+        </div>
+        <form class="ol-menu-grid" id="ol-form" action="#order" novalidate>
+          <div class="ol-list">
+          <section class="ol-cat" id="starters" aria-labelledby="h-starters">
+            <h3 id="h-starters">Starters</h3>
+            <p class="ol-cat-desc">Small plates to share while the oven heats up.</p>
+            <ul class="ol-items">
+            <li class="ol-item" data-id="bruschetta" data-name="Bruschetta al pomodoro" data-price="7.50" data-tags="v vg">
+              <img src="photos/bruschetta-320.webp" alt="Toasted bread topped with chopped tomatoes and a basil leaf" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-bruschetta">Bruschetta al pomodoro</h4>
+                <p>Grilled sourdough, ripe tomatoes, basil and garlic, Larenza olive oil.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-vg">Vegan</span></p><p class="ol-allergens">Allergens: gluten</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€7.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Bruschetta al pomodoro">−</button>
+                  <label class="ol-sr" for="q-bruschetta">Quantity of Bruschetta al pomodoro</label>
+                  <input id="q-bruschetta" name="bruschetta" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Bruschetta al pomodoro">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item" data-id="hummus" data-name="Hummus &amp; warm pita" data-price="8.00" data-tags="v vg">
+              <img src="photos/hummus-320.webp" alt="A bowl of hummus with olive oil, herbs and pita triangles" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-hummus">Hummus &amp; warm pita</h4>
+                <p>Chickpeas, tahini and lemon, with pita straight from the oven.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-vg">Vegan</span></p><p class="ol-allergens">Allergens: gluten, sesame</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€8.00</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Hummus &amp; warm pita">−</button>
+                  <label class="ol-sr" for="q-hummus">Quantity of Hummus &amp; warm pita</label>
+                  <input id="q-hummus" name="hummus" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Hummus &amp; warm pita">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item" data-id="dakos" data-name="Tomato &amp; feta rusk" data-price="9.00" data-tags="v">
+              <img src="photos/tomato-feta-320.webp" alt="Tomato with cubes of feta on a barley rusk, olives and olive oil beside it" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-dakos">Tomato &amp; feta rusk</h4>
+                <p>Barley rusk, grated tomato, feta, oregano and capers.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span></p><p class="ol-allergens">Allergens: gluten, milk</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€9.00</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Tomato &amp; feta rusk">−</button>
+                  <label class="ol-sr" for="q-dakos">Quantity of Tomato &amp; feta rusk</label>
+                  <input id="q-dakos" name="dakos" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Tomato &amp; feta rusk">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item" data-id="octopus" data-name="Grilled octopus" data-price="16.50" data-tags="gf">
+              <img src="photos/octopus-320.webp" alt="A grilled octopus tentacle dipped in a dark sauce, on a blue plate" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-octopus">Grilled octopus</h4>
+                <p>Charred octopus on saffron potatoes with a green herb oil.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">Allergens: molluscs</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€16.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Grilled octopus">−</button>
+                  <label class="ol-sr" for="q-octopus">Quantity of Grilled octopus</label>
+                  <input id="q-octopus" name="octopus" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Grilled octopus">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="anchovies" data-name="Marinated anchovies" data-price="8.50" data-tags="gf">
+              
+              <div class="ol-item-body">
+                <h4 id="n-anchovies">Marinated anchovies</h4>
+                <p>White anchovies in lemon, parsley and garlic.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">Allergens: fish</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€8.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Marinated anchovies">−</button>
+                  <label class="ol-sr" for="q-anchovies">Quantity of Marinated anchovies</label>
+                  <input id="q-anchovies" name="anchovies" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Marinated anchovies">+</button>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </section>
+          <section class="ol-cat" id="salads" aria-labelledby="h-salads">
+            <h3 id="h-salads">Salads</h3>
+            <p class="ol-cat-desc">Dressed with our own olive oil and a squeeze of lemon.</p>
+            <ul class="ol-items">
+            <li class="ol-item" data-id="greek" data-name="Village salad" data-price="10.50" data-tags="v gf">
+              <img src="photos/greek-salad-320.webp" alt="A colourful salad of tomato, cucumber, red onion, peppers, olives and feta" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-greek">Village salad</h4>
+                <p>Tomato, cucumber, red onion, peppers, olives and feta.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">Allergens: milk</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€10.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Village salad">−</button>
+                  <label class="ol-sr" for="q-greek">Quantity of Village salad</label>
+                  <input id="q-greek" name="greek" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Village salad">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="rocket" data-name="Rocket, pear &amp; walnut" data-price="9.50" data-tags="v gf">
+              
+              <div class="ol-item-body">
+                <h4 id="n-rocket">Rocket, pear &amp; walnut</h4>
+                <p>Peppery rocket, roasted pear, walnuts and aged cheese.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">Allergens: milk, nuts</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€9.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Rocket, pear &amp; walnut">−</button>
+                  <label class="ol-sr" for="q-rocket">Quantity of Rocket, pear &amp; walnut</label>
+                  <input id="q-rocket" name="rocket" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Rocket, pear &amp; walnut">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="fennel" data-name="Fennel &amp; orange" data-price="9.00" data-tags="v vg gf">
+              
+              <div class="ol-item-body">
+                <h4 id="n-fennel">Fennel &amp; orange</h4>
+                <p>Shaved fennel, blood orange, black olives and mint.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-vg">Vegan</span><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">No major allergens</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€9.00</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Fennel &amp; orange">−</button>
+                  <label class="ol-sr" for="q-fennel">Quantity of Fennel &amp; orange</label>
+                  <input id="q-fennel" name="fennel" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Fennel &amp; orange">+</button>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </section>
+          <section class="ol-cat" id="pasta" aria-labelledby="h-pasta">
+            <h3 id="h-pasta">Pasta &amp; risotto</h3>
+            <p class="ol-cat-desc">Fresh pasta made every morning; risotto cooked to order (18 minutes).</p>
+            <ul class="ol-items">
+            <li class="ol-item" data-id="linguine" data-name="Seafood linguine" data-price="18.50" data-tags="">
+              <img src="photos/seafood-pasta-320.webp" alt="Pasta with mussels, prawns and parsley" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-linguine">Seafood linguine</h4>
+                <p>Mussels, prawns and clams, white wine, garlic and parsley.</p>
+                <p class="ol-allergens">Allergens: gluten, crustaceans, molluscs, sulphites</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€18.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Seafood linguine">−</button>
+                  <label class="ol-sr" for="q-linguine">Quantity of Seafood linguine</label>
+                  <input id="q-linguine" name="linguine" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Seafood linguine">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item" data-id="nero" data-name="Squid ink tagliolini" data-price="17.00" data-tags="hot">
+              <img src="photos/squid-ink-320.webp" alt="A small nest of black squid ink pasta with pieces of squid" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-nero">Squid ink tagliolini</h4>
+                <p>Black tagliolini with squid, chilli and a little lemon zest.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-hot">Spicy</span></p><p class="ol-allergens">Allergens: gluten, eggs, molluscs</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€17.00</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Squid ink tagliolini">−</button>
+                  <label class="ol-sr" for="q-nero">Quantity of Squid ink tagliolini</label>
+                  <input id="q-nero" name="nero" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Squid ink tagliolini">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item" data-id="gamberi" data-name="Prawn spaghetti" data-price="17.50" data-tags="hot">
+              <img src="photos/shrimp-spaghetti-320.webp" alt="Spaghetti with prawns, red chilli and greens" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-gamberi">Prawn spaghetti</h4>
+                <p>Prawns, cherry tomatoes, chilli and rocket.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-hot">Spicy</span></p><p class="ol-allergens">Allergens: gluten, crustaceans</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€17.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Prawn spaghetti">−</button>
+                  <label class="ol-sr" for="q-gamberi">Quantity of Prawn spaghetti</label>
+                  <input id="q-gamberi" name="gamberi" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Prawn spaghetti">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item" data-id="risotto" data-name="Wild mushroom risotto" data-price="15.00" data-tags="v gf">
+              <img src="photos/risotto-320.webp" alt="Mushroom risotto on a striped plate" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-risotto">Wild mushroom risotto</h4>
+                <p>Carnaroli rice, porcini, thyme and aged cheese.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">Allergens: milk, celery</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€15.00</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Wild mushroom risotto">−</button>
+                  <label class="ol-sr" for="q-risotto">Quantity of Wild mushroom risotto</label>
+                  <input id="q-risotto" name="risotto" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Wild mushroom risotto">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="trofie" data-name="Trofie with pesto" data-price="13.00" data-tags="v">
+              
+              <div class="ol-item-body">
+                <h4 id="n-trofie">Trofie with pesto</h4>
+                <p>Twisted pasta, basil pesto, green beans and potato.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span></p><p class="ol-allergens">Allergens: gluten, milk, nuts</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€13.00</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Trofie with pesto">−</button>
+                  <label class="ol-sr" for="q-trofie">Quantity of Trofie with pesto</label>
+                  <input id="q-trofie" name="trofie" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Trofie with pesto">+</button>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </section>
+          <section class="ol-cat" id="sea" aria-labelledby="h-sea">
+            <h3 id="h-sea">From the sea</h3>
+            <p class="ol-cat-desc">Fish from the morning boats; ask us about today&#x27;s catch.</p>
+            <ul class="ol-items">
+            <li class="ol-item" data-id="bream" data-name="Grilled sea bream" data-price="24.00" data-tags="gf">
+              <img src="photos/sea-bream-320.webp" alt="A whole grilled fish on a blue plate with vegetables" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-bream">Grilled sea bream</h4>
+                <p>Whole sea bream from the grill, lemon, capers and wild greens.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">Allergens: fish</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€24.00</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Grilled sea bream">−</button>
+                  <label class="ol-sr" for="q-bream">Quantity of Grilled sea bream</label>
+                  <input id="q-bream" name="bream" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Grilled sea bream">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item" data-id="salmon" data-name="Salmon, citrus &amp; olives" data-price="22.00" data-tags="gf">
+              <img src="photos/salmon-320.webp" alt="A salmon fillet with an orange slice and olives" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-salmon">Salmon, citrus &amp; olives</h4>
+                <p>Roasted salmon fillet, orange, olives and fennel.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">Allergens: fish</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€22.00</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Salmon, citrus &amp; olives">−</button>
+                  <label class="ol-sr" for="q-salmon">Quantity of Salmon, citrus &amp; olives</label>
+                  <input id="q-salmon" name="salmon" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Salmon, citrus &amp; olives">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="grill" data-name="Mixed grill for two" data-price="48.00" data-tags="gf">
+              
+              <div class="ol-item-body">
+                <h4 id="n-grill">Mixed grill for two</h4>
+                <p>Sea bream, prawns, squid and octopus with grilled vegetables.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">Allergens: fish, crustaceans, molluscs</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€48.00</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Mixed grill for two">−</button>
+                  <label class="ol-sr" for="q-grill">Quantity of Mixed grill for two</label>
+                  <input id="q-grill" name="grill" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Mixed grill for two">+</button>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </section>
+          <section class="ol-cat" id="pizza" aria-labelledby="h-pizza">
+            <h3 id="h-pizza">Wood oven pizza</h3>
+            <p class="ol-cat-desc">Neapolitan-style dough, 48 hours of rising, 90 seconds at 450 °C.</p>
+            <ul class="ol-items">
+            <li class="ol-item" data-id="margherita" data-name="Margherita" data-price="11.00" data-tags="v">
+              <img src="photos/margherita-320.webp" alt="A margherita pizza on a wooden board" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-margherita">Margherita</h4>
+                <p>Tomato, fior di latte, basil and olive oil.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span></p><p class="ol-allergens">Allergens: gluten, milk</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€11.00</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Margherita">−</button>
+                  <label class="ol-sr" for="q-margherita">Quantity of Margherita</label>
+                  <input id="q-margherita" name="margherita" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Margherita">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item" data-id="diavola" data-name="Diavola" data-price="13.50" data-tags="hot">
+              <img src="photos/diavola-320.webp" alt="Pizzas with toppings on a table in front of a wood fire" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-diavola">Diavola</h4>
+                <p>Tomato, mozzarella, spicy salami and chilli honey.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-hot">Spicy</span></p><p class="ol-allergens">Allergens: gluten, milk</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€13.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Diavola">−</button>
+                  <label class="ol-sr" for="q-diavola">Quantity of Diavola</label>
+                  <input id="q-diavola" name="diavola" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Diavola">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="orto" data-name="Garden" data-price="12.50" data-tags="v">
+              
+              <div class="ol-item-body">
+                <h4 id="n-orto">Garden</h4>
+                <p>Tomato, mozzarella, courgette, aubergine and peppers.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span></p><p class="ol-allergens">Allergens: gluten, milk</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€12.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Garden">−</button>
+                  <label class="ol-sr" for="q-orto">Quantity of Garden</label>
+                  <input id="q-orto" name="orto" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Garden">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="marinara" data-name="Marinara" data-price="9.50" data-tags="v vg">
+              
+              <div class="ol-item-body">
+                <h4 id="n-marinara">Marinara</h4>
+                <p>Tomato, garlic, oregano and olive oil, no cheese.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-vg">Vegan</span></p><p class="ol-allergens">Allergens: gluten</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€9.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Marinara">−</button>
+                  <label class="ol-sr" for="q-marinara">Quantity of Marinara</label>
+                  <input id="q-marinara" name="marinara" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Marinara">+</button>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </section>
+          <section class="ol-cat" id="desserts" aria-labelledby="h-desserts">
+            <h3 id="h-desserts">Desserts</h3>
+            <ul class="ol-items">
+            <li class="ol-item" data-id="tiramisu" data-name="Tiramisu" data-price="7.50" data-tags="v">
+              <img src="photos/tiramisu-320.webp" alt="A round tiramisu dusted with cocoa" width="320" height="320" loading="lazy" decoding="async">
+              <div class="ol-item-body">
+                <h4 id="n-tiramisu">Tiramisu</h4>
+                <p>Mascarpone, espresso and cocoa, made every afternoon.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span></p><p class="ol-allergens">Allergens: gluten, eggs, milk</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€7.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Tiramisu">−</button>
+                  <label class="ol-sr" for="q-tiramisu">Quantity of Tiramisu</label>
+                  <input id="q-tiramisu" name="tiramisu" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Tiramisu">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="pannacotta" data-name="Lemon panna cotta" data-price="6.50" data-tags="v gf">
+              
+              <div class="ol-item-body">
+                <h4 id="n-pannacotta">Lemon panna cotta</h4>
+                <p>Set cream with lemon curd and crumbled almonds.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">Allergens: milk, nuts</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€6.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Lemon panna cotta">−</button>
+                  <label class="ol-sr" for="q-pannacotta">Quantity of Lemon panna cotta</label>
+                  <input id="q-pannacotta" name="pannacotta" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Lemon panna cotta">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="cake" data-name="Orange olive-oil cake" data-price="6.50" data-tags="v">
+              
+              <div class="ol-item-body">
+                <h4 id="n-cake">Orange olive-oil cake</h4>
+                <p>A soft cake with orange syrup and yoghurt.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span></p><p class="ol-allergens">Allergens: gluten, eggs, milk</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€6.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Orange olive-oil cake">−</button>
+                  <label class="ol-sr" for="q-cake">Quantity of Orange olive-oil cake</label>
+                  <input id="q-cake" name="cake" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Orange olive-oil cake">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="sorbet" data-name="Sorbet, three scoops" data-price="5.50" data-tags="v vg gf">
+              
+              <div class="ol-item-body">
+                <h4 id="n-sorbet">Sorbet, three scoops</h4>
+                <p>Lemon, blood orange and fig.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-vg">Vegan</span><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">No major allergens</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€5.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Sorbet, three scoops">−</button>
+                  <label class="ol-sr" for="q-sorbet">Quantity of Sorbet, three scoops</label>
+                  <input id="q-sorbet" name="sorbet" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Sorbet, three scoops">+</button>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </section>
+          <section class="ol-cat" id="drinks" aria-labelledby="h-drinks">
+            <h3 id="h-drinks">Drinks</h3>
+            <ul class="ol-items">
+            <li class="ol-item ol-noimg" data-id="lemonade" data-name="Homemade lemonade" data-price="4.00" data-tags="v gf">
+              
+              <div class="ol-item-body">
+                <h4 id="n-lemonade">Homemade lemonade</h4>
+                <p>Lemons, mint and a little honey (0.4 l).</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">No major allergens</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€4.00</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Homemade lemonade">−</button>
+                  <label class="ol-sr" for="q-lemonade">Quantity of Homemade lemonade</label>
+                  <input id="q-lemonade" name="lemonade" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Homemade lemonade">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="water" data-name="Sparkling water" data-price="3.50" data-tags="v vg gf">
+              
+              <div class="ol-item-body">
+                <h4 id="n-water">Sparkling water</h4>
+                <p>0.75 l bottle.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-vg">Vegan</span><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">No major allergens</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€3.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Sparkling water">−</button>
+                  <label class="ol-sr" for="q-water">Quantity of Sparkling water</label>
+                  <input id="q-water" name="water" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Sparkling water">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="wine" data-name="House white wine" data-price="5.50" data-tags="v vg gf">
+              
+              <div class="ol-item-body">
+                <h4 id="n-wine">House white wine</h4>
+                <p>A glass of dry white from the Larenza hills (0.15 l).</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-vg">Vegan</span><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">Allergens: sulphites</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€5.50</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less House white wine">−</button>
+                  <label class="ol-sr" for="q-wine">Quantity of House white wine</label>
+                  <input id="q-wine" name="wine" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more House white wine">+</button>
+                </div>
+              </div>
+            </li>
+            <li class="ol-item ol-noimg" data-id="espresso" data-name="Espresso" data-price="2.20" data-tags="v gf">
+              
+              <div class="ol-item-body">
+                <h4 id="n-espresso">Espresso</h4>
+                <p>Single shot, served with a square of dark chocolate.</p>
+                <p class="ol-tags"><span class="ol-tag ol-tag-v">Vegetarian</span><span class="ol-tag ol-tag-gf">Gluten-free</span></p><p class="ol-allergens">Allergens: milk</p>
+              </div>
+              <div class="ol-item-buy">
+                <p class="ol-price">€2.20</p>
+                <div class="ol-qty">
+                  <button type="button" class="ol-step" data-step="-1" aria-label="One less Espresso">−</button>
+                  <label class="ol-sr" for="q-espresso">Quantity of Espresso</label>
+                  <input id="q-espresso" name="espresso" type="number" min="0" max="20" step="1" value="0" inputmode="numeric">
+                  <button type="button" class="ol-step" data-step="1" aria-label="One more Espresso">+</button>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </section>
+            <p class="ol-none" hidden>No dishes match. Clear the search or a filter.</p>
+          </div>
+
+          <aside class="ol-order" id="order" aria-labelledby="ol-order-title">
+            <div class="ol-order-in">
+              <div class="ol-order-head">
+                <h2 id="ol-order-title">Your order</h2>
+                <button type="button" class="ol-close" aria-label="Close your order">×</button>
+              </div>
+              <p class="ol-empty">No dishes yet. Enter a quantity next to any dish in the menu.</p>
+              <ul class="ol-lines"></ul>
+              <p class="ol-total"><span>Total</span> <b class="ol-sum">€0.00</b></p>
+              <fieldset class="ol-how">
+                <legend>How would you like it?</legend>
+                <label><input type="radio" name="how" value="table" checked> At my table</label>
+                <label><input type="radio" name="how" value="takeaway"> Takeaway</label>
+              </fieldset>
+              <div class="ol-field ol-for-table"><label for="ol-table">Table number</label><input id="ol-table" name="table" type="number" min="1" max="30" inputmode="numeric"></div>
+              <div class="ol-field ol-for-takeaway" hidden><label for="ol-time">Pick-up time</label><select id="ol-time" name="time"><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option></select></div>
+              <div class="ol-field"><label for="ol-note">Note for the kitchen <span>(optional)</span></label><textarea id="ol-note" name="note" rows="2" maxlength="200"></textarea></div>
+              <button class="ol-btn ol-btn-olive ol-send" type="submit">Send order</button>
+              <p class="ol-status" role="status"></p>
+            </div>
+          </aside>
+        </form>
+      </div>
+      <button type="button" class="ol-bar" aria-controls="order" aria-expanded="false"><span>Your order · <b class="ol-bar-count">0 dishes</b></span><b class="ol-bar-sum">€0.00</b></button>
+    </section>
+
+    <section class="ol-kitchen" id="kitchen" aria-labelledby="ol-kitchen-title">
+      <div class="ol-wrap ol-split">
+        <figure><img src="photos/kitchen-720.webp" srcset="photos/kitchen-400.webp 400w, photos/kitchen-720.webp 720w" sizes="(min-width: 900px) 520px, 92vw" alt="A chef in a white hat plating a dish at an outdoor table" width="720" height="540" loading="lazy" decoding="async"></figure>
+        <div>
+          <p class="ol-kicker">Our kitchen</p>
+          <h2 id="ol-kitchen-title">Short distances, long lunches</h2>
+          <p>Our fish comes from the boats that tie up across the street, the vegetables from two farms in the hills above Larenza and the olive oil from our own grove. The menu follows what arrives in the morning, so a dish or two may change by evening.</p>
+          <ul class="ol-facts">
+            <li><b>6:30</b> the boats come in</li>
+            <li><b>48 h</b> our pizza dough rises</li>
+            <li><b>400</b> olive trees in our grove</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="ol-visit" id="visit" aria-labelledby="ol-visit-title">
+      <div class="ol-wrap ol-split ol-split-rev">
+        <div>
+          <p class="ol-kicker">Visit</p>
+          <h2 id="ol-visit-title">On the harbour, with a terrace over the sea</h2>
+          <p class="ol-address">Riva 12, Larenza harbour<br><a href="mailto:hello@olmara.example">hello@olmara.example</a></p>
+          <table class="ol-hours">
+            <caption>Opening hours</caption>
+            <tbody>
+            <tr><th scope="row">Monday</th><td>Closed</td></tr>
+            <tr><th scope="row">Tuesday</th><td>12:00 – 23:00</td></tr>
+            <tr><th scope="row">Wednesday</th><td>12:00 – 23:00</td></tr>
+            <tr><th scope="row">Thursday</th><td>12:00 – 23:00</td></tr>
+            <tr><th scope="row">Friday</th><td>12:00 – 00:00</td></tr>
+            <tr><th scope="row">Saturday</th><td>12:00 – 00:00</td></tr>
+            <tr><th scope="row">Sunday</th><td>12:00 – 22:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure><img src="photos/terrace-720.webp" srcset="photos/terrace-400.webp 400w, photos/terrace-720.webp 720w" sizes="(min-width: 900px) 520px, 92vw" alt="A small table with yellow folding chairs on a terrace above the sea" width="720" height="540" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ol-footer">
+    <div class="ol-wrap ol-footer-in">
+      <a class="ol-logo" href="#top"><svg class="ol-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="19" fill="#4f5d2f"/><path d="M12 29c4-7 9.5-12.5 17-17" fill="none" stroke="#f6f0e4" stroke-width="2" stroke-linecap="round"/><ellipse cx="17" cy="19" rx="2.6" ry="5.2" transform="rotate(-50 17 19)" fill="#f6f0e4"/><ellipse cx="23" cy="21.5" rx="2.6" ry="5.2" transform="rotate(40 23 21.5)" fill="#f6f0e4"/><ellipse cx="24.5" cy="14" rx="2.4" ry="4.8" transform="rotate(-40 24.5 14)" fill="#f6f0e4"/><circle cx="14.5" cy="26" r="2.6" fill="#c8892b"/></svg><span>Olmara</span></a>
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme for a restaurant, café or food delivery business. Olmara, Larenza, its address, dishes and prices are fictional; no order is sent. Photos: Pexels.</p>
+    </div>
+    <p class="ol-wrap ol-copy">© <span id="year">2026</span> Olmara demo</p>
+  </footer>
+
+  <script src="olmara.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

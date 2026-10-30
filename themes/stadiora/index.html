@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stadiora Sport – Sports TV Channel Website Demo</title>
+  <meta name="description" content="Sports TV channel website demo designed and coded from scratch by Drago Katić Development: live now with a score bug, a scores ticker, now and next on four channels, a 7-day TV guide, scores and league tables and match reports. Can be built as a custom WordPress theme.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://dkd.rs/themes/stadiora/index.html">
+  <link rel="icon" href="images/stadiora-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Stadiora Sport – Sports TV Channel Website Demo">
+  <meta property="og:description" content="Sports TV channel website demo designed and coded from scratch by Drago Katić Development: live now with a score bug, a scores ticker, now and next on four channels, a 7-day TV guide, scores and league tables and match reports. Can be built as a custom WordPress theme.">
+  <meta property="og:url" content="https://dkd.rs/themes/stadiora/index.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/stadiora.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Stadiora Sport, sports TV channel website demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/saira-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="photos/stadium-live-1600.webp" imagesrcset="photos/stadium-live-800.webp 800w, photos/stadium-live-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="stadiora.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Stadiora Sport – Sports TV Channel Website Demo",
+  "description": "Sports TV channel website demo designed and coded from scratch by Drago Katić Development: live now with a score bug, a scores ticker, now and next on four channels, a 7-day TV guide, scores and league tables and match reports. Can be built as a custom WordPress theme.",
+  "url": "https://dkd.rs/themes/stadiora/index.html",
+  "image": "https://dkd.rs/images/projects/stadiora.webp",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Drago Katić Development",
+    "url": "https://dkd.rs/"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Drago Katić",
+    "url": "https://dkd.rs/"
+  }
+}
+  </script>
+</head>
+<body>
+  <a class="sd-skip" href="#main">Skip to content</a>
+  <header class="sd-header">
+    <div class="sd-wrap sd-header-in">
+      <a class="sd-logo" href="index.html"><svg class="sd-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="9" fill="#d7263d"/><path d="M8 27c5-3.2 19-3.2 24 0M10 20.5c4.4-2.8 15.6-2.8 20 0M12 14c3.6-2.3 12.4-2.3 16 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg><span>Stadiora <b>Sport</b></span></a>
+      <button class="sd-menu" type="button" aria-expanded="false" aria-controls="sd-nav"><span class="sd-menu-bars" aria-hidden="true"></span><span class="sd-sr">Menu</span></button>
+      <nav id="sd-nav" class="sd-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="schedule.html">TV guide</a></li>
+          <li><a href="results.html">Scores</a></li>
+          <li><a href="story.html">Stories</a></li>
+        </ul>
+        <a class="sd-btn sd-btn-live" href="schedule.html#now"><span class="sd-dot" aria-hidden="true"></span>Watch live</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="sd-hero" aria-labelledby="sd-live-title">
+      <div class="sd-hero-media">
+        <img src="photos/stadium-live-1600.webp" srcset="photos/stadium-live-800.webp 800w, photos/stadium-live-1600.webp 1600w" sizes="100vw" alt="A packed football stadium under floodlights at night, seen from the upper stand" width="1600" height="900" fetchpriority="high">
+        <div class="sd-hero-overlay">
+          <div class="sd-bug" role="group" aria-label="Live score: Ardenport FC 1, Brennholt United 1">
+            <span class="sd-bug-ch">S1</span>
+            <span class="sd-bug-team">ARD</span><span class="sd-bug-score"><b>1</b>–<b>1</b></span><span class="sd-bug-team">BRE</span>
+            <span class="sd-bug-clock"><span class="sd-clock" data-start="67">67</span>′</span>
+          </div>
+          <p class="sd-live-flag"><span class="sd-dot" aria-hidden="true"></span>Live</p>
+        </div>
+      </div>
+      <div class="sd-wrap sd-hero-in">
+        <div class="sd-lower">
+          <p class="sd-kicker">On air now · Stadiora 1</p>
+          <h1 id="sd-live-title">Ardenport v Brennholt: the top-of-the-table clash, live</h1>
+          <p class="sd-lower-sub">Valemont League · Matchday 9 · Harbour Park, Ardenport</p>
+          <div class="sd-actions">
+            <a class="sd-btn sd-btn-red" href="schedule.html#now"><span class="sd-dot" aria-hidden="true"></span>Watch on Stadiora 1</a>
+            <a class="sd-btn sd-btn-ghost" href="results.html#football">League table</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <div class="sd-ticker" role="region" aria-label="Latest scores">
+    <p class="sd-ticker-label">Scores</p>
+    <div class="sd-ticker-track">
+      <ul class="sd-ticker-list"><li>FT Bren 0–2 Arde</li><li>FT Corv 3–1 Dunm</li><li>FT Eskv 2–0 Grey</li><li>FT Holm 1–1 Farr</li><li>FT Ivel 2–1 Juni</li><li>Hoops: Comets 88–81 Kings</li><li>Hoops: Owls 95–92 Stags</li><li>Stadiora Open SF: Varga bt Sørlie 6–3 7–6</li><li>100 m: Adeyemi 9.94 meeting record</li><li>Five Valleys stage 4: Brandvold solo win</li></ul>
+      <ul class="sd-ticker-list" aria-hidden="true"><li>FT Bren 0–2 Arde</li><li>FT Corv 3–1 Dunm</li><li>FT Eskv 2–0 Grey</li><li>FT Holm 1–1 Farr</li><li>FT Ivel 2–1 Juni</li><li>Hoops: Comets 88–81 Kings</li><li>Hoops: Owls 95–92 Stags</li><li>Stadiora Open SF: Varga bt Sørlie 6–3 7–6</li><li>100 m: Adeyemi 9.94 meeting record</li><li>Five Valleys stage 4: Brandvold solo win</li></ul>
+    </div>
+    <button class="sd-ticker-pause" type="button" aria-pressed="false">Pause</button>
+  </div>
+
+    <section class="sd-section sd-dark" aria-labelledby="sd-now-title">
+      <div class="sd-wrap">
+        <div class="sd-head">
+          <h2 id="sd-now-title">Now &amp; next</h2>
+          <a class="sd-more" href="schedule.html">Full TV guide</a>
+        </div>
+        <ul class="sd-rails">
+          <li class="sd-rail" data-channel="s1">
+            <p class="sd-rail-ch"><b>Stadiora 1</b> <span>Football</span></p>
+            <p class="sd-rail-now"><span class="sd-rail-label">Today</span> <a href="schedule.html#s1">See the Stadiora 1 line-up</a></p>
+          </li>
+          <li class="sd-rail" data-channel="s2">
+            <p class="sd-rail-ch"><b>Stadiora 2</b> <span>Basketball &amp; indoor</span></p>
+            <p class="sd-rail-now"><span class="sd-rail-label">Today</span> <a href="schedule.html#s2">See the Stadiora 2 line-up</a></p>
+          </li>
+          <li class="sd-rail" data-channel="s3">
+            <p class="sd-rail-ch"><b>Stadiora 3</b> <span>Tennis &amp; athletics</span></p>
+            <p class="sd-rail-now"><span class="sd-rail-label">Today</span> <a href="schedule.html#s3">See the Stadiora 3 line-up</a></p>
+          </li>
+          <li class="sd-rail" data-channel="max">
+            <p class="sd-rail-ch"><b>Stadiora Max</b> <span>Cycling, swimming &amp; more</span></p>
+            <p class="sd-rail-now"><span class="sd-rail-label">Today</span> <a href="schedule.html#max">See the Stadiora Max line-up</a></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sd-section" aria-labelledby="sd-top-title">
+      <div class="sd-wrap">
+        <div class="sd-head">
+          <h2 id="sd-top-title">Top stories</h2>
+          <a class="sd-more" href="story.html">Match report</a>
+        </div>
+        <article class="sd-lead">
+          <a class="sd-lead-link" href="story.html">
+            <img src="photos/football-1600.webp" srcset="photos/football-800.webp 800w, photos/football-1600.webp 1600w" sizes="(min-width: 1100px) 680px, 92vw" alt="A footballer in a dark kit about to strike the ball, substitutes watching from the bench" width="1600" height="900" loading="lazy" decoding="async">
+            <div class="sd-lead-text">
+              <span class="sd-tag">Football · Match report</span>
+              <h3>Brennholt 0–2 Ardenport: the leaders win the river derby</h3>
+              <p>Two goals in eight second-half minutes, a penalty save and a five-point lead at the top of the Valemont League.</p>
+              <span class="sd-read">Read the report</span>
+            </div>
+          </a>
+        </article>
+        <div class="sd-grid">
+          <article class="sd-card">
+            <a class="sd-card-link" href="results.html#basketball">
+              <img src="photos/basketball-720.webp" srcset="photos/basketball-400.webp 400w, photos/basketball-720.webp 720w" sizes="(min-width: 1100px) 340px, (min-width: 640px) 45vw, 92vw" alt="A hand reaching for the ball above the rim during an indoor basketball game" width="720" height="450" loading="lazy" decoding="async">
+              <span class="sd-tag">Basketball</span>
+              <h3>Owls stay top after a 95–92 thriller in Northvale</h3>
+              <p>A late three in the final second keeps Saltmere unbeaten away from home.</p>
+            </a>
+          </article>
+          <article class="sd-card">
+            <a class="sd-card-link" href="results.html#tennis">
+              <img src="photos/tennis-720.webp" srcset="photos/tennis-400.webp 400w, photos/tennis-720.webp 720w" sizes="(min-width: 1100px) 340px, (min-width: 640px) 45vw, 92vw" alt="Tennis balls on a hard court next to the net" width="720" height="450" loading="lazy" decoding="async">
+              <span class="sd-tag">Tennis</span>
+              <h3>Varga books a place in the Stadiora Open final</h3>
+              <p>Straight sets against Sørlie and a Sunday date with Moreau on centre court.</p>
+            </a>
+          </article>
+          <article class="sd-card">
+            <a class="sd-card-link" href="results.html#athletics">
+              <img src="photos/sprint-720.webp" srcset="photos/sprint-400.webp 400w, photos/sprint-720.webp 720w" sizes="(min-width: 1100px) 340px, (min-width: 640px) 45vw, 92vw" alt="A sprinter&#x27;s hands and spikes on the starting line of a red running track" width="720" height="450" loading="lazy" decoding="async">
+              <span class="sd-tag">Athletics</span>
+              <h3>9.94: a meeting record at the Night of Sprints</h3>
+              <p>The fastest 100 m ever run on the Ardenport track, and a crowd on its feet.</p>
+            </a>
+          </article>
+          <article class="sd-card">
+            <a class="sd-card-link" href="schedule.html#max">
+              <img src="photos/cycling-720.webp" srcset="photos/cycling-400.webp 400w, photos/cycling-720.webp 720w" sizes="(min-width: 1100px) 340px, (min-width: 640px) 45vw, 92vw" alt="A group of road cyclists racing through a town, spectators along the road" width="720" height="450" loading="lazy" decoding="async">
+              <span class="sd-tag">Cycling</span>
+              <h3>Five Valleys: a solo breakaway takes stage four</h3>
+              <p>Forty kilometres alone in the wind and a gap the peloton never closed.</p>
+            </a>
+          </article>
+          <article class="sd-card">
+            <a class="sd-card-link" href="schedule.html#max">
+              <img src="photos/swimming-720.webp" srcset="photos/swimming-400.webp 400w, photos/swimming-720.webp 720w" sizes="(min-width: 1100px) 340px, (min-width: 640px) 45vw, 92vw" alt="A swimmer in a white cap doing backstroke in a racing lane" width="720" height="450" loading="lazy" decoding="async">
+              <span class="sd-tag">Swimming</span>
+              <h3>Grand Prix finals live tonight on Stadiora Max</h3>
+              <p>Eight finals from 17:00, with the 200 m backstroke as the closing race.</p>
+            </a>
+          </article>
+          <article class="sd-card">
+            <a class="sd-card-link" href="schedule.html#s2">
+              <img src="photos/volleyball-720.webp" srcset="photos/volleyball-400.webp 400w, photos/volleyball-720.webp 720w" sizes="(min-width: 1100px) 340px, (min-width: 640px) 45vw, 92vw" alt="A volleyball player in an orange shirt jumping to spike the ball in a sports hall" width="720" height="450" loading="lazy" decoding="async">
+              <span class="sd-tag">Volleyball</span>
+              <h3>Lynx and Hawks meet in the volleyball match of the week</h3>
+              <p>Both unbeaten, both with new setters, live on Stadiora 2 at 20:30.</p>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sd-section sd-tint" aria-labelledby="sd-scores-title">
+      <div class="sd-wrap sd-scores">
+        <div>
+          <div class="sd-head">
+            <h2 id="sd-scores-title">Valemont League</h2>
+            <a class="sd-more" href="results.html#football">Table &amp; results</a>
+          </div>
+          <h3 class="sd-sub">Matchday 8 results</h3>
+          <ul class="sd-results">
+            <li><span class="sd-t">Corvane Athletic</span><b>3–1</b><span class="sd-t">Dunmarrow City</span></li>
+            <li><span class="sd-t">Eskvale Rovers</span><b>2–0</b><span class="sd-t">Greystow Town</span></li>
+            <li><span class="sd-t">Holmcrest Albion</span><b>1–1</b><span class="sd-t">Farrowmere FC</span></li>
+            <li><span class="sd-t">Ivelbridge FC</span><b>2–1</b><span class="sd-t">Juniper Bay</span></li>
+            <li><span class="sd-t">Brennholt United</span><b>0–2</b><span class="sd-t">Ardenport FC</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sd-sub sd-sub-top">Matchday 9 on Stadiora</h3>
+          <ul class="sd-fixtures">
+            <li><span class="sd-when">Sat 17:30</span><span class="sd-t">Ardenport FC v Brennholt United</span><span class="sd-ch">Stadiora 1</span></li>
+            <li><span class="sd-when">Sat 20:00</span><span class="sd-t">Dunmarrow City v Eskvale Rovers</span><span class="sd-ch">Stadiora 1</span></li>
+            <li><span class="sd-when">Sun 15:00</span><span class="sd-t">Farrowmere FC v Corvane Athletic</span><span class="sd-ch">Stadiora 1</span></li>
+            <li><span class="sd-when">Sun 17:30</span><span class="sd-t">Greystow Town v Ivelbridge FC</span><span class="sd-ch">Stadiora Max</span></li>
+            <li><span class="sd-when">Sun 20:00</span><span class="sd-t">Juniper Bay v Holmcrest Albion</span><span class="sd-ch">Stadiora 1</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sd-section" aria-labelledby="sd-app-title">
+      <div class="sd-wrap sd-app">
+        <figure class="sd-app-photo"><img src="photos/camera-720.webp" srcset="photos/camera-400.webp 400w, photos/camera-720.webp 720w" sizes="(min-width: 900px) 520px, 92vw" alt="A camera operator with headphones filming in a TV studio" width="720" height="450" loading="lazy" decoding="async"></figure>
+        <div>
+          <p class="sd-kicker">Stadiora app</p>
+          <h2 id="sd-app-title">Every channel, every match, on your phone</h2>
+          <p>Watch all four channels live, catch up on the last seven days and get a goal alert the second the net moves. One subscription, TV and app.</p>
+          <form class="sd-signup" action="#" novalidate>
+            <label for="sd-email">Get the weekly TV guide by email</label>
+            <div class="sd-signup-row">
+              <input id="sd-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+              <button class="sd-btn sd-btn-red" type="submit">Subscribe</button>
+            </div>
+            <p class="sd-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sd-footer">
+    <div class="sd-wrap sd-footer-grid">
+      <div>
+        <a class="sd-logo" href="index.html"><svg class="sd-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="9" fill="#d7263d"/><path d="M8 27c5-3.2 19-3.2 24 0M10 20.5c4.4-2.8 15.6-2.8 20 0M12 14c3.6-2.3 12.4-2.3 16 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg><span>Stadiora <b>Sport</b></span></a>
+        <p>Four channels of live sport, studio shows and highlights, on TV and in the Stadiora app.</p>
+      </div>
+      <div>
+        <h2 class="sd-footer-title">Channels</h2>
+        <ul class="sd-footer-list">
+          <li><b>Stadiora 1</b> Football</li>
+          <li><b>Stadiora 2</b> Basketball & indoor</li>
+          <li><b>Stadiora 3</b> Tennis & athletics</li>
+          <li><b>Stadiora Max</b> Cycling, swimming & more</li>
+        </ul>
+      </div>
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme for a sports TV channel, sports news portal or club website. Stadiora Sport, its channels, competitions, clubs, athletes, journalists, scores and programmes are fictional. Photos: Pexels.</p>
+    </div>
+    <p class="sd-wrap sd-copy">© <span id="year">2026</span> Stadiora Sport demo</p>
+  </footer>
+
+  <script src="stadiora-data.js" defer></script>
+  <script src="stadiora.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

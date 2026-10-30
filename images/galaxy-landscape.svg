@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320">
+<!-- Our Galaxy, band "landscape": made by arhiva/alati/galaxy.py - do not edit. The rotating logo that lights the planets is at (400, 58) on this grid. -->
+<defs><radialGradient id="g1" cx="0.799" cy="0.474" r="1" fx="0.799" fy="0.474"><stop offset="0" stop-color="#8d909c"/><stop offset="0.25" stop-color="#6d7179"/><stop offset="0.5" stop-color="#494e56"/><stop offset="0.68" stop-color="#2c2e40"/><stop offset="0.85" stop-color="#0b0d1e"/><stop offset="1" stop-color="#050a14"/></radialGradient><radialGradient id="g2" cx="0.799" cy="0.479" r="1" fx="0.799" fy="0.479"><stop offset="0" stop-color="#8c909c"/><stop offset="0.25" stop-color="#6c7078"/><stop offset="0.5" stop-color="#494e56"/><stop offset="0.68" stop-color="#2b2e40"/><stop offset="0.85" stop-color="#0b0d1e"/><stop offset="1" stop-color="#050a14"/></radialGradient><radialGradient id="g3" cx="0.797" cy="0.461" r="1" fx="0.797" fy="0.461"><stop offset="0" stop-color="#8d909c"/><stop offset="0.25" stop-color="#6d7079"/><stop offset="0.5" stop-color="#494e56"/><stop offset="0.68" stop-color="#2c2e40"/><stop offset="0.85" stop-color="#0b0d1e"/><stop offset="1" stop-color="#050a14"/></radialGradient><radialGradient id="g4" cx="0.797" cy="0.454" r="1" fx="0.797" fy="0.454"><stop offset="0" stop-color="#8f929f"/><stop offset="0.25" stop-color="#6e727a"/><stop offset="0.5" stop-color="#4a4f57"/><stop offset="0.68" stop-color="#2c2e41"/><stop offset="0.85" stop-color="#0c0d1e"/><stop offset="1" stop-color="#050a14"/></radialGradient><radialGradient id="g5" cx="0.797" cy="0.455" r="1" fx="0.797" fy="0.455"><stop offset="0" stop-color="#a7aab6"/><stop offset="0.25" stop-color="#80848c"/><stop offset="0.5" stop-color="#565b63"/><stop offset="0.68" stop-color="#333548"/><stop offset="0.85" stop-color="#0d0d20"/><stop offset="1" stop-color="#050a14"/></radialGradient><radialGradient id="g6" cx="0.751" cy="0.336" r="1" fx="0.751" fy="0.336"><stop offset="0" stop-color="#c1c4d1"/><stop offset="0.25" stop-color="#9598a0"/><stop offset="0.5" stop-color="#646870"/><stop offset="0.68" stop-color="#3b3c51"/><stop offset="0.85" stop-color="#0e0e22"/><stop offset="1" stop-color="#050a14"/></radialGradient><radialGradient id="g7" cx="0.215" cy="0.405" r="1" fx="0.215" fy="0.405"><stop offset="0" stop-color="#c3c6d3"/><stop offset="0.25" stop-color="#969aa1"/><stop offset="0.5" stop-color="#656971"/><stop offset="0.68" stop-color="#3b3c51"/><stop offset="0.85" stop-color="#0e0e22"/><stop offset="1" stop-color="#050a14"/></radialGradient></defs>
+<g fill="white">
+<circle cx="400" cy="220" r="1.5"/>
+<circle cx="410" cy="230" r="1.2"/>
+<circle cx="370" cy="190" r="1"/>
+<circle cx="700" cy="100" r="0.5"/>
+<circle cx="302" cy="310" r="1.5"/>
+<circle cx="521" cy="313" r="0.5"/>
+<circle cx="218" cy="272" r="0.5"/>
+<circle cx="610" cy="284" r="0.5"/>
+<circle cx="427" cy="299" r="0.5"/>
+<circle cx="629" cy="315" r="0.5"/>
+<circle cx="189" cy="284" r="0.5"/>
+<circle cx="576" cy="274" r="0.5"/>
+<circle cx="34" cy="310" r="1"/>
+<circle cx="284" cy="275" r="0.5"/>
+<circle cx="649" cy="252" r="0.5"/>
+<circle cx="96" cy="307" r="1"/>
+<circle cx="564" cy="258" r="0.5"/>
+<circle cx="41" cy="314" r="0.5"/>
+<circle cx="29" cy="293" r="0.5"/>
+<circle cx="669" cy="306" r="0.5"/>
+<circle cx="360" cy="272" r="0.5"/>
+<circle cx="549" cy="286" r="0.5"/>
+<circle cx="163" cy="289" r="1"/>
+<circle cx="359" cy="274" r="0.5"/>
+<circle cx="269" cy="277" r="0.5"/>
+<circle cx="589" cy="273" r="0.5"/>
+<circle cx="749" cy="270" r="0.5"/>
+<circle cx="594" cy="262" r="0.5"/>
+<circle cx="237" cy="308" r="0.5"/>
+<circle cx="647" cy="292" r="0.5"/>
+<circle cx="284" cy="283" r="0.5"/>
+<circle cx="404" cy="271" r="0.5"/>
+<circle cx="514" cy="252" r="1.5"/>
+<circle cx="234" cy="314" r="1"/>
+<circle cx="543" cy="276" r="0.5"/>
+<circle cx="435" cy="294" r="0.5"/>
+<circle cx="369" cy="292" r="0.5"/>
+<circle cx="234" cy="275" r="0.5"/>
+<circle cx="40" cy="304" r="0.5"/>
+<circle cx="206" cy="266" r="0.5"/>
+<circle cx="103" cy="310" r="0.5"/>
+<circle cx="75" cy="276" r="1"/>
+<circle cx="273" cy="283" r="0.5"/>
+<circle cx="432" cy="314" r="0.5"/>
+<circle cx="591" cy="311" r="0.5"/>
+<circle cx="160" cy="319" r="0.5"/>
+<circle cx="268" cy="306" r="0.5"/>
+<circle cx="338" cy="288" r="1.5"/>
+<circle cx="347" cy="298" r="0.5"/>
+<circle cx="198" cy="303" r="0.5"/>
+<circle cx="421" cy="262" r="0.5"/>
+<circle cx="606" cy="309" r="0.5"/>
+<circle cx="233" cy="302" r="0.5"/>
+<circle cx="743" cy="282" r="0.5"/>
+<circle cx="137" cy="265" r="0.5"/>
+<circle cx="123" cy="271" r="0.5"/>
+<circle cx="575" cy="251" r="0.5"/>
+<circle cx="89" cy="313" r="0.5"/>
+<circle cx="132" cy="268" r="0.5"/>
+<circle cx="651" cy="292" r="0.5"/>
+<circle cx="79" cy="257" r="0.5"/>
+<circle cx="203" cy="315" r="0.5"/>
+<circle cx="554" cy="277" r="0.5"/>
+<circle cx="729" cy="298" r="0.5"/>
+<circle cx="453" cy="284" r="0.5"/>
+<circle cx="144" cy="306" r="0.5"/>
+<circle cx="256" cy="310" r="1.5"/>
+<circle cx="307" cy="313" r="0.5"/>
+<circle cx="384" cy="264" r="0.5"/>
+<circle cx="745" cy="287" r="0.5"/>
+<circle cx="90" cy="277" r="1"/>
+<circle cx="486" cy="259" r="0.5"/>
+<circle cx="598" cy="299" r="1.5"/>
+<circle cx="413" cy="256" r="0.5"/>
+<circle cx="230" cy="314" r="0.5"/>
+<circle cx="642" cy="318" r="0.5"/>
+<circle cx="111" cy="293" r="1"/>
+<circle cx="403" cy="312" r="0.5"/>
+<circle cx="57" cy="269" r="0.5"/>
+<circle cx="130" cy="297" r="1.5"/>
+<circle cx="535" cy="275" r="0.5"/>
+<circle cx="308" cy="254" r="1"/>
+<circle cx="263" cy="252" r="0.5"/>
+<circle cx="534" cy="268" r="0.5"/>
+<circle cx="611" cy="259" r="1"/>
+<circle cx="38" cy="283" r="0.5"/>
+<circle cx="670" cy="317" r="1"/>
+<circle cx="383" cy="278" r="0.5"/>
+<circle cx="5" cy="260" r="0.5"/>
+<circle cx="10" cy="280" r="0.5"/>
+<circle cx="15" cy="300" r="0.5"/>
+<circle cx="20" cy="270" r="0.5"/>
+<circle cx="25" cy="310" r="0.5"/>
+<circle cx="30" cy="290" r="0.5"/>
+<circle cx="35" cy="265" r="0.5"/>
+<circle cx="8" cy="275" r="0.5"/>
+<circle cx="9" cy="312" r="0.5"/>
+<circle cx="6" cy="301" r="0.5"/>
+<circle cx="2" cy="314" r="0.5"/>
+</g>
+<path d="M492,98 A28,10 0 0 1 548,98" fill="none" stroke="#e9ebf9" stroke-opacity="0.89" stroke-width="0.6"/>
+<path d="M485,98 A35,12 0 0 1 555,98" fill="none" stroke="#e9ebf9" stroke-opacity="0.89" stroke-width="0.8"/>
+<path d="M480,98 A40,14 0 0 1 560,98" fill="none" stroke="#e9ebf9" stroke-opacity="0.89" stroke-width="1"/>
+<circle cx="32" cy="90" r="2" fill="url(#g1)"/>
+<circle cx="26" cy="84" r="3" fill="url(#g2)"/>
+<circle cx="33" cy="106" r="4" fill="url(#g3)"/>
+<circle cx="55" cy="111" r="1" fill="url(#g4)"/>
+<circle cx="190" cy="90" r="12" fill="url(#g5)"/>
+<circle cx="290" cy="130" r="10" fill="url(#g6)"/>
+<circle cx="520" cy="98" r="8" fill="url(#g7)"/>
+<path d="M492,98 A28,10 0 0 0 548,98" fill="none" stroke="#e9ebf9" stroke-opacity="0.89" stroke-width="0.6"/>
+<path d="M485,98 A35,12 0 0 0 555,98" fill="none" stroke="#e9ebf9" stroke-opacity="0.89" stroke-width="0.8"/>
+<path d="M480,98 A40,14 0 0 0 560,98" fill="none" stroke="#e9ebf9" stroke-opacity="0.89" stroke-width="1"/>
+</svg>

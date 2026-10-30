@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regions – Stackwise Demo</title>
+  <meta name="description" content="An interactive tile map of European markets with revenue, orders and customers per country — part of an admin dashboard demo by Drago Katić Development.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f4f4f1">
+  <link rel="canonical" href="https://dkd.rs/themes/stackwise/regions.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%233355ff'/%3E%3Cpath%20d='M8%2021.5h16M8%2016h11M8%2010.5h6'%20stroke='%23fff'%20stroke-width='3'%20stroke-linecap='round'/%3E%3Ccircle%20cx='23.5'%20cy='10.5'%20r='2.5'%20fill='%23c6f04a'/%3E%3C/svg%3E" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Regions – Stackwise Demo">
+  <meta property="og:description" content="An interactive tile map of European markets with revenue, orders and customers per country — part of an admin dashboard demo by Drago Katić Development.">
+  <meta property="og:url" content="https://dkd.rs/themes/stackwise/regions.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/stackwise.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Stackwise dashboard demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="stackwise.css">
+  <script>(function (d) { d.className += " js"; var t = null; try { t = localStorage.getItem("stackwise-theme"); } catch (e) {} if (t === "dark" || (t !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches)) { d.setAttribute("data-theme", "dark"); } })(document.documentElement);</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Regions – Stackwise Demo",
+    "description": "An interactive tile map of European markets with revenue, orders and customers per country — part of an admin dashboard demo by Drago Katić Development.",
+    "url": "https://dkd.rs/themes/stackwise/regions.html",
+    "image": "https://dkd.rs/images/projects/stackwise.webp",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Drago Katić Development",
+      "url": "https://dkd.rs/"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Drago Katić",
+      "url": "https://dkd.rs/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="app">
+  <aside class="sidebar" id="sidebar" aria-label="Main menu">
+    <a class="brand" href="index.html"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#3355ff"/><path d="M8 21.5h16M8 16h11M8 10.5h6" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="23.5" cy="10.5" r="2.5" fill="#c6f04a"/></svg><span>Stackwise</span></a>
+    <div class="store-switch">
+      <span class="store-avatar" aria-hidden="true">OH</span>
+      <span><b>Oakmere Home</b><small>Online store · Growth plan</small></span>
+    </div>
+    <nav class="side-nav" aria-label="Sections">
+      <p class="side-label">Menu</p>
+      <ul>
+        <li><a class="nav-link" href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg><span>Overview</span></a></li>
+        <li class="nav-group">
+          <button class="nav-link nav-group-toggle" type="button" aria-expanded="true" aria-controls="nav-reports"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 20.5h17M6.5 17v-5M11 17V6M15.5 17v-8M20 17v-3"/></svg><span>Reports</span><svg class="icon chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m8 10 4 4 4-4"/></svg></button>
+          <ul class="subnav" id="nav-reports">
+            <li><a class="nav-link" href="analytics.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12h4l2.5-6 5 12 2.5-6h4"/></svg><span>Analytics</span></a></li>
+            <li><a class="nav-link" href="regions.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 4.5 3.5 6.5v13L9 17.5l6 2 5.5-2v-13L15 6.5z M9 4.5v13M15 6.5v13"/></svg><span>Regions</span><span class="nav-badge">31</span></a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="customers.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c1.8.8 3 2.6 3.5 5.2"/></svg><span>Customers</span><span class="nav-badge">3 new</span></a></li>
+        <li><a class="nav-link" href="settings.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6.5h9M17.5 6.5H20M4 12h3.5M12 12h8M4 17.5h11.5M20 17.5h0"/><circle cx="15.5" cy="6.5" r="2"/><circle cx="9.5" cy="12" r="2"/><circle cx="17.5" cy="17.5" r="2"/></svg><span>Settings</span></a></li>
+      </ul>
+      <p class="side-label">Account</p>
+      <ul>
+        <li><a class="nav-link sign-out" href="sign-in.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4M10 16l-4-4 4-4M6 12h10"/></svg><span>Sign out</span></a></li>
+      </ul>
+    </nav>
+    <div class="side-card">
+      <p><b>Autumn sale</b> starts in 6 days. 14 products are still missing sale prices.</p>
+      <a href="customers.html">Notify customers</a>
+    </div>
+  </aside>
+  <div class="backdrop" hidden></div>
+  <div class="main-col">
+    <header class="topbar">
+      <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="visually-hidden">Open menu</span></button>
+      <form class="top-search" action="customers.html" role="search">
+        <label class="visually-hidden" for="top-q">Search customers</label>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="top-q" name="q" type="search" placeholder="Search…" autocomplete="off">
+        <kbd>/</kbd>
+      </form>
+      <div class="top-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-pressed="false"><svg class="icon i-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="icon i-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg><span class="visually-hidden">Dark mode</span></button>
+        <div class="notify">
+          <button class="icon-btn notify-toggle has-dot" type="button" aria-expanded="false" aria-controls="notify-panel"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 16v-5a6 6 0 0 1 12 0v5l1.5 2h-15zM10 20.5a2 2 0 0 0 4 0"/></svg><span class="visually-hidden">Notifications (3 unread)</span></button>
+          <div class="notify-panel" id="notify-panel" hidden>
+            <div class="notify-head"><b>Notifications</b><button type="button" class="link-btn notify-read">Mark all as read</button></div>
+            <ul>
+              <li class="unread"><span class="dot dot-4"></span><p><b>Low stock:</b> Stoneware mug, sage — 6 left.<small>12 min ago</small></p></li>
+              <li class="unread"><span class="dot dot-1"></span><p><b>New order</b> #OK-10486 from Lea Hoffmann, €126.40.<small>38 min ago</small></p></li>
+              <li class="unread"><span class="dot dot-2"></span><p><b>3 new customers</b> signed up today.<small>2 h ago</small></p></li>
+              <li><span class="dot dot-3"></span><p><b>Payout</b> of €9,842.10 sent to your bank.<small>Yesterday</small></p></li>
+            </ul>
+          </div>
+        </div>
+        <a class="user-chip" href="settings.html" aria-label="Mia Novak, account settings">
+          <span class="avatar" aria-hidden="true">MN</span>
+          <span class="user-name"><b>Mia Novak</b><small>Store manager</small></span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="content">
+      <div class="page-head">
+        <div>
+          <h1>Regions</h1>
+          <p>Oakmere Home ships to 31 European countries. Figures for the last 12 months.</p>
+        </div>
+        <div class="page-actions"><button class="btn btn-ghost js-only" type="button" data-export=".rank-table" data-filename="oakmere-regions.csv"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg>Export CSV</button></div>
+      </div>
+
+      <section class="grid two-one">
+        <article class="card">
+          <div class="card-head">
+            <div><h2>Markets map</h2><p class="card-sub">Select a country for details</p></div>
+            <div class="segmented js-only" role="group" aria-label="Metric">
+              <button type="button" aria-pressed="true" data-metric="revenue">Revenue</button>
+              <button type="button" aria-pressed="false" data-metric="orders">Orders</button>
+              <button type="button" aria-pressed="false" data-metric="customers">Customers</button>
+            </div>
+          </div>
+          <ul class="tilemap" aria-label="Countries">
+          <li style="grid-column:1;grid-row:1"><button class="tile" type="button" data-code="IS" data-name="Iceland" data-revenue="900" data-orders="24" data-customers="15" style="--v:0.098" aria-pressed="false" aria-label="Iceland, €900 revenue">IS</button></li>
+          <li style="grid-column:5;grid-row:1"><button class="tile" type="button" data-code="NO" data-name="Norway" data-revenue="8990" data-orders="255" data-customers="161" style="--v:0.309" aria-pressed="false" aria-label="Norway, €8,990 revenue">NO</button></li>
+          <li style="grid-column:6;grid-row:1"><button class="tile" type="button" data-code="SE" data-name="Sweden" data-revenue="21360" data-orders="535" data-customers="299" style="--v:0.477" aria-pressed="false" aria-label="Sweden, €21,360 revenue">SE</button></li>
+          <li style="grid-column:7;grid-row:1"><button class="tile" type="button" data-code="FI" data-name="Finland" data-revenue="9360" data-orders="271" data-customers="151" style="--v:0.316" aria-pressed="false" aria-label="Finland, €9,360 revenue">FI</button></li>
+          <li style="grid-column:1;grid-row:2"><button class="tile" type="button" data-code="IE" data-name="Ireland" data-revenue="10730" data-orders="276" data-customers="160" style="--v:0.338" aria-pressed="false" aria-label="Ireland, €10,730 revenue">IE</button></li>
+          <li style="grid-column:2;grid-row:2"><button class="tile" type="button" data-code="GB" data-name="United Kingdom" data-revenue="28400" data-orders="762" data-customers="497" style="--v:0.550" aria-pressed="false" aria-label="United Kingdom, €28,400 revenue">GB</button></li>
+          <li style="grid-column:5;grid-row:2"><button class="tile" type="button" data-code="DK" data-name="Denmark" data-revenue="15140" data-orders="440" data-customers="270" style="--v:0.402" aria-pressed="false" aria-label="Denmark, €15,140 revenue">DK</button></li>
+          <li style="grid-column:7;grid-row:2"><button class="tile" type="button" data-code="EE" data-name="Estonia" data-revenue="1920" data-orders="50" data-customers="30" style="--v:0.143" aria-pressed="false" aria-label="Estonia, €1,920 revenue">EE</button></li>
+          <li style="grid-column:4;grid-row:3"><button class="tile" type="button" data-code="NL" data-name="Netherlands" data-revenue="37160" data-orders="1086" data-customers="693" style="--v:0.629" aria-pressed="false" aria-label="Netherlands, €37,160 revenue">NL</button></li>
+          <li style="grid-column:5;grid-row:3"><button class="tile light-text" type="button" data-code="DE" data-name="Germany" data-revenue="93910" data-orders="2478" data-customers="1531" style="--v:1.000" aria-pressed="true" aria-label="Germany, €93,910 revenue">DE</button></li>
+          <li style="grid-column:6;grid-row:3"><button class="tile" type="button" data-code="PL" data-name="Poland" data-revenue="16500" data-orders="478" data-customers="284" style="--v:0.419" aria-pressed="false" aria-label="Poland, €16,500 revenue">PL</button></li>
+          <li style="grid-column:7;grid-row:3"><button class="tile" type="button" data-code="LV" data-name="Latvia" data-revenue="1550" data-orders="45" data-customers="30" style="--v:0.128" aria-pressed="false" aria-label="Latvia, €1,550 revenue">LV</button></li>
+          <li style="grid-column:3;grid-row:4"><button class="tile" type="button" data-code="FR" data-name="France" data-revenue="44070" data-orders="1166" data-customers="764" style="--v:0.685" aria-pressed="false" aria-label="France, €44,070 revenue">FR</button></li>
+          <li style="grid-column:4;grid-row:4"><button class="tile" type="button" data-code="BE" data-name="Belgium" data-revenue="18720" data-orders="450" data-customers="264" style="--v:0.446" aria-pressed="false" aria-label="Belgium, €18,720 revenue">BE</button></li>
+          <li style="grid-column:5;grid-row:4"><button class="tile" type="button" data-code="CZ" data-name="Czechia" data-revenue="10110" data-orders="289" data-customers="184" style="--v:0.328" aria-pressed="false" aria-label="Czechia, €10,110 revenue">CZ</button></li>
+          <li style="grid-column:6;grid-row:4"><button class="tile" type="button" data-code="SK" data-name="Slovakia" data-revenue="3930" data-orders="109" data-customers="69" style="--v:0.205" aria-pressed="false" aria-label="Slovakia, €3,930 revenue">SK</button></li>
+          <li style="grid-column:7;grid-row:4"><button class="tile" type="button" data-code="LT" data-name="Lithuania" data-revenue="1840" data-orders="46" data-customers="31" style="--v:0.140" aria-pressed="false" aria-label="Lithuania, €1,840 revenue">LT</button></li>
+          <li style="grid-column:1;grid-row:5"><button class="tile" type="button" data-code="PT" data-name="Portugal" data-revenue="5950" data-orders="139" data-customers="92" style="--v:0.252" aria-pressed="false" aria-label="Portugal, €5,950 revenue">PT</button></li>
+          <li style="grid-column:2;grid-row:5"><button class="tile" type="button" data-code="ES" data-name="Spain" data-revenue="14420" data-orders="368" data-customers="218" style="--v:0.392" aria-pressed="false" aria-label="Spain, €14,420 revenue">ES</button></li>
+          <li style="grid-column:4;grid-row:5"><button class="tile" type="button" data-code="CH" data-name="Switzerland" data-revenue="14110" data-orders="376" data-customers="262" style="--v:0.388" aria-pressed="false" aria-label="Switzerland, €14,110 revenue">CH</button></li>
+          <li style="grid-column:5;grid-row:5"><button class="tile" type="button" data-code="AT" data-name="Austria" data-revenue="32500" data-orders="757" data-customers="430" style="--v:0.588" aria-pressed="false" aria-label="Austria, €32,500 revenue">AT</button></li>
+          <li style="grid-column:6;grid-row:5"><button class="tile" type="button" data-code="HU" data-name="Hungary" data-revenue="5560" data-orders="162" data-customers="99" style="--v:0.243" aria-pressed="false" aria-label="Hungary, €5,560 revenue">HU</button></li>
+          <li style="grid-column:7;grid-row:5"><button class="tile" type="button" data-code="RO" data-name="Romania" data-revenue="3710" data-orders="89" data-customers="59" style="--v:0.199" aria-pressed="false" aria-label="Romania, €3,710 revenue">RO</button></li>
+          <li style="grid-column:4;grid-row:6"><button class="tile" type="button" data-code="IT" data-name="Italy" data-revenue="30230" data-orders="827" data-customers="474" style="--v:0.567" aria-pressed="false" aria-label="Italy, €30,230 revenue">IT</button></li>
+          <li style="grid-column:5;grid-row:6"><button class="tile" type="button" data-code="SI" data-name="Slovenia" data-revenue="7750" data-orders="220" data-customers="137" style="--v:0.287" aria-pressed="false" aria-label="Slovenia, €7,750 revenue">SI</button></li>
+          <li style="grid-column:6;grid-row:6"><button class="tile" type="button" data-code="HR" data-name="Croatia" data-revenue="7090" data-orders="203" data-customers="113" style="--v:0.275" aria-pressed="false" aria-label="Croatia, €7,090 revenue">HR</button></li>
+          <li style="grid-column:7;grid-row:6"><button class="tile" type="button" data-code="RS" data-name="Serbia" data-revenue="6600" data-orders="180" data-customers="117" style="--v:0.265" aria-pressed="false" aria-label="Serbia, €6,600 revenue">RS</button></li>
+          <li style="grid-column:8;grid-row:6"><button class="tile" type="button" data-code="BG" data-name="Bulgaria" data-revenue="2140" data-orders="52" data-customers="35" style="--v:0.151" aria-pressed="false" aria-label="Bulgaria, €2,140 revenue">BG</button></li>
+          <li style="grid-column:6;grid-row:7"><button class="tile" type="button" data-code="BA" data-name="Bosnia and Herzegovina" data-revenue="1030" data-orders="29" data-customers="18" style="--v:0.105" aria-pressed="false" aria-label="Bosnia and Herzegovina, €1,030 revenue">BA</button></li>
+          <li style="grid-column:7;grid-row:7"><button class="tile" type="button" data-code="MK" data-name="North Macedonia" data-revenue="610" data-orders="16" data-customers="11" style="--v:0.081" aria-pressed="false" aria-label="North Macedonia, €610 revenue">MK</button></li>
+          <li style="grid-column:7;grid-row:8"><button class="tile" type="button" data-code="GR" data-name="Greece" data-revenue="3400" data-orders="85" data-customers="51" style="--v:0.190" aria-pressed="false" aria-label="Greece, €3,400 revenue">GR</button></li>
+          </ul>
+          <p class="map-scale" aria-hidden="true"><span>Lower</span><i></i><span>Higher</span></p>
+        </article>
+
+        <article class="card country-card" aria-live="polite">
+          <p class="card-sub">Selected market</p>
+          <h2 class="country-name">Germany</h2>
+          <dl class="country-stats">
+            <div><dt>Revenue</dt><dd data-stat="revenue">€93,910</dd></div>
+            <div><dt>Orders</dt><dd data-stat="orders">2,478</dd></div>
+            <div><dt>Customers</dt><dd data-stat="customers">1,531</dd></div>
+            <div><dt>Average order</dt><dd data-stat="aov">€37.90</dd></div>
+          </dl>
+          <p class="country-share"><span data-stat="share">20.4%</span> of all revenue · rank <span data-stat="rank">1</span> of 31</p>
+          <div class="bar big"><span data-stat="bar" style="width:20.4%"></span></div>
+          <dl class="totals">
+            <div><dt>All markets</dt><dd>€459,690</dd></div>
+            <div><dt>Orders</dt><dd>12,263</dd></div>
+            <div><dt>Customers</dt><dd>7,549</dd></div>
+          </dl>
+        </article>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><div><h2>Ranking</h2><p class="card-sub">All markets by revenue</p></div></div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Ranking">
+          <table class="data-table rank-table">
+            <thead><tr><th scope="col" class="num">#</th><th scope="col">Country</th><th scope="col" class="num">Revenue</th><th scope="col" class="num">Orders</th><th scope="col" class="num">Customers</th><th scope="col">Share of revenue</th></tr></thead>
+            <tbody>
+              <tr data-code="DE">
+                <td class="num rank">1</td>
+                <th scope="row">Germany</th>
+                <td class="num">€93,910</td>
+                <td class="num">2,478</td>
+                <td class="num">1,531</td>
+                <td class="share"><span class="bar"><span style="width:100.0%"></span></span>20.4%</td>
+              </tr>
+              <tr data-code="FR">
+                <td class="num rank">2</td>
+                <th scope="row">France</th>
+                <td class="num">€44,070</td>
+                <td class="num">1,166</td>
+                <td class="num">764</td>
+                <td class="share"><span class="bar"><span style="width:46.9%"></span></span>9.6%</td>
+              </tr>
+              <tr data-code="NL">
+                <td class="num rank">3</td>
+                <th scope="row">Netherlands</th>
+                <td class="num">€37,160</td>
+                <td class="num">1,086</td>
+                <td class="num">693</td>
+                <td class="share"><span class="bar"><span style="width:39.6%"></span></span>8.1%</td>
+              </tr>
+              <tr data-code="AT">
+                <td class="num rank">4</td>
+                <th scope="row">Austria</th>
+                <td class="num">€32,500</td>
+                <td class="num">757</td>
+                <td class="num">430</td>
+                <td class="share"><span class="bar"><span style="width:34.6%"></span></span>7.1%</td>
+              </tr>
+              <tr data-code="IT">
+                <td class="num rank">5</td>
+                <th scope="row">Italy</th>
+                <td class="num">€30,230</td>
+                <td class="num">827</td>
+                <td class="num">474</td>
+                <td class="share"><span class="bar"><span style="width:32.2%"></span></span>6.6%</td>
+              </tr>
+              <tr data-code="GB">
+                <td class="num rank">6</td>
+                <th scope="row">United Kingdom</th>
+                <td class="num">€28,400</td>
+                <td class="num">762</td>
+                <td class="num">497</td>
+                <td class="share"><span class="bar"><span style="width:30.2%"></span></span>6.2%</td>
+              </tr>
+              <tr data-code="SE">
+                <td class="num rank">7</td>
+                <th scope="row">Sweden</th>
+                <td class="num">€21,360</td>
+                <td class="num">535</td>
+                <td class="num">299</td>
+                <td class="share"><span class="bar"><span style="width:22.7%"></span></span>4.6%</td>
+              </tr>
+              <tr data-code="BE">
+                <td class="num rank">8</td>
+                <th scope="row">Belgium</th>
+                <td class="num">€18,720</td>
+                <td class="num">450</td>
+                <td class="num">264</td>
+                <td class="share"><span class="bar"><span style="width:19.9%"></span></span>4.1%</td>
+              </tr>
+              <tr data-code="PL">
+                <td class="num rank">9</td>
+                <th scope="row">Poland</th>
+                <td class="num">€16,500</td>
+                <td class="num">478</td>
+                <td class="num">284</td>
+                <td class="share"><span class="bar"><span style="width:17.6%"></span></span>3.6%</td>
+              </tr>
+              <tr data-code="DK">
+                <td class="num rank">10</td>
+                <th scope="row">Denmark</th>
+                <td class="num">€15,140</td>
+                <td class="num">440</td>
+                <td class="num">270</td>
+                <td class="share"><span class="bar"><span style="width:16.1%"></span></span>3.3%</td>
+              </tr>
+              <tr data-code="ES">
+                <td class="num rank">11</td>
+                <th scope="row">Spain</th>
+                <td class="num">€14,420</td>
+                <td class="num">368</td>
+                <td class="num">218</td>
+                <td class="share"><span class="bar"><span style="width:15.4%"></span></span>3.1%</td>
+              </tr>
+              <tr data-code="CH">
+                <td class="num rank">12</td>
+                <th scope="row">Switzerland</th>
+                <td class="num">€14,110</td>
+                <td class="num">376</td>
+                <td class="num">262</td>
+                <td class="share"><span class="bar"><span style="width:15.0%"></span></span>3.1%</td>
+              </tr>
+              <tr data-code="IE">
+                <td class="num rank">13</td>
+                <th scope="row">Ireland</th>
+                <td class="num">€10,730</td>
+                <td class="num">276</td>
+                <td class="num">160</td>
+                <td class="share"><span class="bar"><span style="width:11.4%"></span></span>2.3%</td>
+              </tr>
+              <tr data-code="CZ">
+                <td class="num rank">14</td>
+                <th scope="row">Czechia</th>
+                <td class="num">€10,110</td>
+                <td class="num">289</td>
+                <td class="num">184</td>
+                <td class="share"><span class="bar"><span style="width:10.8%"></span></span>2.2%</td>
+              </tr>
+              <tr data-code="FI">
+                <td class="num rank">15</td>
+                <th scope="row">Finland</th>
+                <td class="num">€9,360</td>
+                <td class="num">271</td>
+                <td class="num">151</td>
+                <td class="share"><span class="bar"><span style="width:10.0%"></span></span>2.0%</td>
+              </tr>
+              <tr data-code="NO">
+                <td class="num rank">16</td>
+                <th scope="row">Norway</th>
+                <td class="num">€8,990</td>
+                <td class="num">255</td>
+                <td class="num">161</td>
+                <td class="share"><span class="bar"><span style="width:9.6%"></span></span>2.0%</td>
+              </tr>
+              <tr data-code="SI">
+                <td class="num rank">17</td>
+                <th scope="row">Slovenia</th>
+                <td class="num">€7,750</td>
+                <td class="num">220</td>
+                <td class="num">137</td>
+                <td class="share"><span class="bar"><span style="width:8.3%"></span></span>1.7%</td>
+              </tr>
+              <tr data-code="HR">
+                <td class="num rank">18</td>
+                <th scope="row">Croatia</th>
+                <td class="num">€7,090</td>
+                <td class="num">203</td>
+                <td class="num">113</td>
+                <td class="share"><span class="bar"><span style="width:7.5%"></span></span>1.5%</td>
+              </tr>
+              <tr data-code="RS">
+                <td class="num rank">19</td>
+                <th scope="row">Serbia</th>
+                <td class="num">€6,600</td>
+                <td class="num">180</td>
+                <td class="num">117</td>
+                <td class="share"><span class="bar"><span style="width:7.0%"></span></span>1.4%</td>
+              </tr>
+              <tr data-code="PT">
+                <td class="num rank">20</td>
+                <th scope="row">Portugal</th>
+                <td class="num">€5,950</td>
+                <td class="num">139</td>
+                <td class="num">92</td>
+                <td class="share"><span class="bar"><span style="width:6.3%"></span></span>1.3%</td>
+              </tr>
+              <tr data-code="HU">
+                <td class="num rank">21</td>
+                <th scope="row">Hungary</th>
+                <td class="num">€5,560</td>
+                <td class="num">162</td>
+                <td class="num">99</td>
+                <td class="share"><span class="bar"><span style="width:5.9%"></span></span>1.2%</td>
+              </tr>
+              <tr data-code="SK">
+                <td class="num rank">22</td>
+                <th scope="row">Slovakia</th>
+                <td class="num">€3,930</td>
+                <td class="num">109</td>
+                <td class="num">69</td>
+                <td class="share"><span class="bar"><span style="width:4.2%"></span></span>0.9%</td>
+              </tr>
+              <tr data-code="RO">
+                <td class="num rank">23</td>
+                <th scope="row">Romania</th>
+                <td class="num">€3,710</td>
+                <td class="num">89</td>
+                <td class="num">59</td>
+                <td class="share"><span class="bar"><span style="width:4.0%"></span></span>0.8%</td>
+              </tr>
+              <tr data-code="GR">
+                <td class="num rank">24</td>
+                <th scope="row">Greece</th>
+                <td class="num">€3,400</td>
+                <td class="num">85</td>
+                <td class="num">51</td>
+                <td class="share"><span class="bar"><span style="width:3.6%"></span></span>0.7%</td>
+              </tr>
+              <tr data-code="BG">
+                <td class="num rank">25</td>
+                <th scope="row">Bulgaria</th>
+                <td class="num">€2,140</td>
+                <td class="num">52</td>
+                <td class="num">35</td>
+                <td class="share"><span class="bar"><span style="width:2.3%"></span></span>0.5%</td>
+              </tr>
+              <tr data-code="EE">
+                <td class="num rank">26</td>
+                <th scope="row">Estonia</th>
+                <td class="num">€1,920</td>
+                <td class="num">50</td>
+                <td class="num">30</td>
+                <td class="share"><span class="bar"><span style="width:2.0%"></span></span>0.4%</td>
+              </tr>
+              <tr data-code="LT">
+                <td class="num rank">27</td>
+                <th scope="row">Lithuania</th>
+                <td class="num">€1,840</td>
+                <td class="num">46</td>
+                <td class="num">31</td>
+                <td class="share"><span class="bar"><span style="width:2.0%"></span></span>0.4%</td>
+              </tr>
+              <tr data-code="LV">
+                <td class="num rank">28</td>
+                <th scope="row">Latvia</th>
+                <td class="num">€1,550</td>
+                <td class="num">45</td>
+                <td class="num">30</td>
+                <td class="share"><span class="bar"><span style="width:1.7%"></span></span>0.3%</td>
+              </tr>
+              <tr data-code="BA">
+                <td class="num rank">29</td>
+                <th scope="row">Bosnia and Herzegovina</th>
+                <td class="num">€1,030</td>
+                <td class="num">29</td>
+                <td class="num">18</td>
+                <td class="share"><span class="bar"><span style="width:1.1%"></span></span>0.2%</td>
+              </tr>
+              <tr data-code="IS">
+                <td class="num rank">30</td>
+                <th scope="row">Iceland</th>
+                <td class="num">€900</td>
+                <td class="num">24</td>
+                <td class="num">15</td>
+                <td class="share"><span class="bar"><span style="width:1.0%"></span></span>0.2%</td>
+              </tr>
+              <tr data-code="MK">
+                <td class="num rank">31</td>
+                <th scope="row">North Macedonia</th>
+                <td class="num">€610</td>
+                <td class="num">16</td>
+                <td class="num">11</td>
+                <td class="share"><span class="bar"><span style="width:0.6%"></span></span>0.1%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="app-footer">
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme. Stackwise and Oakmere Home are fictional; names, orders and figures are made-up examples.</p>
+      <p>© <span id="year">2026</span> Stackwise demo</p>
+    </footer>
+  </div>
+  </div>
+  <dialog class="modal" id="signout-dialog" aria-labelledby="signout-title">
+    <form method="dialog">
+      <h2 id="signout-title">Sign out of Stackwise?</h2>
+      <p>You will need your email and password to get back in. Unsaved changes on this page will be lost.</p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" value="cancel">Stay signed in</button>
+        <a class="btn btn-danger" href="sign-in.html">Sign out</a>
+      </div>
+    </form>
+  </dialog>
+  <div class="toasts" role="status" aria-live="polite"></div>
+  <script src="stackwise.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

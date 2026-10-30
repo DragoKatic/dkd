@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV guide – Stadiora Sport – Sports TV Website Demo</title>
+  <meta name="description" content="TV guide of a sports channel website demo by Drago Katić Development: seven days on four channels with live, studio and replay programmes, sport filters and what is on now.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://dkd.rs/themes/stadiora/schedule.html">
+  <link rel="icon" href="images/stadiora-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="TV guide – Stadiora Sport – Sports TV Website Demo">
+  <meta property="og:description" content="TV guide of a sports channel website demo by Drago Katić Development: seven days on four channels with live, studio and replay programmes, sport filters and what is on now.">
+  <meta property="og:url" content="https://dkd.rs/themes/stadiora/schedule.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/stadiora.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Stadiora Sport, sports TV channel website demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/saira-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="stadiora.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "TV guide – Stadiora Sport – Sports TV Website Demo",
+  "description": "TV guide of a sports channel website demo by Drago Katić Development: seven days on four channels with live, studio and replay programmes, sport filters and what is on now.",
+  "url": "https://dkd.rs/themes/stadiora/schedule.html",
+  "image": "https://dkd.rs/images/projects/stadiora.webp",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Drago Katić Development",
+    "url": "https://dkd.rs/"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Drago Katić",
+    "url": "https://dkd.rs/"
+  }
+}
+  </script>
+</head>
+<body>
+  <a class="sd-skip" href="#main">Skip to content</a>
+  <header class="sd-header">
+    <div class="sd-wrap sd-header-in">
+      <a class="sd-logo" href="index.html"><svg class="sd-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="9" fill="#d7263d"/><path d="M8 27c5-3.2 19-3.2 24 0M10 20.5c4.4-2.8 15.6-2.8 20 0M12 14c3.6-2.3 12.4-2.3 16 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg><span>Stadiora <b>Sport</b></span></a>
+      <button class="sd-menu" type="button" aria-expanded="false" aria-controls="sd-nav"><span class="sd-menu-bars" aria-hidden="true"></span><span class="sd-sr">Menu</span></button>
+      <nav id="sd-nav" class="sd-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html" aria-current="page">TV guide</a></li>
+          <li><a href="results.html">Scores</a></li>
+          <li><a href="story.html">Stories</a></li>
+        </ul>
+        <a class="sd-btn sd-btn-live" href="schedule.html#now"><span class="sd-dot" aria-hidden="true"></span>Watch live</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="sd-page-head sd-dark">
+      <div class="sd-wrap">
+        <p class="sd-kicker">TV guide</p>
+        <h1>What's on Stadiora</h1>
+        <p class="sd-lead-p">Seven days on four channels. Live programmes are marked in red; the programme on air right now is highlighted.</p>
+      </div>
+    </section>
+    <div class="sd-wrap sd-guide" id="now"><span id="s1"></span><span id="s2"></span><span id="s3"></span><span id="max"></span>
+      <div class="sd-guide-bar">
+        <div class="sd-days" role="tablist" aria-label="Day"></div>
+        <div class="sd-filters" role="group" aria-label="Sport">
+          <button type="button" class="sd-chip" data-sport="all" aria-pressed="true">All sports</button>
+          <button type="button" class="sd-chip" data-sport="Action sports" aria-pressed="false">Action sports</button>
+          <button type="button" class="sd-chip" data-sport="Athletics" aria-pressed="false">Athletics</button>
+          <button type="button" class="sd-chip" data-sport="Basketball" aria-pressed="false">Basketball</button>
+          <button type="button" class="sd-chip" data-sport="Climbing" aria-pressed="false">Climbing</button>
+          <button type="button" class="sd-chip" data-sport="Cycling" aria-pressed="false">Cycling</button>
+          <button type="button" class="sd-chip" data-sport="Football" aria-pressed="false">Football</button>
+          <button type="button" class="sd-chip" data-sport="Handball" aria-pressed="false">Handball</button>
+          <button type="button" class="sd-chip" data-sport="Swimming" aria-pressed="false">Swimming</button>
+          <button type="button" class="sd-chip" data-sport="Tennis" aria-pressed="false">Tennis</button>
+          <button type="button" class="sd-chip" data-sport="Volleyball" aria-pressed="false">Volleyball</button>
+          <label class="sd-check"><input type="checkbox" class="sd-live-only"> Live only</label>
+        </div>
+      </div>
+        <section class="sd-day" data-day="0" aria-labelledby="sd-day-0">
+          <h2 class="sd-day-title" id="sd-day-0">Monday</h2>
+          <div class="sd-chans">
+          <section class="sd-chan" id="s1-0" aria-labelledby="s1-0-t">
+            <h3 id="s1-0-t"><b>Stadiora 1</b> <span>Football</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="120" data-sport="Football"><time>06:00</time><span class="sd-prog-title">Matchday Classics</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="08:00" data-min="60" data-sport="Football"><time>08:00</time><span class="sd-prog-title">Morning Kick-off</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="09:00" data-min="180" data-sport="Football"><time>09:00</time><span class="sd-prog-title">Valemont League: Matchday 8 replay</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="12:00" data-min="60" data-sport="Football"><time>12:00</time><span class="sd-prog-title">The Tactics Board</span><span class="sd-prog-meta">Football · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="13:00" data-min="240" data-sport="Football"><time>13:00</time><span class="sd-prog-title">Youth Cup: highlights</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="17:00" data-min="60" data-sport="Football"><time>17:00</time><span class="sd-prog-title">Countdown to Matchday 9</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:00" data-min="120" data-sport="Football"><time>18:00</time><span class="sd-prog-title">Women&#x27;s League: Eskvale v Corvane</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="20:00" data-min="90" data-sport="Football"><time>20:00</time><span class="sd-prog-title">Full Time</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="21:30" data-min="270" data-sport="Football"><time>21:30</time><span class="sd-prog-title">Night replays</span><span class="sd-prog-meta">Football · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s2-0" aria-labelledby="s2-0-t">
+            <h3 id="s2-0-t"><b>Stadiora 2</b> <span>Basketball &amp; indoor</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Basketball"><time>06:00</time><span class="sd-prog-title">Hoops Rewind</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Basketball"><time>09:00</time><span class="sd-prog-title">Court Report</span><span class="sd-prog-meta">Basketball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="10:00" data-min="180" data-sport="Volleyball"><time>10:00</time><span class="sd-prog-title">Volleyball Super Cup replay</span><span class="sd-prog-meta">Volleyball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="13:00" data-min="120" data-sport="Handball"><time>13:00</time><span class="sd-prog-title">Handball Europe Week</span><span class="sd-prog-meta">Handball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="15:00" data-min="180" data-sport="Basketball"><time>15:00</time><span class="sd-prog-title">Hoops League: classic games</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="30" data-sport="Basketball"><time>18:00</time><span class="sd-prog-title">Tip-off Show</span><span class="sd-prog-meta">Basketball · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:30" data-min="120" data-sport="Basketball"><time>18:30</time><span class="sd-prog-title">Hoops League: Comets v Owls</span><span class="sd-prog-meta">Basketball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="20:30" data-min="120" data-sport="Volleyball"><time>20:30</time><span class="sd-prog-title">Volleyball League: Lynx v Hawks</span><span class="sd-prog-meta">Volleyball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Basketball"><time>22:30</time><span class="sd-prog-title">Night court</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s3-0" aria-labelledby="s3-0-t">
+            <h3 id="s3-0-t"><b>Stadiora 3</b> <span>Tennis &amp; athletics</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Tennis"><time>06:00</time><span class="sd-prog-title">Stadiora Open: day highlights</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Athletics"><time>09:00</time><span class="sd-prog-title">Track Talk</span><span class="sd-prog-meta">Athletics · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="10:00" data-min="300" data-sport="Tennis"><time>10:00</time><span class="sd-prog-title">Stadiora Open: day session</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="15:00" data-min="180" data-sport="Tennis"><time>15:00</time><span class="sd-prog-title">Stadiora Open: centre court</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="120" data-sport="Athletics"><time>18:00</time><span class="sd-prog-title">Night of Sprints: build-up</span><span class="sd-prog-meta">Athletics · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="20:00" data-min="150" data-sport="Athletics"><time>20:00</time><span class="sd-prog-title">Night of Sprints</span><span class="sd-prog-meta">Athletics · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Tennis"><time>22:30</time><span class="sd-prog-title">Tennis replays</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="max-0" aria-labelledby="max-0-t">
+            <h3 id="max-0-t"><b>Stadiora Max</b> <span>Cycling, swimming &amp; more</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-magazine" data-start="06:00" data-min="120" data-sport="Cycling"><time>06:00</time><span class="sd-prog-title">Ride Report</span><span class="sd-prog-meta">Cycling · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="08:00" data-min="120" data-sport="Swimming"><time>08:00</time><span class="sd-prog-title">Swimming Grand Prix replay</span><span class="sd-prog-meta">Swimming · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="10:00" data-min="60" data-sport="Climbing"><time>10:00</time><span class="sd-prog-title">Peak Stories</span><span class="sd-prog-meta">Climbing · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="11:00" data-min="300" data-sport="Cycling"><time>11:00</time><span class="sd-prog-title">Tour of the Five Valleys: stage</span><span class="sd-prog-meta">Cycling · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="16:00" data-min="60" data-sport="Cycling"><time>16:00</time><span class="sd-prog-title">Five Valleys: stage review</span><span class="sd-prog-meta">Cycling · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="17:00" data-min="180" data-sport="Swimming"><time>17:00</time><span class="sd-prog-title">Swimming Grand Prix: finals</span><span class="sd-prog-meta">Swimming · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-magazine" data-start="20:00" data-min="120" data-sport="Action sports"><time>20:00</time><span class="sd-prog-title">Extreme Weekly</span><span class="sd-prog-meta">Action sports · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="22:00" data-min="240" data-sport="Cycling"><time>22:00</time><span class="sd-prog-title">Max replays</span><span class="sd-prog-meta">Cycling · Replay</span></li>
+            </ol>
+          </section>
+          </div>
+        </section>
+        <section class="sd-day" data-day="1" aria-labelledby="sd-day-1">
+          <h2 class="sd-day-title" id="sd-day-1">Tuesday</h2>
+          <div class="sd-chans">
+          <section class="sd-chan" id="s1-1" aria-labelledby="s1-1-t">
+            <h3 id="s1-1-t"><b>Stadiora 1</b> <span>Football</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="120" data-sport="Football"><time>06:00</time><span class="sd-prog-title">Matchday Classics</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="08:00" data-min="60" data-sport="Football"><time>08:00</time><span class="sd-prog-title">Morning Kick-off</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="09:00" data-min="180" data-sport="Football"><time>09:00</time><span class="sd-prog-title">Valemont League: Matchday 8 replay</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="12:00" data-min="60" data-sport="Football"><time>12:00</time><span class="sd-prog-title">The Tactics Board</span><span class="sd-prog-meta">Football · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="13:00" data-min="240" data-sport="Football"><time>13:00</time><span class="sd-prog-title">Youth Cup: highlights</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="17:00" data-min="60" data-sport="Football"><time>17:00</time><span class="sd-prog-title">Countdown to Matchday 9</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:00" data-min="120" data-sport="Football"><time>18:00</time><span class="sd-prog-title">Women&#x27;s League: Eskvale v Corvane</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="20:00" data-min="90" data-sport="Football"><time>20:00</time><span class="sd-prog-title">Full Time</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="21:30" data-min="270" data-sport="Football"><time>21:30</time><span class="sd-prog-title">Night replays</span><span class="sd-prog-meta">Football · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s2-1" aria-labelledby="s2-1-t">
+            <h3 id="s2-1-t"><b>Stadiora 2</b> <span>Basketball &amp; indoor</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Basketball"><time>06:00</time><span class="sd-prog-title">Hoops Rewind</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Basketball"><time>09:00</time><span class="sd-prog-title">Court Report</span><span class="sd-prog-meta">Basketball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="10:00" data-min="180" data-sport="Volleyball"><time>10:00</time><span class="sd-prog-title">Volleyball Super Cup replay</span><span class="sd-prog-meta">Volleyball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="13:00" data-min="120" data-sport="Handball"><time>13:00</time><span class="sd-prog-title">Handball Europe Week</span><span class="sd-prog-meta">Handball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="15:00" data-min="180" data-sport="Basketball"><time>15:00</time><span class="sd-prog-title">Hoops League: classic games</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="30" data-sport="Basketball"><time>18:00</time><span class="sd-prog-title">Tip-off Show</span><span class="sd-prog-meta">Basketball · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:30" data-min="120" data-sport="Basketball"><time>18:30</time><span class="sd-prog-title">Hoops League: Comets v Owls</span><span class="sd-prog-meta">Basketball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="20:30" data-min="120" data-sport="Volleyball"><time>20:30</time><span class="sd-prog-title">Volleyball League: Lynx v Hawks</span><span class="sd-prog-meta">Volleyball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Basketball"><time>22:30</time><span class="sd-prog-title">Night court</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s3-1" aria-labelledby="s3-1-t">
+            <h3 id="s3-1-t"><b>Stadiora 3</b> <span>Tennis &amp; athletics</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Tennis"><time>06:00</time><span class="sd-prog-title">Stadiora Open: day highlights</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Athletics"><time>09:00</time><span class="sd-prog-title">Track Talk</span><span class="sd-prog-meta">Athletics · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="10:00" data-min="300" data-sport="Tennis"><time>10:00</time><span class="sd-prog-title">Stadiora Open: day session</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="15:00" data-min="180" data-sport="Tennis"><time>15:00</time><span class="sd-prog-title">Stadiora Open: centre court</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="120" data-sport="Athletics"><time>18:00</time><span class="sd-prog-title">Night of Sprints: build-up</span><span class="sd-prog-meta">Athletics · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="20:00" data-min="150" data-sport="Athletics"><time>20:00</time><span class="sd-prog-title">Night of Sprints</span><span class="sd-prog-meta">Athletics · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Tennis"><time>22:30</time><span class="sd-prog-title">Tennis replays</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="max-1" aria-labelledby="max-1-t">
+            <h3 id="max-1-t"><b>Stadiora Max</b> <span>Cycling, swimming &amp; more</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-magazine" data-start="06:00" data-min="120" data-sport="Cycling"><time>06:00</time><span class="sd-prog-title">Ride Report</span><span class="sd-prog-meta">Cycling · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="08:00" data-min="120" data-sport="Swimming"><time>08:00</time><span class="sd-prog-title">Swimming Grand Prix replay</span><span class="sd-prog-meta">Swimming · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="10:00" data-min="60" data-sport="Climbing"><time>10:00</time><span class="sd-prog-title">Peak Stories</span><span class="sd-prog-meta">Climbing · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="11:00" data-min="300" data-sport="Cycling"><time>11:00</time><span class="sd-prog-title">Tour of the Five Valleys: stage</span><span class="sd-prog-meta">Cycling · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="16:00" data-min="60" data-sport="Cycling"><time>16:00</time><span class="sd-prog-title">Five Valleys: stage review</span><span class="sd-prog-meta">Cycling · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="17:00" data-min="180" data-sport="Swimming"><time>17:00</time><span class="sd-prog-title">Swimming Grand Prix: finals</span><span class="sd-prog-meta">Swimming · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-magazine" data-start="20:00" data-min="120" data-sport="Action sports"><time>20:00</time><span class="sd-prog-title">Extreme Weekly</span><span class="sd-prog-meta">Action sports · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="22:00" data-min="240" data-sport="Cycling"><time>22:00</time><span class="sd-prog-title">Max replays</span><span class="sd-prog-meta">Cycling · Replay</span></li>
+            </ol>
+          </section>
+          </div>
+        </section>
+        <section class="sd-day" data-day="2" aria-labelledby="sd-day-2">
+          <h2 class="sd-day-title" id="sd-day-2">Wednesday</h2>
+          <div class="sd-chans">
+          <section class="sd-chan" id="s1-2" aria-labelledby="s1-2-t">
+            <h3 id="s1-2-t"><b>Stadiora 1</b> <span>Football</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="120" data-sport="Football"><time>06:00</time><span class="sd-prog-title">Matchday Classics</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="08:00" data-min="60" data-sport="Football"><time>08:00</time><span class="sd-prog-title">Morning Kick-off</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="09:00" data-min="180" data-sport="Football"><time>09:00</time><span class="sd-prog-title">Valemont League: Matchday 8 replay</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="12:00" data-min="60" data-sport="Football"><time>12:00</time><span class="sd-prog-title">The Tactics Board</span><span class="sd-prog-meta">Football · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="13:00" data-min="240" data-sport="Football"><time>13:00</time><span class="sd-prog-title">Youth Cup: highlights</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="17:00" data-min="60" data-sport="Football"><time>17:00</time><span class="sd-prog-title">Countdown to Matchday 9</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:00" data-min="120" data-sport="Football"><time>18:00</time><span class="sd-prog-title">Women&#x27;s League: Eskvale v Corvane</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="20:00" data-min="90" data-sport="Football"><time>20:00</time><span class="sd-prog-title">Full Time</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="21:30" data-min="270" data-sport="Football"><time>21:30</time><span class="sd-prog-title">Night replays</span><span class="sd-prog-meta">Football · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s2-2" aria-labelledby="s2-2-t">
+            <h3 id="s2-2-t"><b>Stadiora 2</b> <span>Basketball &amp; indoor</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Basketball"><time>06:00</time><span class="sd-prog-title">Hoops Rewind</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Basketball"><time>09:00</time><span class="sd-prog-title">Court Report</span><span class="sd-prog-meta">Basketball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="10:00" data-min="180" data-sport="Volleyball"><time>10:00</time><span class="sd-prog-title">Volleyball Super Cup replay</span><span class="sd-prog-meta">Volleyball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="13:00" data-min="120" data-sport="Handball"><time>13:00</time><span class="sd-prog-title">Handball Europe Week</span><span class="sd-prog-meta">Handball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="15:00" data-min="180" data-sport="Basketball"><time>15:00</time><span class="sd-prog-title">Hoops League: classic games</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="30" data-sport="Basketball"><time>18:00</time><span class="sd-prog-title">Tip-off Show</span><span class="sd-prog-meta">Basketball · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:30" data-min="120" data-sport="Basketball"><time>18:30</time><span class="sd-prog-title">Hoops League: Comets v Owls</span><span class="sd-prog-meta">Basketball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="20:30" data-min="120" data-sport="Volleyball"><time>20:30</time><span class="sd-prog-title">Volleyball League: Lynx v Hawks</span><span class="sd-prog-meta">Volleyball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Basketball"><time>22:30</time><span class="sd-prog-title">Night court</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s3-2" aria-labelledby="s3-2-t">
+            <h3 id="s3-2-t"><b>Stadiora 3</b> <span>Tennis &amp; athletics</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Tennis"><time>06:00</time><span class="sd-prog-title">Stadiora Open: day highlights</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Athletics"><time>09:00</time><span class="sd-prog-title">Track Talk</span><span class="sd-prog-meta">Athletics · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="10:00" data-min="300" data-sport="Tennis"><time>10:00</time><span class="sd-prog-title">Stadiora Open: day session</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="15:00" data-min="180" data-sport="Tennis"><time>15:00</time><span class="sd-prog-title">Stadiora Open: centre court</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="120" data-sport="Athletics"><time>18:00</time><span class="sd-prog-title">Night of Sprints: build-up</span><span class="sd-prog-meta">Athletics · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="20:00" data-min="150" data-sport="Athletics"><time>20:00</time><span class="sd-prog-title">Night of Sprints</span><span class="sd-prog-meta">Athletics · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Tennis"><time>22:30</time><span class="sd-prog-title">Tennis replays</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="max-2" aria-labelledby="max-2-t">
+            <h3 id="max-2-t"><b>Stadiora Max</b> <span>Cycling, swimming &amp; more</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-magazine" data-start="06:00" data-min="120" data-sport="Cycling"><time>06:00</time><span class="sd-prog-title">Ride Report</span><span class="sd-prog-meta">Cycling · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="08:00" data-min="120" data-sport="Swimming"><time>08:00</time><span class="sd-prog-title">Swimming Grand Prix replay</span><span class="sd-prog-meta">Swimming · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="10:00" data-min="60" data-sport="Climbing"><time>10:00</time><span class="sd-prog-title">Peak Stories</span><span class="sd-prog-meta">Climbing · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="11:00" data-min="300" data-sport="Cycling"><time>11:00</time><span class="sd-prog-title">Tour of the Five Valleys: stage</span><span class="sd-prog-meta">Cycling · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="16:00" data-min="60" data-sport="Cycling"><time>16:00</time><span class="sd-prog-title">Five Valleys: stage review</span><span class="sd-prog-meta">Cycling · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="17:00" data-min="180" data-sport="Swimming"><time>17:00</time><span class="sd-prog-title">Swimming Grand Prix: finals</span><span class="sd-prog-meta">Swimming · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-magazine" data-start="20:00" data-min="120" data-sport="Action sports"><time>20:00</time><span class="sd-prog-title">Extreme Weekly</span><span class="sd-prog-meta">Action sports · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="22:00" data-min="240" data-sport="Cycling"><time>22:00</time><span class="sd-prog-title">Max replays</span><span class="sd-prog-meta">Cycling · Replay</span></li>
+            </ol>
+          </section>
+          </div>
+        </section>
+        <section class="sd-day" data-day="3" aria-labelledby="sd-day-3">
+          <h2 class="sd-day-title" id="sd-day-3">Thursday</h2>
+          <div class="sd-chans">
+          <section class="sd-chan" id="s1-3" aria-labelledby="s1-3-t">
+            <h3 id="s1-3-t"><b>Stadiora 1</b> <span>Football</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="120" data-sport="Football"><time>06:00</time><span class="sd-prog-title">Matchday Classics</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="08:00" data-min="60" data-sport="Football"><time>08:00</time><span class="sd-prog-title">Morning Kick-off</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="09:00" data-min="180" data-sport="Football"><time>09:00</time><span class="sd-prog-title">Valemont League: Matchday 8 replay</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="12:00" data-min="60" data-sport="Football"><time>12:00</time><span class="sd-prog-title">The Tactics Board</span><span class="sd-prog-meta">Football · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="13:00" data-min="240" data-sport="Football"><time>13:00</time><span class="sd-prog-title">Youth Cup: highlights</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="17:00" data-min="60" data-sport="Football"><time>17:00</time><span class="sd-prog-title">Countdown to Matchday 9</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:00" data-min="120" data-sport="Football"><time>18:00</time><span class="sd-prog-title">Women&#x27;s League: Eskvale v Corvane</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="20:00" data-min="90" data-sport="Football"><time>20:00</time><span class="sd-prog-title">Full Time</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="21:30" data-min="270" data-sport="Football"><time>21:30</time><span class="sd-prog-title">Night replays</span><span class="sd-prog-meta">Football · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s2-3" aria-labelledby="s2-3-t">
+            <h3 id="s2-3-t"><b>Stadiora 2</b> <span>Basketball &amp; indoor</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Basketball"><time>06:00</time><span class="sd-prog-title">Hoops Rewind</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Basketball"><time>09:00</time><span class="sd-prog-title">Court Report</span><span class="sd-prog-meta">Basketball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="10:00" data-min="180" data-sport="Volleyball"><time>10:00</time><span class="sd-prog-title">Volleyball Super Cup replay</span><span class="sd-prog-meta">Volleyball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="13:00" data-min="120" data-sport="Handball"><time>13:00</time><span class="sd-prog-title">Handball Europe Week</span><span class="sd-prog-meta">Handball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="15:00" data-min="180" data-sport="Basketball"><time>15:00</time><span class="sd-prog-title">Hoops League: classic games</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="30" data-sport="Basketball"><time>18:00</time><span class="sd-prog-title">Tip-off Show</span><span class="sd-prog-meta">Basketball · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:30" data-min="120" data-sport="Basketball"><time>18:30</time><span class="sd-prog-title">Hoops League: Comets v Owls</span><span class="sd-prog-meta">Basketball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="20:30" data-min="120" data-sport="Volleyball"><time>20:30</time><span class="sd-prog-title">Volleyball League: Lynx v Hawks</span><span class="sd-prog-meta">Volleyball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Basketball"><time>22:30</time><span class="sd-prog-title">Night court</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s3-3" aria-labelledby="s3-3-t">
+            <h3 id="s3-3-t"><b>Stadiora 3</b> <span>Tennis &amp; athletics</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Tennis"><time>06:00</time><span class="sd-prog-title">Stadiora Open: day highlights</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Athletics"><time>09:00</time><span class="sd-prog-title">Track Talk</span><span class="sd-prog-meta">Athletics · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="10:00" data-min="300" data-sport="Tennis"><time>10:00</time><span class="sd-prog-title">Stadiora Open: day session</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="15:00" data-min="180" data-sport="Tennis"><time>15:00</time><span class="sd-prog-title">Stadiora Open: centre court</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="120" data-sport="Athletics"><time>18:00</time><span class="sd-prog-title">Night of Sprints: build-up</span><span class="sd-prog-meta">Athletics · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="20:00" data-min="150" data-sport="Athletics"><time>20:00</time><span class="sd-prog-title">Night of Sprints</span><span class="sd-prog-meta">Athletics · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Tennis"><time>22:30</time><span class="sd-prog-title">Tennis replays</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="max-3" aria-labelledby="max-3-t">
+            <h3 id="max-3-t"><b>Stadiora Max</b> <span>Cycling, swimming &amp; more</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-magazine" data-start="06:00" data-min="120" data-sport="Cycling"><time>06:00</time><span class="sd-prog-title">Ride Report</span><span class="sd-prog-meta">Cycling · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="08:00" data-min="120" data-sport="Swimming"><time>08:00</time><span class="sd-prog-title">Swimming Grand Prix replay</span><span class="sd-prog-meta">Swimming · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="10:00" data-min="60" data-sport="Climbing"><time>10:00</time><span class="sd-prog-title">Peak Stories</span><span class="sd-prog-meta">Climbing · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="11:00" data-min="300" data-sport="Cycling"><time>11:00</time><span class="sd-prog-title">Tour of the Five Valleys: stage</span><span class="sd-prog-meta">Cycling · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="16:00" data-min="60" data-sport="Cycling"><time>16:00</time><span class="sd-prog-title">Five Valleys: stage review</span><span class="sd-prog-meta">Cycling · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="17:00" data-min="180" data-sport="Swimming"><time>17:00</time><span class="sd-prog-title">Swimming Grand Prix: finals</span><span class="sd-prog-meta">Swimming · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-magazine" data-start="20:00" data-min="120" data-sport="Action sports"><time>20:00</time><span class="sd-prog-title">Extreme Weekly</span><span class="sd-prog-meta">Action sports · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="22:00" data-min="240" data-sport="Cycling"><time>22:00</time><span class="sd-prog-title">Max replays</span><span class="sd-prog-meta">Cycling · Replay</span></li>
+            </ol>
+          </section>
+          </div>
+        </section>
+        <section class="sd-day" data-day="4" aria-labelledby="sd-day-4">
+          <h2 class="sd-day-title" id="sd-day-4">Friday</h2>
+          <div class="sd-chans">
+          <section class="sd-chan" id="s1-4" aria-labelledby="s1-4-t">
+            <h3 id="s1-4-t"><b>Stadiora 1</b> <span>Football</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="120" data-sport="Football"><time>06:00</time><span class="sd-prog-title">Matchday Classics</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="08:00" data-min="60" data-sport="Football"><time>08:00</time><span class="sd-prog-title">Morning Kick-off</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="09:00" data-min="180" data-sport="Football"><time>09:00</time><span class="sd-prog-title">Valemont League: Matchday 8 replay</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="12:00" data-min="60" data-sport="Football"><time>12:00</time><span class="sd-prog-title">The Tactics Board</span><span class="sd-prog-meta">Football · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="13:00" data-min="240" data-sport="Football"><time>13:00</time><span class="sd-prog-title">Youth Cup: highlights</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="17:00" data-min="60" data-sport="Football"><time>17:00</time><span class="sd-prog-title">Countdown to Matchday 9</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:00" data-min="120" data-sport="Football"><time>18:00</time><span class="sd-prog-title">Women&#x27;s League: Eskvale v Corvane</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="20:00" data-min="90" data-sport="Football"><time>20:00</time><span class="sd-prog-title">Full Time</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="21:30" data-min="270" data-sport="Football"><time>21:30</time><span class="sd-prog-title">Night replays</span><span class="sd-prog-meta">Football · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s2-4" aria-labelledby="s2-4-t">
+            <h3 id="s2-4-t"><b>Stadiora 2</b> <span>Basketball &amp; indoor</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Basketball"><time>06:00</time><span class="sd-prog-title">Hoops Rewind</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Basketball"><time>09:00</time><span class="sd-prog-title">Court Report</span><span class="sd-prog-meta">Basketball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="10:00" data-min="180" data-sport="Volleyball"><time>10:00</time><span class="sd-prog-title">Volleyball Super Cup replay</span><span class="sd-prog-meta">Volleyball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="13:00" data-min="120" data-sport="Handball"><time>13:00</time><span class="sd-prog-title">Handball Europe Week</span><span class="sd-prog-meta">Handball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="15:00" data-min="180" data-sport="Basketball"><time>15:00</time><span class="sd-prog-title">Hoops League: classic games</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="30" data-sport="Basketball"><time>18:00</time><span class="sd-prog-title">Tip-off Show</span><span class="sd-prog-meta">Basketball · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:30" data-min="120" data-sport="Basketball"><time>18:30</time><span class="sd-prog-title">Hoops League: Comets v Owls</span><span class="sd-prog-meta">Basketball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="20:30" data-min="120" data-sport="Volleyball"><time>20:30</time><span class="sd-prog-title">Volleyball League: Lynx v Hawks</span><span class="sd-prog-meta">Volleyball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Basketball"><time>22:30</time><span class="sd-prog-title">Night court</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s3-4" aria-labelledby="s3-4-t">
+            <h3 id="s3-4-t"><b>Stadiora 3</b> <span>Tennis &amp; athletics</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Tennis"><time>06:00</time><span class="sd-prog-title">Stadiora Open: day highlights</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Athletics"><time>09:00</time><span class="sd-prog-title">Track Talk</span><span class="sd-prog-meta">Athletics · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="10:00" data-min="300" data-sport="Tennis"><time>10:00</time><span class="sd-prog-title">Stadiora Open: day session</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="15:00" data-min="180" data-sport="Tennis"><time>15:00</time><span class="sd-prog-title">Stadiora Open: centre court</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="120" data-sport="Athletics"><time>18:00</time><span class="sd-prog-title">Night of Sprints: build-up</span><span class="sd-prog-meta">Athletics · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="20:00" data-min="150" data-sport="Athletics"><time>20:00</time><span class="sd-prog-title">Night of Sprints</span><span class="sd-prog-meta">Athletics · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Tennis"><time>22:30</time><span class="sd-prog-title">Tennis replays</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="max-4" aria-labelledby="max-4-t">
+            <h3 id="max-4-t"><b>Stadiora Max</b> <span>Cycling, swimming &amp; more</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-magazine" data-start="06:00" data-min="120" data-sport="Cycling"><time>06:00</time><span class="sd-prog-title">Ride Report</span><span class="sd-prog-meta">Cycling · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="08:00" data-min="120" data-sport="Swimming"><time>08:00</time><span class="sd-prog-title">Swimming Grand Prix replay</span><span class="sd-prog-meta">Swimming · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="10:00" data-min="60" data-sport="Climbing"><time>10:00</time><span class="sd-prog-title">Peak Stories</span><span class="sd-prog-meta">Climbing · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="11:00" data-min="300" data-sport="Cycling"><time>11:00</time><span class="sd-prog-title">Tour of the Five Valleys: stage</span><span class="sd-prog-meta">Cycling · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="16:00" data-min="60" data-sport="Cycling"><time>16:00</time><span class="sd-prog-title">Five Valleys: stage review</span><span class="sd-prog-meta">Cycling · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="17:00" data-min="180" data-sport="Swimming"><time>17:00</time><span class="sd-prog-title">Swimming Grand Prix: finals</span><span class="sd-prog-meta">Swimming · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-magazine" data-start="20:00" data-min="120" data-sport="Action sports"><time>20:00</time><span class="sd-prog-title">Extreme Weekly</span><span class="sd-prog-meta">Action sports · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="22:00" data-min="240" data-sport="Cycling"><time>22:00</time><span class="sd-prog-title">Max replays</span><span class="sd-prog-meta">Cycling · Replay</span></li>
+            </ol>
+          </section>
+          </div>
+        </section>
+        <section class="sd-day" data-day="5" aria-labelledby="sd-day-5">
+          <h2 class="sd-day-title" id="sd-day-5">Saturday</h2>
+          <div class="sd-chans">
+          <section class="sd-chan" id="s1-5" aria-labelledby="s1-5-t">
+            <h3 id="s1-5-t"><b>Stadiora 1</b> <span>Football</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="120" data-sport="Football"><time>06:00</time><span class="sd-prog-title">Matchday Classics</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="08:00" data-min="120" data-sport="Football"><time>08:00</time><span class="sd-prog-title">Matchday Breakfast</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-studio" data-start="10:00" data-min="120" data-sport="Football"><time>10:00</time><span class="sd-prog-title">Valemont League: preview show</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="12:00" data-min="150" data-sport="Football"><time>12:00</time><span class="sd-prog-title">Women&#x27;s League: live match</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="14:30" data-min="180" data-sport="Football"><time>14:30</time><span class="sd-prog-title">Valemont League: early match</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="17:30" data-min="120" data-sport="Football"><time>17:30</time><span class="sd-prog-title">Valemont League: big match</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="19:30" data-min="30" data-sport="Football"><time>19:30</time><span class="sd-prog-title">Half-time extra</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="20:00" data-min="120" data-sport="Football"><time>20:00</time><span class="sd-prog-title">Valemont League: late match</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="22:00" data-min="90" data-sport="Football"><time>22:00</time><span class="sd-prog-title">Full Time</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="23:30" data-min="150" data-sport="Football"><time>23:30</time><span class="sd-prog-title">Goals of the round</span><span class="sd-prog-meta">Football · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s2-5" aria-labelledby="s2-5-t">
+            <h3 id="s2-5-t"><b>Stadiora 2</b> <span>Basketball &amp; indoor</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Basketball"><time>06:00</time><span class="sd-prog-title">Hoops Rewind</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Basketball"><time>09:00</time><span class="sd-prog-title">Court Report</span><span class="sd-prog-meta">Basketball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="10:00" data-min="180" data-sport="Volleyball"><time>10:00</time><span class="sd-prog-title">Volleyball Super Cup replay</span><span class="sd-prog-meta">Volleyball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="13:00" data-min="120" data-sport="Handball"><time>13:00</time><span class="sd-prog-title">Handball Europe Week</span><span class="sd-prog-meta">Handball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="15:00" data-min="180" data-sport="Basketball"><time>15:00</time><span class="sd-prog-title">Hoops League: classic games</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="30" data-sport="Basketball"><time>18:00</time><span class="sd-prog-title">Tip-off Show</span><span class="sd-prog-meta">Basketball · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:30" data-min="120" data-sport="Basketball"><time>18:30</time><span class="sd-prog-title">Hoops League: Comets v Owls</span><span class="sd-prog-meta">Basketball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="20:30" data-min="120" data-sport="Volleyball"><time>20:30</time><span class="sd-prog-title">Volleyball League: Lynx v Hawks</span><span class="sd-prog-meta">Volleyball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Basketball"><time>22:30</time><span class="sd-prog-title">Night court</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s3-5" aria-labelledby="s3-5-t">
+            <h3 id="s3-5-t"><b>Stadiora 3</b> <span>Tennis &amp; athletics</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Tennis"><time>06:00</time><span class="sd-prog-title">Stadiora Open: day highlights</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Athletics"><time>09:00</time><span class="sd-prog-title">Track Talk</span><span class="sd-prog-meta">Athletics · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="10:00" data-min="300" data-sport="Tennis"><time>10:00</time><span class="sd-prog-title">Stadiora Open: day session</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="15:00" data-min="180" data-sport="Tennis"><time>15:00</time><span class="sd-prog-title">Stadiora Open: centre court</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="120" data-sport="Athletics"><time>18:00</time><span class="sd-prog-title">Night of Sprints: build-up</span><span class="sd-prog-meta">Athletics · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="20:00" data-min="150" data-sport="Athletics"><time>20:00</time><span class="sd-prog-title">Night of Sprints</span><span class="sd-prog-meta">Athletics · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Tennis"><time>22:30</time><span class="sd-prog-title">Tennis replays</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="max-5" aria-labelledby="max-5-t">
+            <h3 id="max-5-t"><b>Stadiora Max</b> <span>Cycling, swimming &amp; more</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-magazine" data-start="06:00" data-min="120" data-sport="Cycling"><time>06:00</time><span class="sd-prog-title">Ride Report</span><span class="sd-prog-meta">Cycling · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="08:00" data-min="120" data-sport="Swimming"><time>08:00</time><span class="sd-prog-title">Swimming Grand Prix replay</span><span class="sd-prog-meta">Swimming · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="10:00" data-min="60" data-sport="Climbing"><time>10:00</time><span class="sd-prog-title">Peak Stories</span><span class="sd-prog-meta">Climbing · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="11:00" data-min="300" data-sport="Cycling"><time>11:00</time><span class="sd-prog-title">Tour of the Five Valleys: stage</span><span class="sd-prog-meta">Cycling · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="16:00" data-min="60" data-sport="Cycling"><time>16:00</time><span class="sd-prog-title">Five Valleys: stage review</span><span class="sd-prog-meta">Cycling · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="17:00" data-min="180" data-sport="Swimming"><time>17:00</time><span class="sd-prog-title">Swimming Grand Prix: finals</span><span class="sd-prog-meta">Swimming · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-magazine" data-start="20:00" data-min="120" data-sport="Action sports"><time>20:00</time><span class="sd-prog-title">Extreme Weekly</span><span class="sd-prog-meta">Action sports · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="22:00" data-min="240" data-sport="Cycling"><time>22:00</time><span class="sd-prog-title">Max replays</span><span class="sd-prog-meta">Cycling · Replay</span></li>
+            </ol>
+          </section>
+          </div>
+        </section>
+        <section class="sd-day" data-day="6" aria-labelledby="sd-day-6">
+          <h2 class="sd-day-title" id="sd-day-6">Sunday</h2>
+          <div class="sd-chans">
+          <section class="sd-chan" id="s1-6" aria-labelledby="s1-6-t">
+            <h3 id="s1-6-t"><b>Stadiora 1</b> <span>Football</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="120" data-sport="Football"><time>06:00</time><span class="sd-prog-title">Matchday Classics</span><span class="sd-prog-meta">Football · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="08:00" data-min="120" data-sport="Football"><time>08:00</time><span class="sd-prog-title">Matchday Breakfast</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-studio" data-start="10:00" data-min="120" data-sport="Football"><time>10:00</time><span class="sd-prog-title">Valemont League: preview show</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="12:00" data-min="150" data-sport="Football"><time>12:00</time><span class="sd-prog-title">Women&#x27;s League: live match</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="14:30" data-min="180" data-sport="Football"><time>14:30</time><span class="sd-prog-title">Valemont League: early match</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="17:30" data-min="120" data-sport="Football"><time>17:30</time><span class="sd-prog-title">Valemont League: big match</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="19:30" data-min="30" data-sport="Football"><time>19:30</time><span class="sd-prog-title">Half-time extra</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="20:00" data-min="120" data-sport="Football"><time>20:00</time><span class="sd-prog-title">Valemont League: late match</span><span class="sd-prog-meta">Football · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="22:00" data-min="90" data-sport="Football"><time>22:00</time><span class="sd-prog-title">Full Time</span><span class="sd-prog-meta">Football · Studio</span></li>
+              <li class="sd-prog sd-replay" data-start="23:30" data-min="150" data-sport="Football"><time>23:30</time><span class="sd-prog-title">Goals of the round</span><span class="sd-prog-meta">Football · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s2-6" aria-labelledby="s2-6-t">
+            <h3 id="s2-6-t"><b>Stadiora 2</b> <span>Basketball &amp; indoor</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Basketball"><time>06:00</time><span class="sd-prog-title">Hoops Rewind</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Basketball"><time>09:00</time><span class="sd-prog-title">Court Report</span><span class="sd-prog-meta">Basketball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="10:00" data-min="180" data-sport="Volleyball"><time>10:00</time><span class="sd-prog-title">Volleyball Super Cup replay</span><span class="sd-prog-meta">Volleyball · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="13:00" data-min="120" data-sport="Handball"><time>13:00</time><span class="sd-prog-title">Handball Europe Week</span><span class="sd-prog-meta">Handball · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="15:00" data-min="180" data-sport="Basketball"><time>15:00</time><span class="sd-prog-title">Hoops League: classic games</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="30" data-sport="Basketball"><time>18:00</time><span class="sd-prog-title">Tip-off Show</span><span class="sd-prog-meta">Basketball · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="18:30" data-min="120" data-sport="Basketball"><time>18:30</time><span class="sd-prog-title">Hoops League: Comets v Owls</span><span class="sd-prog-meta">Basketball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="20:30" data-min="120" data-sport="Volleyball"><time>20:30</time><span class="sd-prog-title">Volleyball League: Lynx v Hawks</span><span class="sd-prog-meta">Volleyball · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Basketball"><time>22:30</time><span class="sd-prog-title">Night court</span><span class="sd-prog-meta">Basketball · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="s3-6" aria-labelledby="s3-6-t">
+            <h3 id="s3-6-t"><b>Stadiora 3</b> <span>Tennis &amp; athletics</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-replay" data-start="06:00" data-min="180" data-sport="Tennis"><time>06:00</time><span class="sd-prog-title">Stadiora Open: day highlights</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="09:00" data-min="60" data-sport="Athletics"><time>09:00</time><span class="sd-prog-title">Track Talk</span><span class="sd-prog-meta">Athletics · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="10:00" data-min="300" data-sport="Tennis"><time>10:00</time><span class="sd-prog-title">Stadiora Open: day session</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-live" data-start="15:00" data-min="180" data-sport="Tennis"><time>15:00</time><span class="sd-prog-title">Stadiora Open: centre court</span><span class="sd-prog-meta">Tennis · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="18:00" data-min="120" data-sport="Athletics"><time>18:00</time><span class="sd-prog-title">Night of Sprints: build-up</span><span class="sd-prog-meta">Athletics · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="20:00" data-min="150" data-sport="Athletics"><time>20:00</time><span class="sd-prog-title">Night of Sprints</span><span class="sd-prog-meta">Athletics · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-replay" data-start="22:30" data-min="210" data-sport="Tennis"><time>22:30</time><span class="sd-prog-title">Tennis replays</span><span class="sd-prog-meta">Tennis · Replay</span></li>
+            </ol>
+          </section>
+          <section class="sd-chan" id="max-6" aria-labelledby="max-6-t">
+            <h3 id="max-6-t"><b>Stadiora Max</b> <span>Cycling, swimming &amp; more</span></h3>
+            <ol class="sd-progs">
+              <li class="sd-prog sd-magazine" data-start="06:00" data-min="120" data-sport="Cycling"><time>06:00</time><span class="sd-prog-title">Ride Report</span><span class="sd-prog-meta">Cycling · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="08:00" data-min="120" data-sport="Swimming"><time>08:00</time><span class="sd-prog-title">Swimming Grand Prix replay</span><span class="sd-prog-meta">Swimming · Replay</span></li>
+              <li class="sd-prog sd-magazine" data-start="10:00" data-min="60" data-sport="Climbing"><time>10:00</time><span class="sd-prog-title">Peak Stories</span><span class="sd-prog-meta">Climbing · Magazine</span></li>
+              <li class="sd-prog sd-live" data-start="11:00" data-min="300" data-sport="Cycling"><time>11:00</time><span class="sd-prog-title">Tour of the Five Valleys: stage</span><span class="sd-prog-meta">Cycling · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-studio" data-start="16:00" data-min="60" data-sport="Cycling"><time>16:00</time><span class="sd-prog-title">Five Valleys: stage review</span><span class="sd-prog-meta">Cycling · Studio</span></li>
+              <li class="sd-prog sd-live" data-start="17:00" data-min="180" data-sport="Swimming"><time>17:00</time><span class="sd-prog-title">Swimming Grand Prix: finals</span><span class="sd-prog-meta">Swimming · <b class="sd-live-tag">Live</b></span></li>
+              <li class="sd-prog sd-magazine" data-start="20:00" data-min="120" data-sport="Action sports"><time>20:00</time><span class="sd-prog-title">Extreme Weekly</span><span class="sd-prog-meta">Action sports · Magazine</span></li>
+              <li class="sd-prog sd-replay" data-start="22:00" data-min="240" data-sport="Cycling"><time>22:00</time><span class="sd-prog-title">Max replays</span><span class="sd-prog-meta">Cycling · Replay</span></li>
+            </ol>
+          </section>
+          </div>
+        </section>
+      <p class="sd-empty" hidden>No programmes match this filter on the chosen day.</p>
+    </div>
+  </main>
+
+  <footer class="sd-footer">
+    <div class="sd-wrap sd-footer-grid">
+      <div>
+        <a class="sd-logo" href="index.html"><svg class="sd-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="9" fill="#d7263d"/><path d="M8 27c5-3.2 19-3.2 24 0M10 20.5c4.4-2.8 15.6-2.8 20 0M12 14c3.6-2.3 12.4-2.3 16 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg><span>Stadiora <b>Sport</b></span></a>
+        <p>Four channels of live sport, studio shows and highlights, on TV and in the Stadiora app.</p>
+      </div>
+      <div>
+        <h2 class="sd-footer-title">Channels</h2>
+        <ul class="sd-footer-list">
+          <li><b>Stadiora 1</b> Football</li>
+          <li><b>Stadiora 2</b> Basketball & indoor</li>
+          <li><b>Stadiora 3</b> Tennis & athletics</li>
+          <li><b>Stadiora Max</b> Cycling, swimming & more</li>
+        </ul>
+      </div>
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme for a sports TV channel, sports news portal or club website. Stadiora Sport, its channels, competitions, clubs, athletes, journalists, scores and programmes are fictional. Photos: Pexels.</p>
+    </div>
+    <p class="sd-wrap sd-copy">© <span id="year">2026</span> Stadiora Sport demo</p>
+  </footer>
+
+  <script src="stadiora-data.js" defer></script>
+  <script src="stadiora.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

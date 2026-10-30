@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liora Vale – Model Portfolio Website Demo</title>
+  <meta name="description" content="Model book website demo designed and coded from scratch by Drago Katić Development: a glamorous portfolio for a fashion model with a filterable book, lightbox, printable comp card and booking form. Fast, accessible and responsive.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0d0b0a">
+  <link rel="canonical" href="https://dkd.rs/themes/verso/index.html">
+  <link rel="icon" href="images/verso-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Liora Vale – Model Portfolio Website Demo">
+  <meta property="og:description" content="A glamorous model book website with a filterable portfolio, comp card and booking form, designed and coded from scratch by Drago Katić Development.">
+  <meta property="og:url" content="https://dkd.rs/themes/verso/index.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/verso.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Liora Vale model portfolio website demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/bodoni-moda.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="photos/hero-900.webp" as="image" imagesrcset="photos/hero-900.webp 900w, photos/hero-1400.webp 1400w" imagesizes="(max-width: 860px) 100vw, 50vw">
+  <link rel="stylesheet" href="verso.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Liora Vale – Model Portfolio Website Demo",
+    "description": "Model book website demo designed and coded from scratch by Drago Katić Development.",
+    "url": "https://dkd.rs/themes/verso/index.html",
+    "image": "https://dkd.rs/images/projects/verso.webp",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Drago Katić Development",
+      "url": "https://dkd.rs/"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Drago Katić",
+      "url": "https://dkd.rs/"
+    }
+  }
+  </script>
+</head>
+<body id="top">
+  <a class="vb-skip" href="#book">Skip to the book</a>
+
+  <header class="vb-header">
+    <div class="vb-wrap vb-header-in">
+      <a class="vb-logo" href="#top" aria-label="Liora Vale, back to top">Liora <em>Vale</em></a>
+      <button type="button" class="vb-menu-btn" aria-expanded="false" aria-controls="vb-nav">Menu</button>
+      <nav class="vb-nav" id="vb-nav" aria-label="Main">
+        <ul>
+          <li><a href="#book">Book</a></li>
+          <li><a href="#card">Comp card</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a class="vb-nav-cta" href="#booking">Book Liora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="vb-hero" aria-labelledby="vb-hero-title">
+      <figure class="vb-hero-photo">
+        <img src="photos/hero-900.webp" srcset="photos/hero-900.webp 900w, photos/hero-1400.webp 1400w" sizes="(max-width: 860px) 100vw, 50vw" alt="A model's profile drawn by a thin line of light on a black background" width="900" height="1466" fetchpriority="high">
+      </figure>
+      <div class="vb-hero-text">
+        <p class="vb-over">Model &nbsp;·&nbsp; Milan &nbsp;·&nbsp; Paris &nbsp;·&nbsp; Belgrade</p>
+        <h1 id="vb-hero-title" class="vb-hero-title">Liora <em>Vale</em></h1>
+        <p class="vb-hero-lead">Editorial, campaign and runway model with a quiet, cinematic presence. Now booking for the SS27 season.</p>
+        <p class="vb-hero-actions">
+          <a class="vb-btn" href="#book">View the book</a>
+          <a class="vb-btn vb-btn-ghost" href="#booking">Book a date</a>
+        </p>
+        <dl class="vb-stats">
+          <div><dt>Magazine covers</dt><dd>14</dd></div>
+          <div><dt>Campaigns</dt><dd>60+</dd></div>
+          <div><dt>Fashion weeks</dt><dd>11</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="vb-press" aria-label="As seen in">
+      <p class="vb-press-label">As seen in</p>
+      <div class="vb-marquee">
+        <ul class="vb-marquee-track">
+          <li>Revue Blanche</li><li>Maison Lune</li><li>Atelier Noor</li><li>Velours</li><li>Hôtel Ombre</li><li>Linea Uno</li><li>Sable &amp; Soie</li><li>Orra Jewellery</li>
+        </ul>
+        <ul class="vb-marquee-track" aria-hidden="true">
+          <li>Revue Blanche</li><li>Maison Lune</li><li>Atelier Noor</li><li>Velours</li><li>Hôtel Ombre</li><li>Linea Uno</li><li>Sable &amp; Soie</li><li>Orra Jewellery</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="vb-book" id="book" aria-labelledby="vb-book-title">
+      <div class="vb-wrap">
+        <header class="vb-head">
+          <p class="vb-page">p. 01</p>
+          <h2 id="vb-book-title">The <em>book</em></h2>
+          <p class="vb-head-text">A selection of editorials, campaigns and beauty work from the last two seasons. Open any image to see it in full.</p>
+        </header>
+
+        <div class="vb-filters" role="group" aria-label="Filter the book">
+          <button type="button" class="vb-filter" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="vb-filter" data-filter="editorial" aria-pressed="false">Editorial</button>
+          <button type="button" class="vb-filter" data-filter="noir" aria-pressed="false">Noir</button>
+          <button type="button" class="vb-filter" data-filter="beauty" aria-pressed="false">Beauty</button>
+          <button type="button" class="vb-filter" data-filter="resort" aria-pressed="false">Resort</button>
+        </div>
+
+        <ul class="vb-grid">
+          <li class="vb-item" data-cat="editorial"><figure><a href="photos/open-back-1600.webp"><img src="photos/open-back-720.webp" srcset="photos/open-back-400.webp 400w, photos/open-back-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Black-and-white photo of a woman in a black open-back dress, seen from behind" width="720" height="1080" loading="lazy"></a><figcaption><strong>Quiet Hours</strong> Revue Blanche, AW26</figcaption></figure></li>
+          <li class="vb-item" data-cat="editorial"><figure><a href="photos/vermilion-1600.webp"><img src="photos/vermilion-720.webp" srcset="photos/vermilion-400.webp 400w, photos/vermilion-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Model in a pleated vermilion skirt turning away from the camera, dark water behind her" width="720" height="1080" loading="lazy"></a><figcaption><strong>Vermilion</strong> Maison Lune, SS26 campaign</figcaption></figure></li>
+          <li class="vb-item" data-cat="noir"><figure><a href="photos/halo-1600.webp"><img src="photos/halo-720.webp" srcset="photos/halo-400.webp 400w, photos/halo-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Silhouette of a model against a soft glowing backdrop" width="720" height="1080" loading="lazy"></a><figcaption><strong>Halo</strong> Velours, studio series</figcaption></figure></li>
+          <li class="vb-item" data-cat="beauty"><figure><a href="photos/red-lip-1600.webp"><img src="photos/red-lip-720.webp" srcset="photos/red-lip-400.webp 400w, photos/red-lip-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Close-up of glossy red lipstick being applied" width="720" height="1080" loading="lazy"></a><figcaption><strong>Rouge No. 9</strong> Sable &amp; Soie beauty</figcaption></figure></li>
+          <li class="vb-item" data-cat="editorial"><figure><a href="photos/coat-walk-1600.webp"><img src="photos/coat-walk-720.webp" srcset="photos/coat-walk-400.webp 400w, photos/coat-walk-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Black and white photo of a model in a long coat walking away down an old street" width="720" height="1080" loading="lazy"></a><figcaption><strong>Northern Light</strong> Linea Uno, AW25</figcaption></figure></li>
+          <li class="vb-item" data-cat="noir"><figure><a href="photos/neon-1600.webp"><img src="photos/neon-720.webp" srcset="photos/neon-400.webp 400w, photos/neon-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Model in silhouette against blurred red neon light" width="720" height="900" loading="lazy"></a><figcaption><strong>After Dark</strong> Hôtel Ombre lookbook</figcaption></figure></li>
+          <li class="vb-item" data-cat="beauty"><figure><a href="photos/pearls-1600.webp"><img src="photos/pearls-720.webp" srcset="photos/pearls-400.webp 400w, photos/pearls-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Hands holding long strands of pearls over lace" width="720" height="1080" loading="lazy"></a><figcaption><strong>Pearl Study</strong> Orra Jewellery</figcaption></figure></li>
+          <li class="vb-item" data-cat="resort"><figure><a href="photos/emerald-1600.webp"><img src="photos/emerald-720.webp" srcset="photos/emerald-400.webp 400w, photos/emerald-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Model in an emerald backless dress sitting in a forest, seen from behind" width="720" height="480" loading="lazy"></a><figcaption><strong>Emerald</strong> Atelier Noor, Resort 26</figcaption></figure></li>
+          <li class="vb-item" data-cat="noir"><figure><a href="photos/sheer-veil-1600.webp"><img src="photos/sheer-veil-720.webp" srcset="photos/sheer-veil-400.webp 400w, photos/sheer-veil-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Model wrapped in a sheer curtain, backlit by a window" width="720" height="1080" loading="lazy"></a><figcaption><strong>Veil</strong> Velours, studio series</figcaption></figure></li>
+          <li class="vb-item" data-cat="editorial"><figure><a href="photos/black-satin-1600.webp"><img src="photos/black-satin-720.webp" srcset="photos/black-satin-400.webp 400w, photos/black-satin-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Black satin slip dress and crystal necklace, cropped at the shoulders" width="720" height="907" loading="lazy"></a><figcaption><strong>Black Satin</strong> Atelier Noor, evening line</figcaption></figure></li>
+          <li class="vb-item" data-cat="resort"><figure><a href="photos/tide-1600.webp"><img src="photos/tide-720.webp" srcset="photos/tide-400.webp 400w, photos/tide-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Black and white photo of a model standing in the sea at dusk" width="720" height="1280" loading="lazy"></a><figcaption><strong>Tide</strong> Revue Blanche, summer issue</figcaption></figure></li>
+          <li class="vb-item" data-cat="noir"><figure><a href="photos/doorway-1600.webp"><img src="photos/doorway-720.webp" srcset="photos/doorway-400.webp 400w, photos/doorway-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Silhouette of a model in a dress walking out through a bright doorway" width="720" height="1080" loading="lazy"></a><figcaption><strong>Exit Light</strong> Hôtel Ombre lookbook</figcaption></figure></li>
+          <li class="vb-item" data-cat="beauty"><figure><a href="photos/pearl-shoulder-1600.webp"><img src="photos/pearl-shoulder-720.webp" srcset="photos/pearl-shoulder-400.webp 400w, photos/pearl-shoulder-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Pearl necklace on a bare shoulder against a dark background" width="720" height="480" loading="lazy"></a><figcaption><strong>Shoulder Line</strong> Orra Jewellery</figcaption></figure></li>
+          <li class="vb-item" data-cat="noir"><figure><a href="photos/window-legs-1600.webp"><img src="photos/window-legs-720.webp" srcset="photos/window-legs-400.webp 400w, photos/window-legs-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Black and white photo of a model standing by a lace curtain in window light" width="720" height="960" loading="lazy"></a><figcaption><strong>Window Light</strong> Linea Uno, lingerie edit</figcaption></figure></li>
+          <li class="vb-item" data-cat="resort"><figure><a href="photos/sunset-1600.webp"><img src="photos/sunset-720.webp" srcset="photos/sunset-400.webp 400w, photos/sunset-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Silhouette of a model in a red dress with arms raised on a beach at sunset" width="720" height="480" loading="lazy"></a><figcaption><strong>Golden Hour</strong> Maison Lune, SS26 campaign</figcaption></figure></li>
+          <li class="vb-item" data-cat="noir"><figure><a href="photos/curtain-1600.webp"><img src="photos/curtain-720.webp" srcset="photos/curtain-400.webp 400w, photos/curtain-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Black and white silhouette of a hand pressed against a sheer curtain" width="720" height="1124" loading="lazy"></a><figcaption><strong>Behind the Curtain</strong> Velours, studio series</figcaption></figure></li>
+          <li class="vb-item" data-cat="beauty"><figure><a href="photos/satin-hand-1600.webp"><img src="photos/satin-hand-720.webp" srcset="photos/satin-hand-400.webp 400w, photos/satin-hand-720.webp 720w" sizes="(max-width: 860px) 46vw, 400px" alt="Hand with a ring and a fine bracelet resting on white satin" width="720" height="481" loading="lazy"></a><figcaption><strong>Satin</strong> Orra Jewellery</figcaption></figure></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="vb-card" id="card" aria-labelledby="vb-card-title">
+      <div class="vb-wrap vb-card-in">
+        <div class="vb-card-photos">
+          <img src="photos/card-wall-720.webp" alt="" width="720" height="1080" loading="lazy">
+          <img src="photos/card-sea-720.webp" alt="" width="720" height="747" loading="lazy">
+        </div>
+        <div class="vb-card-text">
+          <p class="vb-page">p. 02</p>
+          <h2 id="vb-card-title">Comp <em>card</em></h2>
+          <p class="vb-print-name">Liora Vale &nbsp;·&nbsp; Noctua Management, Milan &nbsp;·&nbsp; bookings@lioravale.example</p>
+          <div class="vb-units" role="group" aria-label="Units">
+            <button type="button" class="vb-unit" data-unit="metric" aria-pressed="true">cm / EU</button>
+            <button type="button" class="vb-unit" data-unit="imperial" aria-pressed="false">in / US</button>
+          </div>
+          <dl class="vb-measures">
+            <div><dt>Height</dt><dd data-metric="178 cm" data-imperial="5 ft 10 in">178 cm</dd></div>
+            <div><dt>Bust</dt><dd data-metric="81 cm" data-imperial="32 in">81 cm</dd></div>
+            <div><dt>Waist</dt><dd data-metric="60 cm" data-imperial="23.5 in">60 cm</dd></div>
+            <div><dt>Hips</dt><dd data-metric="89 cm" data-imperial="35 in">89 cm</dd></div>
+            <div><dt>Dress</dt><dd data-metric="EU 34" data-imperial="US 2">EU 34</dd></div>
+            <div><dt>Shoe</dt><dd data-metric="EU 39" data-imperial="US 8.5">EU 39</dd></div>
+            <div><dt>Hair</dt><dd>Dark brown</dd></div>
+            <div><dt>Eyes</dt><dd>Hazel</dd></div>
+          </dl>
+          <p class="vb-card-note">Languages: English, Italian, Serbian. Valid passport, available for travel worldwide.</p>
+          <p><button type="button" class="vb-btn vb-btn-ghost vb-print">Print comp card</button></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="vb-story" id="story" aria-labelledby="vb-story-title">
+      <div class="vb-wrap vb-story-in">
+        <div>
+          <p class="vb-page">p. 03</p>
+          <h2 id="vb-story-title">The <em>story</em></h2>
+          <p>Liora grew up between the Adriatic coast and Belgrade and was scouted at nineteen on a night train to Vienna. Six years later she walks for ateliers in Milan and Paris and is the face of quiet luxury campaigns from Lisbon to Dubrovnik.</p>
+          <p>She is known for her stillness: long, unhurried takes, a sense for light and the patience to wait for the one frame that tells the whole story. Off set she studies art history and collects old fashion magazines.</p>
+        </div>
+        <blockquote class="vb-quote">
+          <p>She doesn't pose for the camera. She waits, and lets the light find her.</p>
+          <footer><span class="vb-initials" aria-hidden="true">RM</span> R. Marchetti, creative director, Maison Lune</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="vb-work" id="work" aria-labelledby="vb-work-title">
+      <div class="vb-wrap">
+        <header class="vb-head">
+          <p class="vb-page">p. 04</p>
+          <h2 id="vb-work-title">Selected <em>work</em></h2>
+        </header>
+        <ol class="vb-list">
+          <li><span class="vb-year">2026</span><strong>Maison Lune</strong><span>SS26 campaign, print and outdoor</span><span class="vb-place">Paris</span></li>
+          <li><span class="vb-year">2026</span><strong>Revue Blanche</strong><span>Cover and 12-page editorial</span><span class="vb-place">Milan</span></li>
+          <li><span class="vb-year">2025</span><strong>Milan Fashion Week</strong><span>Nine shows, closing look for two</span><span class="vb-place">Milan</span></li>
+          <li><span class="vb-year">2025</span><strong>Orra Jewellery</strong><span>Pearl Study campaign and film</span><span class="vb-place">Belgrade</span></li>
+          <li><span class="vb-year">2025</span><strong>Hôtel Ombre</strong><span>Autumn lookbook</span><span class="vb-place">Lisbon</span></li>
+          <li><span class="vb-year">2024</span><strong>Atelier Noor</strong><span>Resort collection and e-commerce</span><span class="vb-place">Dubrovnik</span></li>
+          <li><span class="vb-year">2024</span><strong>Paris Fashion Week</strong><span>Six shows</span><span class="vb-place">Paris</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="vb-booking" id="booking" aria-labelledby="vb-booking-title">
+      <div class="vb-wrap vb-booking-in">
+        <div class="vb-booking-text">
+          <p class="vb-page">p. 05</p>
+          <h2 id="vb-booking-title">Book <em>Liora</em></h2>
+          <p>Tell us about your production and we will answer with availability and rates within one working day.</p>
+          <dl class="vb-contact">
+            <div><dt>Agency</dt><dd>Noctua Management, Via della Spiga, Milan</dd></div>
+            <div><dt>Bookings</dt><dd><a href="mailto:bookings@lioravale.example">bookings@lioravale.example</a></dd></div>
+            <div><dt>Mother agency</dt><dd>Belgrade, Serbia</dd></div>
+          </dl>
+        </div>
+
+        <form class="vb-form" id="vb-form" novalidate>
+          <div class="vb-field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="vb-field"><label for="f-company">Company or publication</label><input id="f-company" name="company" autocomplete="organization"></div>
+          <div class="vb-field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="vb-field"><label for="f-type">Type of job</label>
+            <select id="f-type" name="type" required>
+              <option value="">Choose…</option>
+              <option>Editorial</option>
+              <option>Campaign</option>
+              <option>Runway</option>
+              <option>Beauty</option>
+              <option>E-commerce</option>
+            </select>
+          </div>
+          <div class="vb-field"><label for="f-date">Shoot date</label><input id="f-date" name="date" type="date" required></div>
+          <div class="vb-field"><label for="f-place">Location</label><input id="f-place" name="place" placeholder="City or studio"></div>
+          <div class="vb-field vb-field-wide"><label for="f-msg">About the production</label><textarea id="f-msg" name="message" rows="4" placeholder="Concept, usage, number of looks…"></textarea></div>
+          <div class="vb-field vb-field-wide"><button type="submit" class="vb-btn">Send request</button></div>
+          <p class="vb-form-msg vb-field-wide" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="vb-footer">
+    <div class="vb-wrap">
+      <p class="vb-logo vb-logo-big">Liora <em>Vale</em></p>
+      <p class="vb-credit">This model book is a demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme. Liora Vale, her agency, clients and publications are fictional. Photos: Pexels; they show different models and never a recognisable face.</p>
+      <p class="vb-copy">© <span id="year">2026</span> Liora Vale demo · <a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+  <dialog class="vb-lightbox" aria-label="Photo viewer">
+    <figure>
+      <img src="data:," alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button type="button" class="vb-lb-btn vb-lb-close" aria-label="Close">&times;</button>
+    <button type="button" class="vb-lb-btn vb-lb-prev" aria-label="Previous photo">&larr;</button>
+    <button type="button" class="vb-lb-btn vb-lb-next" aria-label="Next photo">&rarr;</button>
+    <p class="vb-lb-count" aria-live="polite"></p>
+  </dialog>
+
+  <script src="verso.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

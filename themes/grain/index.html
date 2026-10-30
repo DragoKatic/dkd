@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grain &amp; Light – Photography Website Demo</title>
+  <meta name="description" content="Photography portfolio website demo designed and coded from scratch by Drago Katić Development: full-screen photos, a filterable gallery with lightbox, services and a contact form. Fast, accessible and responsive.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#110e0b">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://dkd.rs/themes/grain/index.html">
+  <link rel="icon" href="images/grain-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Grain &amp; Light – Photography Website Demo">
+  <meta property="og:description" content="A photography portfolio website designed and coded from scratch by Drago Katić Development.">
+  <meta property="og:url" content="https://dkd.rs/themes/grain/index.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/grain.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Grain &amp; Light photography website demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/cormorant.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="photos/night-platform-1600.webp" imagesrcset="photos/night-platform-800.webp 800w, photos/night-platform-1600.webp 1600w" imagesizes="100vw">
+  <link rel="stylesheet" href="grain.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Grain & Light – Photography Website Demo",
+    "description": "Photography portfolio website demo designed and coded from scratch by Drago Katić Development.",
+    "url": "https://dkd.rs/themes/grain/index.html",
+    "image": "https://dkd.rs/images/projects/grain.webp",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Drago Katić Development",
+      "url": "https://dkd.rs/"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Drago Katić",
+      "url": "https://dkd.rs/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Grain <em>&amp;</em> Light</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-slides" aria-hidden="true">
+        <figure class="hero-slide is-active" data-caption="Night platform · 01">
+          <img src="photos/night-platform-1600.webp" srcset="photos/night-platform-800.webp 800w, photos/night-platform-1600.webp 1600w" sizes="100vw" alt="" width="1600" height="1067" fetchpriority="high">
+        </figure>
+        <figure class="hero-slide" data-caption="Golden street · 02">
+          <img src="photos/golden-street-1600.webp" srcset="photos/golden-street-800.webp 800w, photos/golden-street-1600.webp 1600w" sizes="100vw" alt="" width="1600" height="1067" loading="lazy" decoding="async">
+        </figure>
+        <figure class="hero-slide" data-caption="Low tide · 03">
+          <img src="photos/low-tide-1600.webp" srcset="photos/low-tide-800.webp 800w, photos/low-tide-1600.webp 1600w" sizes="100vw" alt="" width="1600" height="1067" loading="lazy" decoding="async">
+        </figure>
+        <figure class="hero-slide" data-caption="Cliffside town · 04">
+          <img src="photos/cliffside-town-1600.webp" srcset="photos/cliffside-town-800.webp 800w, photos/cliffside-town-1600.webp 1600w" sizes="100vw" alt="" width="1600" height="1066" loading="lazy" decoding="async">
+        </figure>
+      </div>
+      <div class="wrap hero-content">
+        <p class="kicker">Photography studio · est. 2014</p>
+        <h1>We photograph<br>the <em>quiet</em> moments.</h1>
+        <p class="lead">Portraits, places and products, shot on film and digital with natural light — for people and brands who prefer honest pictures to perfect ones.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#gallery">View the gallery</a>
+          <a class="btn btn-line" href="#contact">Book a shoot</a>
+        </div>
+      </div>
+      <div class="hero-foot wrap">
+        <p class="hero-caption" aria-hidden="true">Night platform · 01</p>
+        <div class="hero-dots" role="group" aria-label="Background photo">
+          <button type="button" aria-label="Photo 1" aria-pressed="true"></button>
+          <button type="button" aria-label="Photo 2" aria-pressed="false"></button>
+          <button type="button" aria-label="Photo 3" aria-pressed="false"></button>
+          <button type="button" aria-label="Photo 4" aria-pressed="false"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="wrap intro-grid">
+        <p class="intro-text reveal">A small studio of three photographers who like <em>grain</em>, long shadows and the minute after everyone stops posing.</p>
+        <dl class="intro-stats reveal">
+          <div><dt>Years behind the camera</dt><dd>12</dd></div>
+          <div><dt>Sessions last year</dt><dd>240</dd></div>
+          <div><dt>Rolls of film a month</dt><dd>30</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">Selected frames</p>
+          <h2>Gallery</h2>
+        </header>
+        <div class="filters" role="group" aria-label="Filter the gallery">
+          <button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-filter="streets" aria-pressed="false">Streets</button>
+          <button type="button" class="filter" data-filter="places" aria-pressed="false">Places</button>
+          <button type="button" class="filter" data-filter="still" aria-pressed="false">Still life</button>
+        </div>
+        <div class="gallery">
+          <a class="shot" data-cat="streets" href="photos/night-platform-1600.webp"><img src="photos/night-platform-800.webp" alt="Railway tracks in thick fog at night under rows of glowing lamps, a train on the right" width="800" height="533" loading="lazy" decoding="async"><span>Night platform</span></a>
+          <a class="shot" data-cat="still" href="photos/rangefinder-730.webp"><img src="photos/rangefinder-730.webp" alt="Close-up of an old rangefinder film camera" width="730" height="340" loading="lazy" decoding="async"><span>The old rangefinder</span></a>
+          <a class="shot" data-cat="places" href="photos/low-tide-1600.webp"><img src="photos/low-tide-800.webp" alt="Two people walking along a wide beach at sunset, seen as silhouettes" width="800" height="533" loading="lazy" decoding="async"><span>Low tide</span></a>
+          <a class="shot" data-cat="streets" href="photos/two-of-a-kind-730.webp"><img src="photos/two-of-a-kind-730.webp" alt="Two classic sports cars, cream and silver, parked side by side in a dark garage" width="730" height="340" loading="lazy" decoding="async"><span>Two of a kind</span></a>
+          <a class="shot" data-cat="still" href="photos/empty-rows-1600.webp"><img src="photos/empty-rows-800.webp" alt="Rows of empty cinema seats in black and white" width="800" height="533" loading="lazy" decoding="async"><span>Empty rows</span></a>
+          <a class="shot" data-cat="still" href="photos/afternoon-tea-730.webp"><img src="photos/afternoon-tea-730.webp" alt="A glass teapot of green tea with two glass cups and a small plant" width="730" height="340" loading="lazy" decoding="async"><span>Afternoon tea</span></a>
+          <a class="shot" data-cat="streets" href="photos/golden-street-1600.webp"><img src="photos/golden-street-800.webp" alt="A narrow city street glowing in the setting sun" width="800" height="533" loading="lazy" decoding="async"><span>Golden street</span></a>
+          <a class="shot" data-cat="streets" href="photos/left-outside-730.webp"><img src="photos/left-outside-730.webp" alt="An orange bicycle left parked outside on a street" width="730" height="340" loading="lazy" decoding="async"><span>Left outside</span></a>
+          <a class="shot" data-cat="places" href="photos/cliffside-town-1600.webp"><img src="photos/cliffside-town-800.webp" alt="Colourful houses stacked on a cliff above the sea" width="800" height="533" loading="lazy" decoding="async"><span>Cliffside town</span></a>
+          <a class="shot" data-cat="still" href="photos/autumn-floor-730.webp"><img src="photos/autumn-floor-730.webp" alt="Dry orange autumn leaves on the ground" width="730" height="340" loading="lazy" decoding="async"><span>Autumn floor</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-band" id="services">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">What we do</p>
+          <h2>Services</h2>
+        </header>
+        <div class="services">
+          <article class="service reveal">
+            <p class="service-num">I</p>
+            <h3>Portraits</h3>
+            <p>Individual, couple and family portraits at home, in the studio or somewhere that matters to you.</p>
+            <p class="service-price">from €180 · 2 hours · 30 edited photos</p>
+          </article>
+          <article class="service reveal">
+            <p class="service-num">II</p>
+            <h3>Brands &amp; products</h3>
+            <p>Product, food and interior photography for websites, menus and shops, with a consistent look across every image.</p>
+            <p class="service-price">from €420 · half day · usage rights included</p>
+          </article>
+          <article class="service reveal">
+            <p class="service-num">III</p>
+            <h3>Events &amp; stories</h3>
+            <p>Weddings, launches and small gatherings, documented quietly from the first guest to the last dance.</p>
+            <p class="service-price">from €650 · up to 6 hours · online gallery</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap about">
+        <figure class="about-photo reveal">
+          <img src="photos/empty-rows-800.webp" alt="Rows of empty cinema seats in black and white" width="800" height="533" loading="lazy" decoding="async">
+        </figure>
+        <div class="about-text reveal">
+          <p class="kicker">About the studio</p>
+          <h2>Three people, two cameras each, one rule.</h2>
+          <p>Nothing is staged that could be found. We scout the light before the shoot, talk more than we direct, and deliver fewer photos — each one worth keeping.</p>
+          <ol class="process">
+            <li><b>Talk</b> A short call to understand the people, place or product.</li>
+            <li><b>Shoot</b> Relaxed sessions in natural light, film and digital side by side.</li>
+            <li><b>Deliver</b> Edited photos in a private online gallery within ten days.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-band" id="contact">
+      <div class="wrap contact">
+        <div class="contact-info reveal">
+          <p class="kicker">Get in touch</p>
+          <h2>Book a shoot</h2>
+          <p>Tell us what you have in mind. We reply within one working day with dates and a simple quote.</p>
+          <dl class="details">
+            <div><dt>Studio</dt><dd>Old Mill Yard 4, Riverside</dd></div>
+            <div><dt>Open</dt><dd>Tue – Sat, 10:00 – 18:00</dd></div>
+            <div><dt>Email</dt><dd>hello@grainandlight.example</dd></div>
+          </dl>
+        </div>
+        <form class="form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+            <p class="error" id="e-name"></p>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+            <p class="error" id="e-email"></p>
+          </div>
+          <div class="field">
+            <label for="f-type">Type of shoot</label>
+            <select id="f-type" name="type">
+              <option>Portraits</option>
+              <option>Brands &amp; products</option>
+              <option>Events &amp; stories</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field field-full">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" rows="5" required aria-describedby="e-message"></textarea>
+            <p class="error" id="e-message"></p>
+          </div>
+          <div class="field-full form-foot">
+            <button type="submit" class="btn btn-gold">Send message</button>
+            <p class="form-note">Demo form — messages are not sent anywhere.</p>
+          </div>
+          <p class="form-status field-full" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top">Grain <em>&amp;</em> Light</a>
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme. Grain &amp; Light is a fictional studio. Photos: Pexels.</p>
+      <p class="copyright">© <span id="year">2026</span></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button type="button" class="lb-close" aria-label="Close">&times;</button>
+    <button type="button" class="lb-nav lb-prev" aria-label="Previous photo">&larr;</button>
+    <figure class="lb-figure">
+      <img class="lb-img" src="data:," alt="">
+      <figcaption class="lb-caption"></figcaption>
+    </figure>
+    <button type="button" class="lb-nav lb-next" aria-label="Next photo">&rarr;</button>
+  </div>
+
+  <script src="grain.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

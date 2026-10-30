@@ -1,0 +1,123 @@
+/*---------------------------------------
+  THE ACTION BUTTON
+-----------------------------------------*/
+/* The orange call-to-action button ("Let's begin", "Get Your Custom Website", "Send", ...).
+   This file is its only definition: it is bundled into css/style.css and themes/overlay.js loads it
+   for the demo notice. Only the text differs, never the look.
+
+   Selectors are element + class and the font properties are !important, so the CSS of
+   a demo theme (or the notice's "all: initial" reset) cannot change the button there.
+   Colors and fonts are written out, not var(), because the themes have their own variables.
+   Paths are relative to this file, so they work from every page.
+   On hover/focus the text turns white, then the white site logo (::after, invisible until then)
+   appears and spins once, like the rotating logo on the homepage. The logo sits in the centre of the
+   button's rounded right end: the button is 46px high, so the right padding is 46px and the logo's
+   centre is 23px from the outer right edge (22px from the padding edge, inside the 1px border).
+   The left padding is the same 46px, so the text stays centred. */
+@font-face {
+  font-family: 'JetBrainsMono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/JetBrainsMono-Bold.woff2') format('woff2');
+}
+a.action-btn,
+button.action-btn {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 46px;
+  border: 1px solid transparent;
+  border-radius: var(--dkd-radius-pill, 100px);
+  background: #ff911c;
+  box-shadow: none;
+  color: #0d1321;
+  font-family: 'JetBrainsMono', ui-monospace, Menlo, Consolas, monospace !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  letter-spacing: normal !important;
+  line-height: 1.5 !important;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none !important;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a.action-btn:hover,
+button.action-btn:hover,
+a.action-btn:focus-visible,
+button.action-btn:focus-visible {
+  background: #ff911c;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+  color: #ffffff;
+  text-decoration: none;
+}
+a.action-btn:focus-visible,
+button.action-btn:focus-visible {
+  outline: 2px solid #ff911c;
+  outline-offset: 3px;
+}
+a.action-btn::after,
+button.action-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  bottom: auto;
+  left: auto;
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: url('../images/logo-white.svg') 48% 45% / 22px 22px no-repeat;
+  box-shadow: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(.4);
+  transition: opacity .2s ease-in-out;
+}
+a.action-btn:hover::after,
+button.action-btn:hover::after,
+a.action-btn:focus-visible::after,
+button.action-btn:focus-visible::after {
+  opacity: 1;
+  animation: action-btn-logo 1.2s .3s cubic-bezier(.3, .6, .3, 1) both;
+}
+@keyframes action-btn-logo {
+  0% {
+    opacity: 0;
+    transform: scale(.4) rotate(0deg);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  a.action-btn,
+  button.action-btn,
+  a.action-btn::after,
+  button.action-btn::after {
+    transition: none;
+  }
+  a.action-btn:hover::after,
+  button.action-btn:hover::after,
+  a.action-btn:focus-visible::after,
+  button.action-btn:focus-visible::after {
+    animation: none;
+    transform: none;
+  }
+}

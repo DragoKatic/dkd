@@ -1,0 +1,43 @@
+{
+    "name": "Drago Katić Development",
+    "short_name": "Drago Katić",
+    "description": "Custom web apps. Open code.",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#0d1321",
+    "theme_color": "#0d1321",
+    "icons": [
+        {
+            "src": "app/splash-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "app/splash-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "lang": "en",
+    "id": "./",
+    "shortcuts": [
+        {
+            "name": "Contact",
+            "url": "./#contact"
+        },
+        {
+            "name": "Case Studies",
+            "url": "case-studies.html"
+        }
+    ]
+}

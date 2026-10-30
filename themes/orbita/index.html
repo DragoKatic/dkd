@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orbita – Fintech Landing Page Demo</title>
+  <meta name="description" content="Dark fintech landing page demo designed and coded from scratch by Drago Katić Development: a fast, accessible and responsive website for a business payments platform. See what your custom website could look like.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#070b14">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://dkd.rs/themes/orbita/index.html">
+  <link rel="icon" href="images/orbita-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Orbita – Fintech Landing Page Demo">
+  <meta property="og:description" content="A dark business payments landing page designed and coded from scratch by Drago Katić Development.">
+  <meta property="og:url" content="https://dkd.rs/themes/orbita/index.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/orbita.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Orbita fintech landing page demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/orbitron.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/exo2.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="orbita.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Orbita – Fintech Landing Page Demo",
+    "description": "Dark fintech landing page demo designed and coded from scratch by Drago Katić Development.",
+    "url": "https://dkd.rs/themes/orbita/index.html",
+    "image": "https://dkd.rs/images/projects/orbita.webp",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Drago Katić Development",
+      "url": "https://dkd.rs/"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Drago Katić",
+      "url": "https://dkd.rs/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="ticker" role="region" aria-label="Exchange rates (demo)">
+    <div class="ticker-track">
+      <ul class="ticker-list">
+        <li>EUR/USD <b>1.0842</b> <i class="up">+0.12%</i></li>
+        <li>GBP/EUR <b>1.1716</b> <i class="down">−0.08%</i></li>
+        <li>USD/JPY <b>149.62</b> <i class="up">+0.31%</i></li>
+        <li>EUR/CHF <b>0.9571</b> <i class="up">+0.05%</i></li>
+        <li>EUR/RSD <b>117.12</b> <i class="down">−0.02%</i></li>
+        <li>BTC/USD <b>67,240</b> <i class="up">+2.14%</i></li>
+        <li>EUR/PLN <b>4.3208</b> <i class="down">−0.11%</i></li>
+        <li>USD/CAD <b>1.3587</b> <i class="up">+0.09%</i></li>
+      </ul>
+      <ul class="ticker-list" aria-hidden="true">
+        <li>EUR/USD <b>1.0842</b> <i class="up">+0.12%</i></li>
+        <li>GBP/EUR <b>1.1716</b> <i class="down">−0.08%</i></li>
+        <li>USD/JPY <b>149.62</b> <i class="up">+0.31%</i></li>
+        <li>EUR/CHF <b>0.9571</b> <i class="up">+0.05%</i></li>
+        <li>EUR/RSD <b>117.12</b> <i class="down">−0.02%</i></li>
+        <li>BTC/USD <b>67,240</b> <i class="up">+2.14%</i></li>
+        <li>EUR/PLN <b>4.3208</b> <i class="down">−0.11%</i></li>
+        <li>USD/CAD <b>1.3587</b> <i class="up">+0.09%</i></li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Orbita home">
+        <img src="images/orbita-mark.svg" alt="" width="32" height="32">
+        <span>Orbita</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#platform">Platform</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-ghost btn-sm" href="#pricing">Sign in</a>
+          <a class="btn btn-primary btn-sm" href="#pricing">Get started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="pill"><span class="pulse"></span>New: real-time FX alerts</p>
+          <h1>Payments at <span class="grad">orbital speed</span></h1>
+          <p class="lead">Orbita collects, converts and pays out in 40+ currencies from one business account. Payouts land in seconds, fees are shown up front and every transfer is tracked from start to finish.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#pricing">Start for free <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#platform">Explore the platform</a>
+          </div>
+          <div class="trust">
+            <div class="avatars" aria-hidden="true"><span>LK</span><span>MR</span><span>AS</span><span>+</span></div>
+            <p><b>12,000+</b> businesses move money with Orbita</p>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="console">
+            <div class="console-bar">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <span class="console-title">orbita://dashboard</span>
+              <span class="live">● live</span>
+            </div>
+            <div class="console-body">
+              <div class="tiles">
+                <div class="tile"><p>Balance</p><b>€248,930</b><i class="up">+4.2%</i></div>
+                <div class="tile"><p>Incoming</p><b>€61,480</b><i class="up">+12%</i></div>
+                <div class="tile"><p>Payouts</p><b>€38,215</b><i class="down">−3%</i></div>
+              </div>
+              <div class="bars">
+                <span style="--h:42%"></span><span style="--h:58%"></span><span style="--h:50%"></span><span style="--h:66%"></span>
+                <span style="--h:61%"></span><span style="--h:74%"></span><span style="--h:69%"></span><span style="--h:88%"></span>
+                <span style="--h:80%"></span><span style="--h:94%"></span>
+              </div>
+              <ul class="tx">
+                <li><span class="tx-icon in">↓</span><span>Invoice #1042<small>Nordvik AS · NOK → EUR</small></span><b class="up">+€4,200.00</b></li>
+                <li><span class="tx-icon out">↑</span><span>Supplier payout<small>Rivera Logistics · SEPA Instant</small></span><b>−€1,380.50</b></li>
+              </ul>
+            </div>
+          </div>
+          <div class="chip chip-a"><span class="up">▲ 24.8%</span> revenue this quarter</div>
+          <div class="chip chip-b"><b>2.4 s</b> average payout</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Orbita in numbers">
+      <div class="wrap stats-grid">
+        <div><p class="stat">40+</p><p>currencies to hold and pay out</p></div>
+        <div><p class="stat">2.4 s</p><p>median instant payout time</p></div>
+        <div><p class="stat">0.35%</p><p>FX margin on every conversion</p></div>
+        <div><p class="stat">99.99%</p><p>platform uptime last year</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">// features</p>
+          <h2>Everything your finance team runs on</h2>
+          <p>Replace the bank portal, the spreadsheet and the currency exchange desk with one account built for how businesses actually pay.</p>
+        </header>
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h13M12 6l6 6-6 6"/><path d="M21 5v14"/></svg>
+            <h3>Instant payouts</h3>
+            <p>Pay suppliers and contractors in seconds over SEPA Instant and local rails in 30 countries.</p>
+          </article>
+          <article class="feature reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="5"/><circle cx="16" cy="16" r="5"/></svg>
+            <h3>Multi-currency accounts</h3>
+            <p>Hold EUR, USD, GBP and 40+ other currencies and convert at the mid-market rate plus a flat margin.</p>
+          </article>
+          <article class="feature reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+            <h3>Invoices that get paid</h3>
+            <p>Send branded invoices with a payment link; Orbita matches every payment to its invoice automatically.</p>
+          </article>
+          <article class="feature reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+            <h3>Live analytics</h3>
+            <p>Cash in, cash out and currency exposure on one screen, updated the moment money moves.</p>
+          </article>
+          <article class="feature reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/></svg>
+            <h3>Virtual cards</h3>
+            <p>Issue cards per team or subscription with their own limits, and freeze them in one tap.</p>
+          </article>
+          <article class="feature reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+            <h3>API &amp; webhooks</h3>
+            <p>Automate payouts and reconciliation with a REST API, webhooks and exports to your accounting software.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="platform">
+      <div class="wrap split">
+        <div class="phone-stage reveal" aria-hidden="true">
+          <div class="phone" id="phone">
+            <div class="phone-screen">
+              <div class="app-top"><span>9:41</span><span class="notch"></span><span>5G</span></div>
+              <p class="app-label">Total balance</p>
+              <p class="app-balance">€248,930<small>.40</small></p>
+              <div class="app-actions"><span>Send</span><span>Request</span><span>Convert</span></div>
+              <div class="app-card">
+                <p>Orbita Business</p>
+                <b>•••• 4821</b>
+                <span>EUR · VIRTUAL</span>
+              </div>
+              <ul class="app-list">
+                <li><span class="tx-icon in">↓</span>Nordvik AS<b class="up">+€4,200</b></li>
+                <li><span class="tx-icon out">↑</span>Rivera Logistics<b>−€1,380</b></li>
+                <li><span class="tx-icon out">↑</span>Cloud hosting<b>−€249</b></li>
+                <li><span class="tx-icon in">↓</span>Stripe payout<b class="up">+€8,904</b></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="split-copy reveal">
+          <p class="kicker">// platform</p>
+          <h2>Your whole treasury, in your pocket</h2>
+          <p>Approve payouts, convert currencies and check every account from the mobile app, with the same controls your team uses on desktop.</p>
+          <ul class="checks">
+            <li>Approve large transfers with face or fingerprint</li>
+            <li>Push alert the moment a payment lands</li>
+            <li>Freeze and unfreeze cards instantly</li>
+            <li>Roles for owners, finance and accountants</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">// how it works</p>
+          <h2>From sign-up to first payout in one afternoon</h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Open your account</h3>
+            <p>Register your company online and verify it with your registration number and ID. Most checks finish within hours.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Add money or get paid</h3>
+            <p>Receive payments to local account details in EUR, USD and GBP, or top up by bank transfer.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Pay anyone, anywhere</h3>
+            <p>Send single payments or upload a batch file. Recipients are notified the moment the money arrives.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="pricing">
+      <div class="wrap">
+        <header class="section-head section-head-center reveal">
+          <p class="kicker">// pricing</p>
+          <h2>Simple plans that scale with you</h2>
+          <p>All plans include multi-currency accounts and unlimited team members.</p>
+        </header>
+        <div class="billing" role="group" aria-label="Billing period">
+          <button type="button" class="billing-option" data-billing="monthly" aria-pressed="true">Monthly</button>
+          <button type="button" class="billing-option" data-billing="yearly" aria-pressed="false">Yearly <span>−20%</span></button>
+        </div>
+        <div class="plans">
+          <article class="plan reveal">
+            <h3>Starter</h3>
+            <p class="plan-desc">For freelancers and new companies.</p>
+            <p class="price"><span class="amount" data-monthly="€0" data-yearly="€0">€0</span> / month</p>
+            <ul class="checks">
+              <li>2 currencies</li>
+              <li>20 free payouts per month</li>
+              <li>Invoicing and payment links</li>
+            </ul>
+            <a class="btn btn-ghost" href="#top">Choose Starter</a>
+          </article>
+          <article class="plan plan-featured reveal">
+            <p class="plan-tag">Most popular</p>
+            <h3>Growth</h3>
+            <p class="plan-desc">For teams paying suppliers every week.</p>
+            <p class="price"><span class="amount" data-monthly="€29" data-yearly="€23">€29</span> / month</p>
+            <ul class="checks">
+              <li>All 40+ currencies</li>
+              <li>200 free payouts per month</li>
+              <li>Virtual cards and approval rules</li>
+              <li>Accounting export</li>
+            </ul>
+            <a class="btn btn-primary" href="#top">Choose Growth</a>
+          </article>
+          <article class="plan reveal">
+            <h3>Scale</h3>
+            <p class="plan-desc">For companies with high volume.</p>
+            <p class="price"><span class="amount" data-monthly="€99" data-yearly="€79">€99</span> / month</p>
+            <ul class="checks">
+              <li>Unlimited payouts</li>
+              <li>API and webhooks</li>
+              <li>Batch payments</li>
+              <li>Dedicated account manager</li>
+            </ul>
+            <a class="btn btn-ghost" href="#top">Choose Scale</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="security">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">// security</p>
+          <h2>Built like a vault, runs like a rocket</h2>
+        </header>
+        <div class="security-grid">
+          <div class="sec reveal"><b>256-bit</b><p>encryption for data at rest and in transit</p></div>
+          <div class="sec reveal"><b>2FA</b><p>required for every login and every payout above your limit</p></div>
+          <div class="sec reveal"><b>Segregated</b><p>customer funds held apart from company money</p></div>
+          <div class="sec reveal"><b>24/7</b><p>fraud monitoring on every transaction</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <div class="wrap faq-wrap">
+        <header class="section-head reveal">
+          <p class="kicker">// faq</p>
+          <h2>Questions, answered</h2>
+          <p>Can't find what you are looking for? Our team replies within one business hour.</p>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>Is my money safe with Orbita?</summary>
+            <p>Customer funds are held in segregated accounts at our licensed e-money partner and are never used for lending.</p>
+          </details>
+          <details>
+            <summary>How long does a payout take?</summary>
+            <p>SEPA Instant payouts arrive in seconds. Other local transfers usually arrive the same business day.</p>
+          </details>
+          <details>
+            <summary>Which businesses can open an account?</summary>
+            <p>Registered companies and sole traders from the EU, the UK and Switzerland. More countries are coming soon.</p>
+          </details>
+          <details>
+            <summary>Can I change or cancel my plan?</summary>
+            <p>Yes. You can switch plans or cancel at any time from the settings page; changes apply from the next billing period.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div class="cta-inner reveal">
+          <h2>Ready for lift-off?</h2>
+          <p>Open a free account today and send your first payout this afternoon.</p>
+          <a class="btn btn-primary" href="#pricing">Start for free <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <img src="images/orbita-mark.svg" alt="" width="28" height="28">
+          <span>Orbita</span>
+        </a>
+        <p>Business payments, collections and currency exchange in one account.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#platform">Platform</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme. Orbita is a fictional company; all figures are examples.</p>
+    </div>
+    <p class="wrap copyright">© <span id="year">2026</span> Orbita demo</p>
+  </footer>
+
+  <script src="orbita.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

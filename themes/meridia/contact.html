@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Meridia Travel Demo</title>
+  <meta name="description" content="Trip enquiry form, offices and FAQ of a fictional travel agency — part of a travel website demo by Drago Katić Development.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#faf6ef">
+  <link rel="canonical" href="https://dkd.rs/themes/meridia/contact.html">
+  <link rel="icon" href="images/meridia-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Contact – Meridia Travel Demo">
+  <meta property="og:description" content="Trip enquiry form, offices and FAQ of a fictional travel agency — part of a travel website demo by Drago Katić Development.">
+  <meta property="og:url" content="https://dkd.rs/themes/meridia/contact.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/meridia.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Meridia Travel website demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/dm-serif-display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="meridia.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Contact – Meridia Travel Demo",
+    "description": "Trip enquiry form, offices and FAQ of a fictional travel agency — part of a travel website demo by Drago Katić Development.",
+    "url": "https://dkd.rs/themes/meridia/contact.html",
+    "image": "https://dkd.rs/images/projects/meridia.webp",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Drago Katić Development",
+      "url": "https://dkd.rs/"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Drago Katić",
+      "url": "https://dkd.rs/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/meridia-mark.svg" alt="" width="34" height="34">
+        <span>Meridia <small>Travel</small></span>
+      </a>
+      <a class="basket-link" href="basket.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="visually-hidden">Basket, </span><span class="basket-count">0</span><span class="visually-hidden"> bookings</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="btn btn-terra" href="tours.html">Book a tour</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero-img" aria-hidden="true">
+        <img src="illustrations/harbour-dusk.svg" alt="" width="1280" height="640" fetchpriority="high">
+      </div>
+      <div class="wrap">
+        <ol class="crumbs" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol>
+        <h1>Plan your trip</h1>
+        <p>Tell us where and when you would like to travel. A planner replies within one working day with ideas and a clear price.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact">
+        <form class="form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+            <p class="error" id="e-name"></p>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+            <p class="error" id="e-email"></p>
+          </div>
+          <div class="field">
+            <label for="f-tour">Interested in</label>
+            <select id="f-tour" name="tour">
+              <!-- gen:tour-options -->
+        <option>A tailor-made trip</option>
+              <option>Old Towns of Central Europe</option>
+              <option>Alpine Rail Journey</option>
+              <option>Street Food of Southeast Asia</option>
+              <option>Canyon Road Trip</option>
+              <option>Island Cliffs &amp; Blue Bays</option>
+              <option>Himalaya Foothills Trek</option>
+              <option>Big City Weekend</option>
+              <option>Lakes &amp; Mountains</option>
+              <option>Night Trains of Europe</option>
+              <option>Above the Clouds</option>
+              <option>Rooftops &amp; Old Squares</option>
+        <!-- /gen:tour-options -->
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-people">Travellers</label>
+            <input id="f-people" name="travellers" type="number" min="1" max="12" value="2">
+          </div>
+          <div class="field field-full">
+            <label for="f-message">Tell us about your trip</label>
+            <textarea id="f-message" name="message" rows="5" required aria-describedby="e-message"></textarea>
+            <p class="error" id="e-message"></p>
+          </div>
+          <div class="field-full form-foot">
+            <button type="submit" class="btn btn-terra">Send enquiry</button>
+            <p class="form-note">Demo form — messages are not sent anywhere.</p>
+          </div>
+          <p class="form-status field-full" role="status"></p>
+        </form>
+
+        <div class="reveal">
+          <h2>Offices</h2>
+          <ul class="offices">
+            <li><b>Riverside</b><span>Meridian Square 5</span><span>Mon – Fri, 9:00 – 17:00</span></li>
+            <li><b>Harbour Town</b><span>Quay Street 12</span><span>Tue – Sat, 10:00 – 18:00</span></li>
+            <li><b>By phone</b><span>+00 123 456 789 (demo number)</span></li>
+          </ul>
+          <div class="faq">
+            <details><summary>How big are the groups?</summary><p>Never more than twelve travellers, usually eight to ten.</p></details>
+            <details><summary>Can I travel alone?</summary><p>Yes. About a third of our travellers come on their own, and single rooms are available on every tour.</p></details>
+            <details><summary>What if I need to change my dates?</summary><p>Date changes are free up to 30 days before departure.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img src="images/meridia-mark.svg" alt="" width="30" height="30">
+          <span>Meridia <small>Travel</small></span>
+        </a>
+        <p>Small-group tours and tailor-made trips since 2009. Fewer places, more time in each.</p>
+        <p class="pay-note">Secure online booking · 20% deposit · free date changes up to 30 days before departure</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2>Book online</h2>
+        <ul>
+          <li><a href="tours.html">All tours</a></li>
+          <li><a href="tours.html?region=europe">Europe</a></li>
+          <li><a href="tours.html?region=asia">Asia</a></li>
+          <li><a href="tours.html?region=americas">Americas</a></li>
+          <li><a href="basket.html">Your basket</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Travel letter</h2>
+        <p>One email a month with new departures and last-minute places.</p>
+        <form class="newsletter" novalidate>
+          <label class="visually-hidden" for="news-email">Email address</label>
+          <input id="news-email" type="email" placeholder="you@example.com" autocomplete="email">
+          <button type="submit" class="btn btn-terra">Subscribe</button>
+        </form>
+        <p class="newsletter-status" role="status"></p>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme for a WooCommerce tour booking shop. Meridia Travel is a fictional agency; tours, prices and places are examples; the landscapes are illustrations of fictional places; no booking or payment is made.</p>
+      <p>© <span id="year">2026</span> Meridia Travel demo</p>
+    </div>
+  </footer>
+
+  <script src="meridia.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Instagram's in-app browser gets a slightly smaller scale; runs before the first layout -->
+    <script>if(/Instagram/i.test(navigator.userAgent))document.querySelector('meta[name="viewport"]').content="width=device-width, initial-scale=0.9"</script>
+    <title>Website SEO &amp; Site Speed | Drago Katić Development</title>
+    <link rel="canonical" href="https://dkd.rs/seo.html">
+    <meta name="description" content="Technical SEO and site speed for websites, WordPress and WooCommerce online stores: titles, structured data, sitemaps, Core Web Vitals, images, accessibility.">
+    <meta name="author" content="Drago Katić">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <!-- Fonts used on every page: fetched before the CSS asks for them, so text does not jump when they arrive -->
+    <link rel="preload" href="fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/JetBrainsMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.css?v=a3a40e31a2">
+    <!-- Cookie consent; analytics/marketing trackers are loaded by it only after consent -->
+    <script src="js/core.js?v=f5ade95661" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://dkd.rs/#person",
+                "name": "Drago Katić",
+                "jobTitle": "Web Developer",
+                "url": "https://dkd.rs",
+                "image": "https://dkd.rs/images/drago-katic.jpg",
+                "description": "Web developer: web applications and automation, websites and online stores, custom WordPress themes and plugins.",
+                "knowsAbout": [
+                    "Web application development",
+                    "WordPress",
+                    "WooCommerce",
+                    "Technical SEO",
+                    "Web accessibility",
+                    "Web performance"
+                ],
+                "sameAs": [
+                    "https://github.com/DragoKatic",
+                    "https://www.instagram.com/drago.katic.development",
+                    "https://www.facebook.com/drago.katic.development",
+                    "https://www.tiktok.com/@drago.katic.development",
+                    "https://www.pinterest.com/dragokatic/",
+                    "https://www.reddit.com/user/DragoKatic/",
+                    "https://www.linkedin.com/company/145334456/",
+                    "https://dragokatic.wordpress.com",
+                    "https://www.upwork.com/freelancers/~01a8eb657df3ee0d5f",
+                    "https://www.freelancer.com/u/DragoKatic"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://dkd.rs/#website",
+                "url": "https://dkd.rs/",
+                "name": "Drago Katić Development",
+                "inLanguage": "en",
+                "publisher": {
+                    "@id": "https://dkd.rs/#person"
+                }
+            }
+        ]
+    }
+    </script>
+    <meta name="p:domain_verify" content="f6a71bbc536ffc34bb310ccdac6bb68a">
+    <!-- Icons and web app manifest -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48 32x32 16x16">
+    <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="author" type="text/plain" href="humans.txt">
+    <meta name="theme-color" content="#0d1321">
+    <meta name="apple-mobile-web-app-title" content="Drago Katić">
+    <!-- Open Graph / X -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Drago Katić Development">
+    <meta property="og:title" content="Website SEO &amp; Site Speed | Drago Katić Development">
+    <meta property="og:description" content="Is your site hard to find or slow to open? The technical side of search optimisation, checked and fixed, and explained in plain words.">
+    <meta property="og:url" content="https://dkd.rs/seo.html">
+    <meta property="og:image" content="https://dkd.rs/images/og/og-seo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="Drago Katić Development">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Drago Katić">
+    <meta name="twitter:label2" content="Time to read">
+    <meta name="twitter:data2" content="2 minutes">
+</head>
+<body>
+<header>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar navbar-expand-lg navbar-pages">
+        <div class="container">
+            <a href="./" class="navbar-brand mx-auto mx-lg-0">
+                <img src="images/logo-title-on-dark.svg" class="brand-logo-title brand-on-dark" alt="Drago Katić Development" width="240" height="61">
+                <img src="images/logo-title-on-light.svg" class="brand-logo-title brand-on-light" alt="Drago Katić Development" width="240" height="61">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="navbar-nav ms-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link section-link" href="./"><span class="menu-links-size">Home</span><img src="images/icon-home.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link section-link" href="websites.html"><span class="menu-links-size">Websites</span><img src="images/icon-websites.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link section-link" href="ecommerce.html"><span class="menu-links-size">eCommerce</span><img src="images/icon-ecommerce.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link section-link" href="seo.html"><span class="menu-links-size">SEO</span><img src="images/icon-seo.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link section-link" href="case-studies.html"><span class="menu-links-size">Case Studies</span><img src="images/icon-case-studies.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                    <li class="nav-item d-lg-none dkd-menu-install" hidden>
+                        <a href="#install" class="nav-link dkd-install-link"><span class="menu-links-size">Install app</span><img src="images/icon-install.svg" class="dkd-menu-icon" alt="" width="28" height="28"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <main id="main" tabindex="-1">
+        <section class="dragokaticdevelopment d-flex justify-content-center align-items-center other-pages-header">
+            <div class="container z-index-50">
+                <div class="row">
+                    <div class="col-lg-7 col-12">
+                        <div class="intro-text">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="images/icon-seo.svg" class="heading-image dkd-icon img-fluid" alt="" width="160" height="160">
+                                <h1 class="ms-3 mb-0 other-pages-title drago-katic-development-text-box">Website SEO &amp; Site Speed</h1>
+                            </div>
+                            <h2 class="other-pages-subtitle">A website that people and search engines understand</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 order-a-website">
+                        <p class="mb-4 order-a-website-position">
+                            <a class="action-btn" href="./#contact">Ask About SEO</a>
+                        </p>
+                    </div>
+                    <p class="other-pages-description">
+                        Good rankings start with a well-built website. The technical side of search engine optimisation for WordPress sites, WooCommerce online stores and custom web applications – page titles, structure, speed, images, structured data and accessibility – checked, fixed and explained in plain words.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+        <section class="section-margin section-space custom-section text-section" aria-labelledby="check-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <h2 class="h4 mb-3" id="check-title">What gets checked and fixed</h2>
+                        <ul>
+                            <li><strong>Titles, meta descriptions and headings</strong> – one clear topic per page, written for people first.</li>
+                            <li><strong>Indexing</strong> – robots.txt, the XML sitemap, canonical URLs, and noindex for pages that should stay out of search results.</li>
+                            <li><strong>Structured data</strong> – schema.org JSON-LD, so search engines know who you are and what you offer; Open Graph tags for sharing on social networks.</li>
+                            <li><strong>Speed and Core Web Vitals</strong> – LCP, CLS and INP; image compression (WebP, responsive images), fonts and scripts that load only when needed, browser caching and compression on the server.</li>
+                            <li><strong>Accessibility</strong> – WCAG 2.1 AA: contrast, alt text for images, keyboard use and labels for screen readers. A site that is easy to use is also easier to rank.</li>
+                            <li><strong>WordPress and WooCommerce</strong> – themes, plugins and product pages that load fast and are described clearly for search engines; the same checks apply to web applications.</li>
+<li><strong>Mobile-friendly layout</strong> – content that fits small screens without zooming or sideways scrolling.</li>
+                            <li><strong>Links and addresses</strong> – broken links, 301 redirects, a helpful 404 page, HTTPS.</li>
+                            <li><strong>Valid HTML and CSS</strong> – checked with the W3C validator.</li>
+                        </ul>
+                        <h2 class="h4 mt-5 mb-3">How the work goes</h2>
+                        <ol>
+                            <li><strong>Audit</strong> – the whole site goes through Lighthouse, the W3C validator, axe and custom scripts, and every finding is noted.</li>
+                            <li><strong>Report</strong> – a short list in plain words: what to fix first and why.</li>
+                            <li><strong>Fixes</strong> – the changes are made, or explained to whoever runs your site.</li>
+                            <li><strong>Follow-up</strong> – Google Search Console and Bing Webmaster Tools show how the site is indexed and which searches bring visitors.</li>
+                        </ol>
+                        <p class="mt-4">First place on Google is not promised here; nobody can honestly promise it. A well-built site gives your content the best chance. The work is done by a web developer who also builds the sites, so a finding can be fixed in the code. This website is a working example: the W3C links at the bottom of every page check its code, and the <a href="case-studies.html">case studies</a> show how it was built.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="contact-area section-space custom-contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-12 ms-auto">
+                    <div class="section-heading d-flex justify-content-center align-items-center mb-4">
+                        <img src="images/icon-contact.svg" class="heading-image dkd-icon img-fluid" alt="" loading="lazy" width="160" height="160">
+                        <h2 class="text-white ms-4 mb-0">Get in Touch</h2>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                    <form action="contact.php"
+                    method="POST"
+                    id="contact-form"
+                    class="dkd-form contact-request margin-0">
+                    <input type="hidden" name="page" value="seo.html">
+                    <!-- Honeypot: hidden from people, bots fill it in and contact.php ignores them -->
+                    <div class="form-hp" aria-hidden="true">
+                        <label for="contact-website">Leave this field empty</label>
+                        <input type="text" name="website" id="contact-website" tabindex="-1" autocomplete="off">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-floating">
+                                <input 
+                                type="text"
+                                name="Name"
+                                id="contact-name"
+                                class="form-control"
+                                placeholder="Name"
+                                autocomplete="name"
+                                required>
+                                <label for="contact-name">Name</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-floating">
+                                <input 
+                                type="email"
+                                name="Email"
+                                id="contact-email"
+                                class="form-control"
+                                placeholder="Email address"
+                                autocomplete="email"
+                                required>
+                                <label for="contact-email">Email address</label>
+                            </div>
+                        </div>
+                        <!-- Service Checkboxes: one named group, so a screen reader says what they are for -->
+                        <div class="col-12" role="group" aria-labelledby="contact-services-label">
+                        <p class="visually-hidden" id="contact-services-label">Services you are interested in (optional)</p>
+                        <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="form-check form-check-inline">
+                                <input name="Services[]" type="checkbox" class="form-check-input" id="service-websites" value="Websites">
+                                <label class="form-check-label" for="service-websites">
+                                    <i class="bi-globe choice-icon" aria-hidden="true"></i>
+                                    <span class="choice-label">Websites</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="form-check form-check-inline">
+                                <input name="Services[]" type="checkbox" class="form-check-input" id="service-webapps" value="Web Apps">
+                                <label class="form-check-label" for="service-webapps">
+                                    <img src="images/icon-web-apps.svg" class="choice-icon choice-icon-img" alt="" width="20" height="20">
+                                    <span class="choice-label">Web Apps</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="form-check form-check-inline">
+                                <input name="Services[]" type="checkbox" class="form-check-input" id="service-ecommerce" value="eCommerce">
+                                <label class="form-check-label" for="service-ecommerce">
+                                    <i class="bi-phone choice-icon" aria-hidden="true"></i>
+                                    <span class="choice-label">eCommerce</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="form-check form-check-inline me-0">
+                                <input name="Services[]" type="checkbox" class="form-check-input" id="service-seo" value="SEO">
+                                <label class="form-check-label" for="service-seo">
+                                    <i class="bi-google choice-icon" aria-hidden="true"></i>
+                                    <span class="choice-label">SEO</span>
+                                </label>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-12 col-12">
+                            <div class="form-floating">
+                                <textarea 
+                                name="Message"
+                                id="contact-message"
+                                class="form-control"
+                                placeholder="Describe the project"
+                                autocomplete="on"
+                                required></textarea>
+                                <label for="contact-message">Describe the project</label>
+                            </div>
+                        </div>
+                        <!-- Submit -->
+                        <div class="col-lg-3 col-12 ms-auto margin-left-0">
+                            <button type="submit" class="action-btn">Send</button>
+                        </div>
+                        <div class="col-12">
+                            <p class="contact-note">Your details are used only to reply to you. <a href="privacy.html">Privacy Policy</a></p>
+                            <p class="contact-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
+                <div class="contact-details d-flex flex-column">
+                    <strong class="info-heading d-block mb-3 contact-title">Write a message</strong>
+                    <p class="mb-0">
+                        A few sentences about the idea are enough. The answer comes by email.
+                    </p>
+                    <strong class="info-heading d-block mt-4 mb-3 contact-title">Email</strong>
+                    <p>
+                        <a href="mailto:contact@dkd.rs" aria-label="Send an email to contact@dkd.rs">contact@dkd.rs</a>
+                    </p>
+                    <strong class="info-heading d-block mt-4 mb-3 contact-title">Phone</strong>
+                    <p class="mb-0">
+                        <a href="tel:+381640882949" aria-label="Call +381 64 088 2949">+381 64 088 2949</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
+                <div class="contact-details contact-details-alt d-flex flex-column">
+                    <strong class="info-heading d-block mb-3 contact-title">On this site</strong>
+                    <ul class="pill-menu">
+                        <li class="pill-menu-item"><a href="websites.html" class="pill-menu-link">Websites</a></li>
+                        <li class="pill-menu-item"><a href="ecommerce.html" class="pill-menu-link">eCommerce</a></li>
+                        <li class="pill-menu-item"><a href="seo.html" class="pill-menu-link">SEO</a></li>
+                        <li class="pill-menu-item"><a href="case-studies.html" class="pill-menu-link">Case Studies</a></li>
+                    </ul>
+                    <strong class="info-heading d-block mt-4 mb-3 contact-title">Elsewhere online</strong>
+                    <ul class="social-links">
+                        <li class="social-links-item">
+                            <a href="https://www.linkedin.com/company/145334456/"
+                            class="social-links-link bi-linkedin"
+                            aria-label="LinkedIn (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://github.com/DragoKatic"
+                            class="social-links-link bi-github"
+                            aria-label="GitHub (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://www.instagram.com/drago.katic.development"
+                            class="social-links-link bi-instagram"
+                            aria-label="Instagram (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://www.facebook.com/drago.katic.development"
+                            class="social-links-link bi-facebook"
+                            aria-label="Facebook Page (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://www.tiktok.com/@drago.katic.development"
+                            class="social-links-link bi-tiktok"
+                            aria-label="TikTok (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://www.pinterest.com/dragokatic/"
+                            class="social-links-link bi-pinterest"
+                            aria-label="Pinterest (opens in a new tab)"
+                            target="_blank"
+                            rel="noopener noreferrer"></a>
+                        </li>
+                    </ul>
+                    <strong class="info-heading d-block mt-4 mb-3 contact-title">Free software</strong>
+                    <p class="mb-0">The code of this site and of the WordPress plugins is free to use and change under the <a href="LICENSE.txt">GPLv2 or later</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                <div class="copyright-bar">
+                    <p class="mb-0">
+                        <span class="copyright-line">Copyright © <span id="year"></span> <a href="./">Drago Katić</a> &middot; Code: <a href="LICENSE.txt" class="footer-license">GPLv2 or later</a></span><span class="footer-legal"><span aria-hidden="true">|</span> <a href="privacy.html">Privacy Policy</a> <span aria-hidden="true">|</span> <a href="credits.html">Credits</a> <span aria-hidden="true">|</span> <a href="privacy.html#cookies" class="cookie-settings-link">Cookie Settings</a></span>
+                    </p>
+                    <!-- Quality marks: each opens the check itself, so a visitor can verify it -->
+                    <ul class="footer-marks" aria-label="Standards this site meets">
+                        <li><a class="footer-mark" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdkd.rs%2Fseo.html" target="_blank" rel="noopener noreferrer" aria-label="W3C HTML: check this page with the W3C validator (opens in a new tab)">W3C HTML</a></li>
+                        <li><a class="footer-mark" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdkd.rs%2Fcss%2Fstyle.css&amp;profile=css3svg&amp;usermedium=all&amp;warning=no&amp;lang=en" target="_blank" rel="noopener noreferrer" aria-label="W3C CSS: check the stylesheet with the W3C validator (opens in a new tab)">W3C CSS</a></li>
+                        <li><a class="footer-mark" href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank" rel="noopener noreferrer" aria-label="WCAG 2.1 AA accessibility (opens in a new tab)">WCAG 2.1 AA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js?v=155ac993c8" defer></script>
+</body>
+</html>

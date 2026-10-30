@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img" aria-labelledby="title desc">
+  <title id="title">Drago Katić Development: Logo (white)</title>
+  <desc id="desc">Custom web apps. Open code.</desc>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title>Drago Katić Development: Logo (white)</dc:title>
+    <dc:creator>Drago Katić Development</dc:creator>
+    <dc:description>Custom web apps. Open code.</dc:description>
+    <dc:source>https://dkd.rs/</dc:source>
+    <dc:rights>© Drago Katić Development. All rights reserved.</dc:rights>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type>StillImage</dc:type>
+  </metadata>
+  <g id="logo">
+  <rect fill="#ffffff" x="538.5" y="499.5" width="249" height="249"/>
+  <rect fill="#ffffff" x="187.5" y="452.5" width="249" height="249" transform="translate(-343.7 558.7) rotate(-60)"/>
+  <rect fill="#ffffff" x="402.5" y="171.5" width="249" height="249" transform="translate(-77.4 303.16) rotate(-30)"/>
+  </g>
+</svg>

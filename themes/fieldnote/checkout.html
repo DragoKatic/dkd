@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WooCommerce Checkout Form Demo</title>
+  <meta name="description" content="Demo WooCommerce checkout form: card number grouped as you type, card brand detected, order total always in view. By Drago Katić Development.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f6f1e7">
+  <link rel="canonical" href="https://dkd.rs/themes/fieldnote/checkout.html">
+  <link rel="icon" href="images/fieldnote-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="WooCommerce Checkout Form Demo">
+  <meta property="og:description" content="A focused payment step for WooCommerce shops: card number grouped as you type, the card brand detected and the order total always in view. A demo by Drago Katić Development.">
+  <meta property="og:url" content="https://dkd.rs/themes/fieldnote/checkout.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/fieldnote.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Fieldnote Forms, accessible web form designs for WordPress">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/lexend.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="fieldnote.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "WooCommerce Checkout Form Demo",
+  "description": "Demo WooCommerce checkout form: card number grouped as you type, card brand detected, order total always in view. By Drago Katić Development.",
+  "url": "https://dkd.rs/themes/fieldnote/checkout.html",
+  "image": "https://dkd.rs/images/projects/fieldnote.webp",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Drago Katić Development",
+    "url": "https://dkd.rs/"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Drago Katić",
+    "url": "https://dkd.rs/"
+  }
+}
+  </script>
+</head>
+<body>
+  <a class="fn-skip" href="#main">Skip to content</a>
+  <header class="fn-header">
+    <div class="fn-wrap fn-header-row">
+      <a class="fn-brand" href="index.html">
+        <img src="images/fieldnote-mark.svg" alt="" width="36" height="36">
+        <span>Fieldnote <em>Forms</em></span>
+      </a>
+      <button class="fn-menu" type="button" aria-expanded="false" aria-controls="fn-nav">Menu</button>
+      <nav class="fn-nav" id="fn-nav" aria-label="Main">
+        <ul><li><a href="index.html">All forms</a></li><li><a href="sign-in.html">Sign in</a></li><li><a href="create-account.html">Sign up</a></li><li><a href="contact.html">Contact</a></li><li><a href="checkout.html">Checkout</a></li></ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="fn-wrap">
+      <nav class="fn-crumbs" aria-label="Breadcrumb"><a href="index.html">All forms</a> <span aria-hidden="true">/</span> <span aria-current="page">Checkout and payment form</span></nav>
+      <div class="fn-page-head">
+        <p class="fn-kicker">WooCommerce · Payment</p>
+        <h1>Checkout and payment</h1>
+        <p class="fn-lead">A focused payment step for WooCommerce shops: card number grouped as you type, the card brand detected and the order total always in view.</p>
+      </div>
+      <div class="fn-stage fn-stage-wide">
+        <div class="fn-card"><div class="fn-checkout"><form class="fn-form " action="#" novalidate data-success="Payment approved. This is a demo, so no card was charged." ><div class="fn-summary" role="alert" tabindex="-1" hidden></div><div class="fn-field"><label for="card-name">Name on card</label><input id="card-name" name="card-name" type="text" aria-describedby="card-name-error" required data-missing="Please enter the name on the card." autocomplete="cc-name"><p class="fn-error" id="card-name-error" hidden></p></div><div class="fn-field"><label for="card-number">Card number</label><p class="fn-hint" id="card-number-hint">Demo only: use a test number such as 4242 4242 4242 4242.</p><input id="card-number" name="card-number" type="text" aria-describedby="card-number-hint card-number-error" required data-missing="Please enter the card number." autocomplete="cc-number" inputmode="numeric" data-card="1" maxlength="23"><p class="fn-error" id="card-number-error" hidden></p></div><p class="fn-card-brand" aria-live="polite"></p><div class="fn-field fn-field-half"><label for="card-expiry">Expiry (MM / YY)</label><input id="card-expiry" name="card-expiry" type="text" aria-describedby="card-expiry-error" required data-missing="Please enter the expiry date." autocomplete="cc-exp" inputmode="numeric" data-expiry="1" maxlength="7" placeholder="MM / YY"><p class="fn-error" id="card-expiry-error" hidden></p></div><div class="fn-field fn-field-half"><label for="card-cvc">Security code</label><input id="card-cvc" name="card-cvc" type="text" aria-describedby="card-cvc-error" required data-missing="Please enter the security code." autocomplete="cc-csc" inputmode="numeric" data-cvc="1" maxlength="4"><p class="fn-error" id="card-cvc-error" hidden></p></div><div class="fn-check"><input id="save-card" name="save-card" type="checkbox" aria-describedby="save-card-error"><label for="save-card">Save this card for next time</label><p class="fn-error" id="save-card-error" hidden></p></div><button class="fn-btn fn-btn-primary" type="submit">Pay €86.40</button><p class="fn-status" role="status"></p></form><aside class="fn-order" aria-labelledby="fn-order-title"><h2 id="fn-order-title">Your order</h2><ul><li><span>Linen notebook ×2</span><span>€36.00</span></li><li><span>Brass pen</span><span>€29.00</span></li><li><span>Delivery</span><span>€5.50</span></li><li><span>VAT (25%)</span><span>€15.90</span></li></ul><p class="fn-total"><span>Total</span><strong>€86.40</strong></p></aside></div></div>
+      </div>
+      <section class="fn-notes" aria-labelledby="fn-notes-title">
+        <h2 id="fn-notes-title">Why this checkout and payment form works</h2>
+        <ul><li>The card number is grouped as people type, so typos are easy to spot.</li><li>The order summary stays in view, so there are no surprises at the end.</li><li>Card fields can be handed to your payment provider (Stripe, PayPal…) as secure fields.</li><li>Designed for the WooCommerce checkout of a custom WordPress theme.</li></ul>
+      </section>
+      <nav class="fn-pager" aria-label="More forms"><a href="project-inquiry.html"><small>Previous form</small>Multi-step project inquiry</a><a href="sign-in.html"><small>Next form</small>Sign-in form</a></nav>
+    </div>
+  </main>
+
+  <footer class="fn-footer">
+    <div class="fn-wrap fn-footer-grid">
+      <div>
+        <a class="fn-brand" href="index.html">
+          <img src="images/fieldnote-mark.svg" alt="" width="30" height="30">
+          <span>Fieldnote <em>Forms</em></span>
+        </a>
+        <p>Accessible web form designs for WordPress sites.</p>
+      </div>
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme. Fieldnote Forms, Northwind Books and the shop items are fictional; the forms send nothing.</p>
+    </div>
+    <p class="fn-wrap fn-copy">© <span id="year">2026</span> Fieldnote Forms demo</p>
+  </footer>
+
+  <script src="fieldnote.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

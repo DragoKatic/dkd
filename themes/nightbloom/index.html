@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nightbloom Festival – Music Festival Website Demo</title>
+  <meta name="description" content="Two-page website demo for a three-day music festival, designed and coded from scratch by Drago Katić Development: countdown, line-up by day, festival map, FAQ and a ticket shop. Can be built as a custom WordPress theme.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#140b2e">
+  <link rel="canonical" href="https://dkd.rs/themes/nightbloom/index.html">
+  <link rel="icon" href="images/nightbloom-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Nightbloom Festival – Music Festival Website Demo">
+  <meta property="og:description" content="Two-page website demo for a three-day music festival, designed and coded from scratch by Drago Katić Development: countdown, line-up by day, festival map, FAQ and a ticket shop. Can be built as a custom WordPress theme.">
+  <meta property="og:url" content="https://dkd.rs/themes/nightbloom/index.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/nightbloom.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Nightbloom Festival, music festival website demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/unbounded.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/rubik.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="nightbloom.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Nightbloom Festival – Music Festival Website Demo",
+  "description": "Two-page website demo for a three-day music festival, designed and coded from scratch by Drago Katić Development: countdown, line-up by day, festival map, FAQ and a ticket shop. Can be built as a custom WordPress theme.",
+  "url": "https://dkd.rs/themes/nightbloom/index.html",
+  "image": "https://dkd.rs/images/projects/nightbloom.webp",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Drago Katić Development",
+    "url": "https://dkd.rs/"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Drago Katić",
+    "url": "https://dkd.rs/"
+  }
+}
+  </script>
+</head>
+<body>
+  <a class="nb-skip" href="#main">Skip to content</a>
+  <header class="nb-header">
+    <div class="nb-wrap nb-header-row">
+      <a class="nb-logo" href="index.html"><img src="images/nightbloom-mark.svg" alt="" width="40" height="40"><span>Nightbloom</span></a>
+      <button class="nb-menu" type="button" aria-expanded="false" aria-controls="nb-nav">Menu</button>
+      <nav class="nb-nav" id="nb-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html#lineup">Line-up</a></li>
+          <li><a href="index.html#map">Festival map</a></li>
+          <li><a href="index.html#info">Info &amp; FAQ</a></li>
+          <li><a class="nb-nav-cta" href="tickets.html">Tickets</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="nb-hero">
+      <img class="nb-hero-art" src="images/stage.svg" alt="" width="1400" height="800">
+      <div class="nb-wrap nb-hero-inner">
+        <p class="nb-date">16–18 July 2027 · Larkspur Valley</p>
+        <h1>Three nights of music under the open sky</h1>
+        <p class="nb-lead">Eighteen artists, three stages, a lake to swim in and a meadow to camp in. The summer weekend you will talk about all year.</p>
+        <div class="nb-countdown" role="timer" aria-label="Time until the festival starts" hidden>
+          <div><strong data-unit="days">0</strong><span>days</span></div>
+          <div><strong data-unit="hours">0</strong><span>hours</span></div>
+          <div><strong data-unit="minutes">0</strong><span>minutes</span></div>
+          <div><strong data-unit="seconds">0</strong><span>seconds</span></div>
+        </div>
+        <div class="nb-actions">
+          <a class="nb-btn nb-btn-hot" href="tickets.html">Get tickets</a>
+          <a class="nb-btn nb-btn-line" href="#lineup">See the line-up</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="nb-section" id="lineup">
+      <div class="nb-wrap">
+        <div class="nb-head nb-reveal"><p class="nb-kicker">Line-up 2027</p><h2>Who plays when</h2><p>Pick a day to see the artists, stage times and stages. Headliners close the main stage every night.</p></div>
+        <div class="nb-tablist" role="tablist" aria-label="Festival days"><button type="button" role="tab" id="nb-tab-fri" aria-controls="nb-day-fri" aria-selected="true">Friday<small>16 July</small></button><button type="button" role="tab" id="nb-tab-sat" aria-controls="nb-day-sat" aria-selected="false" tabindex="-1">Saturday<small>17 July</small></button><button type="button" role="tab" id="nb-tab-sun" aria-controls="nb-day-sun" aria-selected="false" tabindex="-1">Sunday<small>18 July</small></button></div>
+        <div class="nb-day" role="tabpanel" id="nb-day-fri" aria-labelledby="nb-tab-fri" tabindex="0"><h3 class="nb-day-title">Friday 16 July</h3><ul class="nb-artists"><li class="nb-artist nb-headliner"><img src="art/lumen-harbor.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Lumen Harbor</h4><p>Indie pop</p><p class="nb-slot"><time>22:30</time> · Main stage</p></div></li><li class="nb-artist"><img src="art/fennel---fox.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Fennel &amp; Fox</h4><p>Folk</p><p class="nb-slot"><time>19:00</time> · Lakeside</p></div></li><li class="nb-artist"><img src="art/the-velvet-owls.svg" alt="" width="400" height="400" loading="lazy"><div><h4>The Velvet Owls</h4><p>Garage rock</p><p class="nb-slot"><time>20:45</time> · Main stage</p></div></li><li class="nb-artist"><img src="art/kaia-morrow.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Kaia Morrow</h4><p>Soul</p><p class="nb-slot"><time>21:30</time> · Grove stage</p></div></li><li class="nb-artist"><img src="art/static-gardens.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Static Gardens</h4><p>Synthwave</p><p class="nb-slot"><time>23:30</time> · Grove stage</p></div></li><li class="nb-artist"><img src="art/dj-paloma.svg" alt="" width="400" height="400" loading="lazy"><div><h4>DJ Paloma</h4><p>House</p><p class="nb-slot"><time>00:30</time> · Lakeside</p></div></li></ul></div><div class="nb-day" role="tabpanel" id="nb-day-sat" aria-labelledby="nb-tab-sat" tabindex="0"><h3 class="nb-day-title">Saturday 17 July</h3><ul class="nb-artists"><li class="nb-artist nb-headliner"><img src="art/silver-kingfishers.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Silver Kingfishers</h4><p>Stadium rock</p><p class="nb-slot"><time>22:30</time> · Main stage</p></div></li><li class="nb-artist"><img src="art/olive-branch-band.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Olive Branch Band</h4><p>Reggae</p><p class="nb-slot"><time>18:30</time> · Lakeside</p></div></li><li class="nb-artist"><img src="art/sol-castellano.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Sol Castellano</h4><p>Latin jazz</p><p class="nb-slot"><time>20:00</time> · Lakeside</p></div></li><li class="nb-artist"><img src="art/mira-saint.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Mira Saint</h4><p>Alt R&B</p><p class="nb-slot"><time>20:30</time> · Main stage</p></div></li><li class="nb-artist"><img src="art/the-paper-lanterns.svg" alt="" width="400" height="400" loading="lazy"><div><h4>The Paper Lanterns</h4><p>Dream pop</p><p class="nb-slot"><time>21:15</time> · Grove stage</p></div></li><li class="nb-artist"><img src="art/neon-tide.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Neon Tide</h4><p>Electronic</p><p class="nb-slot"><time>23:45</time> · Grove stage</p></div></li></ul></div><div class="nb-day" role="tabpanel" id="nb-day-sun" aria-labelledby="nb-tab-sun" tabindex="0"><h3 class="nb-day-title">Sunday 18 July</h3><ul class="nb-artists"><li class="nb-artist nb-headliner"><img src="art/maple-avenue-parade.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Maple Avenue Parade</h4><p>Indie rock</p><p class="nb-slot"><time>21:45</time> · Main stage</p></div></li><li class="nb-artist"><img src="art/wren---willow.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Wren &amp; Willow</h4><p>Acoustic</p><p class="nb-slot"><time>17:30</time> · Lakeside</p></div></li><li class="nb-artist"><img src="art/june-okafor.svg" alt="" width="400" height="400" loading="lazy"><div><h4>June Okafor</h4><p>Afrobeats</p><p class="nb-slot"><time>19:45</time> · Main stage</p></div></li><li class="nb-artist"><img src="art/paper-satellites.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Paper Satellites</h4><p>Art pop</p><p class="nb-slot"><time>20:30</time> · Grove stage</p></div></li><li class="nb-artist"><img src="art/loud-library.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Loud Library</h4><p>Punk</p><p class="nb-slot"><time>22:30</time> · Grove stage</p></div></li><li class="nb-artist"><img src="art/lunar-choir.svg" alt="" width="400" height="400" loading="lazy"><div><h4>Lunar Choir</h4><p>Ambient</p><p class="nb-slot"><time>23:00</time> · Lakeside</p></div></li></ul></div>
+      </div>
+    </section>
+
+    <section class="nb-section nb-section-dark" id="map">
+      <div class="nb-wrap nb-map-grid">
+        <div class="nb-reveal">
+          <p class="nb-kicker">Festival map</p>
+          <h2>Find your way around the valley</h2>
+          <p>All three stages are within a ten-minute walk. Water points, first aid and quiet zones are marked on the map in the festival app.</p>
+          <ul class="nb-legend">
+            <li><span style="background:#ff3d8b"></span> Main stage</li>
+            <li><span style="background:#c6ff4d"></span> Grove stage in the woods</li>
+            <li><span style="background:#37e2d5"></span> Lakeside stage</li>
+            <li><span style="background:#ffb547"></span> Food court and bars</li>
+          </ul>
+        </div>
+        <div class="nb-reveal"><svg class="nb-map" viewBox="0 0 800 520" role="img" aria-labelledby="nb-map-t nb-map-d">
+  <title id="nb-map-t">Festival map</title>
+  <desc id="nb-map-d">The entrance is in the south. The main stage is in the centre, the Grove stage in the woods to the west, Lakeside stage by the lake in the east, food court and bars between them, and the Meadow campsite in the north.</desc>
+  <rect width="800" height="520" rx="24" fill="#241350"/>
+  <path d="M560 260 C640 200 780 230 790 320 C800 420 680 470 600 430 C540 400 500 320 560 260Z" fill="#1f5f86"/>
+  <g fill="#1f4a3a"><circle cx="60" cy="200" r="40"/><circle cx="110" cy="150" r="34"/><circle cx="150" cy="230" r="44"/><circle cx="80" cy="290" r="36"/><circle cx="190" cy="170" r="30"/><circle cx="40" cy="360" r="30"/></g>
+  <rect x="300" y="30" width="260" height="110" rx="16" fill="#3b2a6e"/>
+  <path d="M400 500 V420 M400 420 C400 360 400 320 400 300 M400 300 C300 280 220 260 170 240 M400 300 C480 300 560 320 640 330 M400 300 V150" stroke="#fbf4ff" stroke-width="6" stroke-dasharray="2 12" stroke-linecap="round" fill="none" opacity=".6"/>
+  <g font-family="Rubik, sans-serif" font-size="17" font-weight="600" fill="#fbf4ff" text-anchor="middle">
+    <rect x="320" y="250" width="160" height="70" rx="12" fill="#ff3d8b"/><text x="400" y="291">Main stage</text>
+    <rect x="100" y="210" width="140" height="56" rx="12" fill="#c6ff4d"/><text x="170" y="244" fill="#140b2e">Grove stage</text>
+    <rect x="590" y="300" width="140" height="56" rx="12" fill="#37e2d5"/><text x="660" y="334" fill="#140b2e">Lakeside</text>
+    <rect x="450" y="370" width="150" height="50" rx="12" fill="#ffb547"/><text x="525" y="401" fill="#140b2e">Food &amp; bars</text>
+    <text x="430" y="92">Meadow campsite</text>
+    <rect x="340" y="455" width="120" height="44" rx="22" fill="#fbf4ff"/><text x="400" y="483" fill="#140b2e">Entrance</text>
+  </g>
+</svg></div>
+      </div>
+    </section>
+
+    <section class="nb-section" id="info">
+      <div class="nb-wrap">
+        <div class="nb-head nb-reveal"><p class="nb-kicker">Good to know</p><h2>Plan your weekend</h2></div>
+        <ul class="nb-info">
+          <li class="nb-reveal"><h3>Getting there</h3><p>Free shuttle buses from Larkspur station every 15 minutes. Car parking must be booked in advance.</p></li>
+          <li class="nb-reveal"><h3>Camping</h3><p>The Meadow campsite opens on Thursday at noon, with showers, charging tents and a quiet area.</p></li>
+          <li class="nb-reveal"><h3>Accessibility</h3><p>Viewing platforms at every stage, accessible toilets and free carer tickets. Ask us what you need.</p></li>
+          <li class="nb-reveal"><h3>Leave no trace</h3><p>Reusable cups, free water refills and a deposit on every can. Last year we recycled 82% of all waste.</p></li>
+        </ul>
+        <div class="nb-faq">
+          <details class="nb-reveal"><summary>Can I bring my own food and drinks?</summary><p>Food yes, sealed soft drinks up to 1.5 litres too. Glass and alcohol are not allowed into the arena.</p></details>
+          <details class="nb-reveal"><summary>Is there an age limit?</summary><p>Children under 12 enter free with an adult. Under 16s must be accompanied by an adult with a ticket.</p></details>
+          <details class="nb-reveal"><summary>What happens if it rains?</summary><p>The show goes on. Bring a raincoat; umbrellas are not allowed in front of the stages.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="nb-section nb-news">
+      <div class="nb-wrap nb-news-inner nb-reveal">
+        <div><h2>Be first to hear the next names</h2><p>New artists, set times and ticket releases, about twice a month.</p></div>
+        <form class="nb-news-form" action="#" novalidate>
+          <label class="nb-sr" for="nb-news-email">Email address</label>
+          <input id="nb-news-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <button class="nb-btn nb-btn-hot" type="submit">Sign up</button>
+          <p class="nb-news-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="nb-footer">
+    <div class="nb-wrap nb-footer-grid">
+      <div>
+        <a class="nb-logo" href="index.html"><img src="images/nightbloom-mark.svg" alt="" width="36" height="36"><span>Nightbloom</span></a>
+        <p>16–18 July · Larkspur Valley · three nights, three stages.</p>
+      </div>
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme. Nightbloom Festival, the artists, the valley and the tickets are fictional; the pictures are illustrations.</p>
+    </div>
+    <p class="nb-wrap nb-copy">© <span id="year">2026</span> Nightbloom Festival demo</p>
+  </footer>
+
+  <script src="nightbloom.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>

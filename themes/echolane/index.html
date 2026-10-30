@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Echolane – SaaS Landing Page Demo</title>
+  <meta name="description" content="SaaS landing page demo by Drago Katić Development: a light, interactive website for a customer feedback product. Fast, accessible and responsive.">
+  <meta name="author" content="Drago Katić">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f6f4fb">
+  <link rel="canonical" href="https://dkd.rs/themes/echolane/index.html">
+  <link rel="icon" href="images/echolane-mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Drago Katić Development">
+  <meta property="og:title" content="Echolane – SaaS Landing Page Demo">
+  <meta property="og:description" content="A light, interactive SaaS landing page designed and coded from scratch by Drago Katić Development.">
+  <meta property="og:url" content="https://dkd.rs/themes/echolane/index.html">
+  <meta property="og:image" content="https://dkd.rs/images/projects/echolane.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Echolane SaaS landing page demo">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preload" href="fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="echolane.css">
+  <script>document.documentElement.className += " js";</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Echolane – SaaS Landing Page Demo",
+    "description": "SaaS landing page demo designed and coded from scratch by Drago Katić Development.",
+    "url": "https://dkd.rs/themes/echolane/index.html",
+    "image": "https://dkd.rs/images/projects/echolane.webp",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Drago Katić Development",
+      "url": "https://dkd.rs/"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Drago Katić",
+      "url": "https://dkd.rs/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="blobs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="site-header" id="top">
+    <div class="header-pill">
+      <a class="brand" href="#top" aria-label="Echolane home">
+        <img src="images/echolane-mark.svg" alt="" width="30" height="30">
+        <span>echolane</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-dark btn-sm" href="#start">Try it free</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="badge"><span>New</span> Two-way sync with your issue tracker</p>
+          <h1>Hear every customer. <span class="hl">Build what matters.</span></h1>
+          <p class="lead">Echolane gathers feedback from email, chat, calls and app reviews, groups it into themes and shows which ones matter most to your revenue — so the roadmap writes itself.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#start">Start free trial</a>
+            <a class="btn btn-soft" href="#how">See how it works</a>
+          </div>
+          <p class="fine">14 days free · No card needed · Set up in 11 minutes</p>
+        </div>
+
+        <div class="sorter">
+          <div class="board" id="board" role="group" aria-label="Example: six pieces of customer feedback grouped into two themes">
+            <div class="theme theme-a" aria-hidden="true"><b>Export &amp; reporting</b><span>3 requests · €18k ARR</span></div>
+            <div class="theme theme-b" aria-hidden="true"><b>Team permissions</b><span>3 requests · €9k ARR</span></div>
+            <figure class="note n1"><figcaption class="src src-mail">Email</figcaption><p>Any way to get a CSV of last month's numbers?</p></figure>
+            <figure class="note n4"><figcaption class="src src-chat">Live chat</figcaption><p>Can I stop interns from deleting projects?</p></figure>
+            <figure class="note n2"><figcaption class="src src-call">Sales call</figcaption><p>They won't sign without scheduled PDF reports.</p></figure>
+            <figure class="note n5"><figcaption class="src src-survey">Survey</figcaption><p>We need view-only access for our clients.</p></figure>
+            <figure class="note n3"><figcaption class="src src-review">App review</figcaption><p>Great app, but exporting data is painful.</p></figure>
+            <figure class="note n6"><figcaption class="src src-ticket">Ticket</figcaption><p>Admin roles please — we are 40 people now.</p></figure>
+          </div>
+          <button type="button" class="btn btn-soft sort-btn" aria-pressed="false" aria-controls="board">Group into themes</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sources" aria-label="Feedback sources">
+      <div class="wrap">
+        <p>Collects feedback from every channel your customers already use</p>
+        <ul>
+          <li>Email</li><li>Live chat</li><li>Support tickets</li><li>Sales calls</li><li>App reviews</li><li>Surveys</li><li>Community</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Features</p>
+          <h2>From noisy inbox to a roadmap you can defend</h2>
+          <p>Five tools that replace the feedback spreadsheet nobody wants to update.</p>
+        </header>
+        <div class="bento">
+          <article class="card card-wide reveal">
+            <div>
+              <h3>One inbox for all of it</h3>
+              <p>Every message, call note and review lands in one place, with the customer and their plan attached.</p>
+            </div>
+            <ul class="mini-inbox" aria-hidden="true">
+              <li><span class="src src-mail">Email</span><span class="msg">Reports should run every Monday…</span><i>2m</i></li>
+              <li><span class="src src-call">Call</span><span class="msg">Asked again about SSO for 200 seats</span><i>1h</i></li>
+              <li><span class="src src-review">Review</span><span class="msg">★★★★☆ Love it, dark mode please</span><i>3h</i></li>
+            </ul>
+          </article>
+          <article class="card card-mint reveal">
+            <h3>Themes, not tags</h3>
+            <p>Similar requests are grouped automatically. You rename, merge or split with a drag.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Weighted by revenue</h3>
+            <p>See which themes come from your biggest accounts, not just the loudest ones.</p>
+            <div class="meter" aria-hidden="true"><span style="--w:78%"></span></div>
+          </article>
+          <article class="card card-peach reveal">
+            <h3>Reply where it started</h3>
+            <p>When a feature ships, everyone who asked for it gets a personal note in their own channel.</p>
+          </article>
+          <article class="card reveal">
+            <h3>A roadmap that links back</h3>
+            <p>Every roadmap item shows the real quotes and customers behind it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="how">
+      <div class="wrap">
+        <header class="section-head section-head-center reveal">
+          <p class="eyebrow">How it works</p>
+          <h2>Four steps, then it runs itself</h2>
+        </header>
+        <ol class="flow">
+          <li class="reveal"><span class="flow-dot">1</span><h3>Collect</h3><p>Connect your inbox, chat and review sites in a few clicks.</p></li>
+          <li class="reveal"><span class="flow-dot">2</span><h3>Group</h3><p>Echolane sorts every message into themes as it arrives.</p></li>
+          <li class="reveal"><span class="flow-dot">3</span><h3>Decide</h3><p>Rank themes by customers, revenue and effort, together with your team.</p></li>
+          <li class="reveal"><span class="flow-dot">4</span><h3>Close the loop</h3><p>Ship it and let every customer who asked know it is live.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="numbers" aria-label="Results">
+      <div class="wrap numbers-grid">
+        <div class="reveal"><p class="num">−62%</p><p>time spent triaging feedback</p></div>
+        <div class="reveal"><p class="num">3.4×</p><p>more feedback linked to the roadmap</p></div>
+        <div class="reveal"><p class="num">11 min</p><p>average setup time</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="stories">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Stories</p>
+          <h2>What changed when the spreadsheet went away</h2>
+        </header>
+        <div class="stories">
+          <blockquote class="story reveal">
+            <p>“We used to argue about what customers wanted. Now we open Echolane and look.”</p>
+            <footer><span class="avatar">MP</span><b>Maya P.</b> Head of Product, logistics software</footer>
+          </blockquote>
+          <blockquote class="story story-mint reveal">
+            <p>“Closing the loop alone paid for it. Customers write back to thank us for listening.”</p>
+            <footer><span class="avatar">JO</span><b>Jonas O.</b> Founder, booking platform</footer>
+          </blockquote>
+          <blockquote class="story reveal">
+            <p>“Revenue weighting changed our Q3 plan. The quiet enterprise requests were the big ones.”</p>
+            <footer><span class="avatar">RS</span><b>Rhea S.</b> VP Customer Success, fintech</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="pricing">
+      <div class="wrap">
+        <header class="section-head section-head-center reveal">
+          <p class="eyebrow">Pricing</p>
+          <h2>Priced per workspace, not per seat</h2>
+          <p>Invite your whole team. Every plan starts with a 14-day free trial.</p>
+        </header>
+        <div class="billing" role="group" aria-label="Billing period">
+          <button type="button" class="billing-option" data-billing="monthly" aria-pressed="true">Monthly</button>
+          <button type="button" class="billing-option" data-billing="yearly" aria-pressed="false">Yearly · 2 months free</button>
+        </div>
+        <div class="plans">
+          <article class="plan reveal">
+            <h3>Solo</h3>
+            <p class="plan-desc">For founders talking to their first customers.</p>
+            <p class="price"><span class="amount" data-monthly="€0" data-yearly="€0">€0</span> / month</p>
+            <ul class="ticks">
+              <li>2 feedback sources</li>
+              <li>100 messages per month</li>
+              <li>Automatic themes</li>
+            </ul>
+            <a class="btn btn-soft" href="#start">Start with Solo</a>
+          </article>
+          <article class="plan plan-featured reveal">
+            <p class="plan-tag">Most teams pick this</p>
+            <h3>Team</h3>
+            <p class="plan-desc">For product teams shipping every week.</p>
+            <p class="price"><span class="amount" data-monthly="€49" data-yearly="€41">€49</span> / month</p>
+            <ul class="ticks">
+              <li>Unlimited sources and messages</li>
+              <li>Revenue weighting</li>
+              <li>Issue tracker sync</li>
+              <li>Close-the-loop replies</li>
+            </ul>
+            <a class="btn btn-primary" href="#start">Start with Team</a>
+          </article>
+          <article class="plan reveal">
+            <h3>Company</h3>
+            <p class="plan-desc">For several products and teams.</p>
+            <p class="price"><span class="amount" data-monthly="€149" data-yearly="€124">€149</span> / month</p>
+            <ul class="ticks">
+              <li>Multiple workspaces</li>
+              <li>SSO and audit log</li>
+              <li>Custom data retention</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn-soft" href="#start">Talk to us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap faq-wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Asked often enough to answer here</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>Can I import the feedback I already have?</summary>
+            <p>Yes. Upload a CSV or connect your inbox and Echolane imports up to 12 months of history on the first sync.</p>
+          </details>
+          <details>
+            <summary>How accurate is the automatic grouping?</summary>
+            <p>Most teams keep about nine out of ten suggested themes as they are. Anything else you can merge or split in seconds.</p>
+          </details>
+          <details>
+            <summary>Is our customers' data used to train models?</summary>
+            <p>No. Your data is only used to group your own feedback and is never shared with other workspaces.</p>
+          </details>
+          <details>
+            <summary>We are two people. Is this too much tool?</summary>
+            <p>The Solo plan is free and built exactly for that stage: two sources, automatic themes and nothing to configure.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="start">
+      <div class="wrap">
+        <div class="cta-inner reveal">
+          <h2>Point it at one week of your feedback</h2>
+          <p>You will see your first themes before your coffee gets cold.</p>
+          <a class="btn btn-dark" href="#top">Start free trial</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <img src="images/echolane-mark.svg" alt="" width="26" height="26">
+          <span>echolane</span>
+        </a>
+        <p>Customer feedback, grouped and ranked, in one place.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <p class="made-by">Demo website designed and developed by <a href="../../websites.html">Drago Katić Development</a>. This design can also be built as a custom WordPress theme. Echolane is a fictional product; people, quotes and figures are examples.</p>
+    </div>
+    <p class="wrap copyright">© <span id="year">2026</span> Echolane demo</p>
+  </footer>
+
+  <script src="echolane.js" defer></script>
+  <script src="../overlay.js"></script>
+</body>
+</html>
